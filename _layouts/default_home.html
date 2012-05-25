@@ -8,37 +8,27 @@
 <script src="/js/jquery.tweet.js" charset="utf-8"></script>
 
 <script type="text/javascript">
-    function randomString(length) {
-      var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz'.split('');
-      var str = '';
-      for (var i = 0; i < length; i++) {
-        str += chars[Math.floor(Math.random() * chars.length)];
-      }
-      return str;
-    }
-    var rnd = randomString(8);
-
-    jQuery(function($){
-        $("#ticker").tweet({
-	  refresh_interval: 7000,
-          username: "orobix",
-          page: 1,
-          count: 6,
-          loading_text: ""
-        }).bind("loaded", function() {
-          var ul = $(this).find(".tweet_list");
-          var ticker = function() {
-            setTimeout(function() {
-              ul.find('li:first').animate( {marginTop: '-4em'}, 0, function() {
-                $(this).detach().appendTo(ul).removeAttr('style');
-              });
-              ticker();
-            }, 7000);
-          };
+jQuery(function($){
+    $("#ticker").tweet({
+refresh_interval: 360000,
+      username: "orobix",
+      page: 1,
+      count: 6,
+      loading_text: ""
+    }).bind("loaded", function() {
+      var ul = $(this).find(".tweet_list");
+      var ticker = function() {
+        setTimeout(function() {
+          ul.find('li:first').animate( {marginTop: '-4em'}, 0, function() {
+            $(this).detach().appendTo(ul).removeAttr('style');
+          });
           ticker();
-        });
-      });
-      
+        }, 7000);
+      };
+      ticker();
+    });
+  });
+    
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-12960044-1']);
 _gaq.push(['_setDomainName', 'orobix.com']);

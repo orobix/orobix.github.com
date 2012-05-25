@@ -1,0 +1,37 @@
+.boxcarousel {
+    width: 90%;
+    padding: 0% 5% 0% 5%;
+    height: 400px;
+}
+
+.content_item {
+	margin-top: 0px;
+    width: 610px;
+    padding: 0px;
+}
+
+.content_item_title {
+    margin: 10px;
+    margin-bottom:20px;
+	color:#666666;
+	font-size:23px;
+	font-weight:bold;
+    height: 1em;
+}
+
+.content_item_img{
+	width: 240px;
+    height: 160px;
+	display:inline-block;
+	clear:none;
+	margin-left:10px;
+    margin-right: 10px;
+}
+
+.content_item_text{
+    margin-top: -14px;
+	width:350px;
+	display:inline-block;
+	color:#666666;
+	font-size:12px;
+}

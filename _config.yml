@@ -1,4 +1,0 @@
-markdown: kramdown
-pygments: true
-permalink: pretty
-server_port: 4000

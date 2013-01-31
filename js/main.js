@@ -5,8 +5,8 @@ $(document).ready( function() {
   //setnewswidth();
  
   if (location.hash) {
-    $('#nav > .item4, .item4_last').removeClass('half_opacity');
-    $('#nav > .item4, .item4_last').not(document.getElementById(this.id)).addClass('half_opacity');
+    $('#nav > .item3_first, .item3, .item3_last').removeClass('half_opacity');
+    $('#nav > .item3_first, .item3, .item3_last').not(document.getElementById('show_' + location.hash.replace('#',''))).addClass('half_opacity');
     $(location.hash + '_section').show();
     $('#footer').css("background-color", "#EEE");
   }
@@ -21,8 +21,8 @@ $(document).ready( function() {
     
   }).click(function() {
     $('.section').hide();
-    $('#nav > .item4, .item4_last').removeClass('half_opacity');
-    $('#nav > .item4, .item4_last').not(document.getElementById(this.id)).addClass('half_opacity');
+    $('#nav > .item3_first, .item3, .item3_last').removeClass('half_opacity');
+    $('#nav > .item3_first, .item3, .item3_last').not(document.getElementById(this.id)).addClass('half_opacity');
     var page = this.id.replace('show_','');
     var section = page.concat('_section');
     $('#' + section).show();

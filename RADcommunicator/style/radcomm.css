@@ -72,8 +72,9 @@ body {
 
 #header {
 	width:100%;
-	height:252px;
-	background:url(../img/bg_header.png) repeat-x transparent;
+	/*height:252px;*/
+	height:280px;
+	background:url(../img/bg_header_1.png) repeat-x transparent;
 	text-align:center;
 }
 
@@ -104,7 +105,7 @@ body {
 
 #appstore {
 	position: absolute;
-	top:185px;
+	top:218px;
 	left:359px;
 }
 
@@ -113,6 +114,13 @@ body {
   top: 195px;
   left: 260px;
   font-size: 24px;
+}
+
+#availiPad {
+  position: absolute;
+  left: 44%;
+  top: 190px;
+  color: black
 }
 
 #ContentHeader hr {

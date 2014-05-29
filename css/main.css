@@ -19,11 +19,6 @@
 
 }
 
-.pt-page {
-  min-width: 800px;
-  min-height: 600px;
-}
-
 #wrap{
 
 	position:fixed;;
@@ -66,6 +61,7 @@
 
 img.background-home {
   height: 100%;
+  min-height: 300px;
 }
 
 img.background-home.background-home-left {

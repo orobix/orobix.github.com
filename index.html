@@ -2,17 +2,56 @@
 	<head>
 		<title>Orobix</title>
 		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/animations.css" />
 
 	</head>
 	<body>
-    <div id="pt-main" class="pt-perspective">
-	    <div class="pt-page pt-page-1">
-        <h1><span>A collection of</span><strong>Page</strong> Transitions</h1>home
-        <a href="#" data-animation="13" data-next="2">></a>
-      </div>
+    <div id="pt-main" >
+
+      <img src="img/background_home_01.jpg" class="img-responsive"></img>
+
+	    <div class="pt-page pt-page-1 col-xs-12 col-sm-12 col-md-12">
+
+        <div class="row"> <!-- top menu -->
+
+              <ul>
+                <li><a href="#">What we do</a></li>
+                <li><a href="#">Meet the team</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+
+        </div>
+
+          <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 home-logo">
+
+              <img src="img/orobix_logo.png" class="col-xs-4 img-logo"></img>
+
+            </div>
+
+          </div>
+
+
+          <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 home-bottom">
+
+              We are OROBIX<a href="#" data-animation="13" data-next="2"><img src="img/arrow_home.png"></img></a>
+
+            </div>
+
+          </div>
+
+
+
+      </div> <!-- END PAGE 1 -->
+
+
 	    <div class="pt-page pt-page-2"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1>philosophy</div>
 	    <div class="pt-page pt-page-3">
         <h1><span>A collection of</span><strong>Page</strong> Transitions</h1>branch
@@ -44,6 +83,8 @@
     <script src="js/modernizr.custom.js"></script>
     <script src="js/pagetransitions.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+
 
 	</body>
 </html>

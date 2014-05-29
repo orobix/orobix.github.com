@@ -1,3 +1,10 @@
+.main-content {
+
+  min-height: 2000px;
+  padding-top: 70px;
+
+}
+
 @font-face {
 
   font-family: "DIN-Light";
@@ -10,4 +17,45 @@
   font-family: "DINNeuzeitGroteskStd-Light";
   src: url(../fonts/DINNeuzeitGroteskStd-Light.otf);
 
+}
+
+#wrap{
+
+	position:fixed;;
+	z-index:-1;
+	top:0;
+	left:0;
+	background-color:black
+}
+
+#wrap img.bgfade{
+
+	position:absolute;
+	top:0;
+	display:none;
+	width:100%;
+	height:100%;
+	z-index:-1
+
+}
+
+.home-bottom {
+
+  bottom: 30px;
+  position:absolute !important;
+  text-align:center;
+
+}
+
+.home-logo {
+
+  bottom: 40%;
+  position:absolute !important;
+  text-align:center !important;
+
+}
+
+.img-logo {
+
+  float: initial !important;
 }

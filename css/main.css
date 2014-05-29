@@ -1,12 +1,13 @@
 @font-face {
 
-  font-family: "Name of your font";
-  src: url(../F);
+  font-family: "DIN-Light";
+  src: url(../fonts/DIN-Light.otf);
 
 }
 
-body {
+@font-face {
 
-  font-family: "Name of your font";
+  font-family: "DINNeuzeitGroteskStd-Light";
+  src: url(../fonts/DINNeuzeitGroteskStd-Light.otf);
 
 }

@@ -19,6 +19,11 @@
 
 }
 
+.pt-page {
+  min-width: 1024px;
+  min-height: 768px;
+}
+
 #wrap{
 
 	position:fixed;;
@@ -58,4 +63,16 @@
 .img-logo {
 
   float: initial !important;
+}
+
+img.background-home {
+  height: 100%;
+}
+
+img.background-home.background-home-left {
+  position: absolute;
+}
+
+img.background-home.background-home-right {
+  float: right;
 }

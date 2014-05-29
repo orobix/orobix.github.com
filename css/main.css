@@ -1,0 +1,12 @@
+@font-face {
+
+  font-family: "Name of your font";
+  src: url(../F);
+
+}
+
+body {
+
+  font-family: "Name of your font";
+
+}

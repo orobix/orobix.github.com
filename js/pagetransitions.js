@@ -2,7 +2,7 @@ var PageTransitions = (function() {
 
 	var $main = $( '#pt-main' ),
 		$pages = $main.children( 'div.pt-page' ),
-		$iterate = $( '#iterateEffects' ),
+		//$iterate = $( '#iterateEffects' ),
 		animcursor = 1,
 		pagesCount = $pages.length,
 		current = 0,
@@ -29,15 +29,15 @@ var PageTransitions = (function() {
 
 		$pages.eq( current ).addClass( 'pt-page-current' );
 
-		$( '#dl-menu' ).dlmenu( {
+		/*$( '#dl-menu' ).dlmenu( {
 			animationClasses : { in : 'dl-animate-in-2', out : 'dl-animate-out-2' },
 			onLinkClick : function( el, ev ) {
 				ev.preventDefault();
 				nextPage( el.data( 'animation' ) );
 			}
-		} );
+		} );*/
 
-		$iterate.on( 'click', function() {
+		/*$iterate.on( 'click', function() {
 			if( isAnimating ) {
 				return false;
 			}
@@ -46,7 +46,18 @@ var PageTransitions = (function() {
 			}
 			nextPage( animcursor );
 			++animcursor;
-		} );
+		} );*/
+
+    $('a').on('click', function() {
+			if( isAnimating ) {
+				return false;
+			}
+			if( animcursor > 67 ) {
+				animcursor = 1;
+			}
+			nextPage( animcursor );
+			++animcursor;
+		});
 
 	}
 

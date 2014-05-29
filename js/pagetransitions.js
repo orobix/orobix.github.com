@@ -48,21 +48,18 @@ var PageTransitions = (function() {
 			++animcursor;
 		} );*/
 
-    $('a').on('click', function() {
-			if( isAnimating ) {
-				return false;
-			}
-			if( animcursor > 67 ) {
-				animcursor = 1;
-			}
-			nextPage( animcursor );
-			++animcursor;
+    $('a[data-animation]').on('click', function(e) {
+      var options = {
+        animation: $(this).data('animation'),
+        next:      $(this).data('next')
+      }
+			nextPage(options);
 		});
 
 	}
 
-	function nextPage(options ) {
-		var animation = (options.animation) ? options.animation : options;
+	function nextPage(options) {
+		var animation = (options.animation) ? options.animation : 1;
 
 		if( isAnimating ) {
 			return false;
@@ -72,7 +69,7 @@ var PageTransitions = (function() {
 		
 		var $currPage = $pages.eq( current );
 
-		if(options.showPage){
+		/*if(options.showPage){
 			if( options.showPage < pagesCount - 1 ) {
 				current = options.showPage;
 			}
@@ -87,7 +84,9 @@ var PageTransitions = (function() {
 			else {
 				current = 0;
 			}
-		}
+		}*/
+
+    current = (options.next) ? options.next : 0;
 
 		var $nextPage = $pages.eq( current ).addClass( 'pt-page-current' ),
 			outClass = '', inClass = '';

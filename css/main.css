@@ -73,5 +73,6 @@ img.background-home.background-home-left {
 }
 
 img.background-home.background-home-right {
-  float: right;
+  position: absolute;
+  right: 0;
 }

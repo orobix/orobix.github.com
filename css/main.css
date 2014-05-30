@@ -5,6 +5,18 @@
 
 }
 
+.navbar {
+
+  padding-right: 2em;
+
+}
+
+.centercontents {
+
+	text-align: center !important;
+
+}
+
 @font-face {
 
   font-family: "DIN-Light";
@@ -55,8 +67,17 @@
 
 }
 
+.orobix-logo-menu {
+  padding-left:10px;
+  margin: 10px;
+  max-width: 90px;
+
+}
+
 .img-logo {
+
   float: initial !important;
+
 }
 
 img.background-home {

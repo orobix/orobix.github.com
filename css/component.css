@@ -50,8 +50,9 @@ html, body { height: 100%; }
 
 .pt-page-1 {
 
-	font-family: 'DINNeuzeitGroteskStd-Light';
-	color: #585858;
+  font-family: 'DINNeuzeitGroteskStd-Light';
+  color: #585858;
+  background-size: cover;*/
   background: -webkit-linear-gradient(left, black, white); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, black, white); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, black, white); /* For Firefox 3.6 to 15 */
@@ -155,7 +156,7 @@ html, body { height: 100%; }
 }
 
 .pt-page-6 {
-	background: #f68dbb;
+	/*background: #f68dbb;*/
 }
 
 /* Triggers (menu and button) */

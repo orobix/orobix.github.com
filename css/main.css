@@ -93,3 +93,79 @@ img.background-home.background-home-right {
   position: absolute;
   right: 0;
 }
+
+.branch-head {
+  height: 100%;
+}
+
+.branch-head > .top {
+  height: 70%;
+  background-color: #f1f1f1;
+}
+
+.branch-head > .bottom {
+  height: 30%;
+}
+
+.branch-link {
+  bottom: 60%;
+  position: absolute;
+  width: 100%;
+}
+
+.branch-link a {
+  font-family: "DINNeuzeitGroteskStd-Light";
+  color: #7d7d7d;
+}
+
+.branch-link a:hover {
+  text-decoration: none;
+  color: darken(#7d7d7d, 10);
+}
+
+.branch-link-right {
+  text-align: right;
+}
+
+.branch-content {
+  text-align: center;
+}
+
+.branch-name {
+  font-family: "DINNeuzeitGroteskStd-Light";
+  color: #7d7d7d;
+}
+
+.branch-title {
+  font-family: "DIN-Light";
+  color: #000000;
+}
+
+.branch-description {
+  font-family: "DIN-Light";
+  color: #000000;
+}
+
+.branch-image {
+  text-align: -webkit-center;
+}
+
+.branch-image img {
+  max-height: 75%;
+}
+
+.bottom > div {
+  text-align: center;
+}
+
+.branch-detail-title {
+  font-family: "DIN-Light";
+  color: #000000;
+  margin-top: 0;
+  text-align: center;
+}
+
+.branch-detail-link {
+  font-family: "DINNeuzeitGroteskStd-Light";
+  color: #898989;
+}

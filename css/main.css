@@ -1,5 +1,5 @@
 .navbar {
-  position: relative!important;
+  position: fixed;
   margin-bottom: 0!important;
   padding-right: 2em;
 
@@ -82,15 +82,23 @@ img.background-home.background-home-right {
   right: 0;
 }
 
+.main-content {
+  padding-top: 58px;
+}
+
 .main-content,
 .main-content > div {
   height: 100%;
   text-align: center;
+}
+
+.main-content p.branch {
   margin-top: 10px;
 }
 
 .branch-head {
   height: 100%;
+  padding-top: 58;
 }
 
 .branch-head > .top {

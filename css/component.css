@@ -99,7 +99,44 @@ html, body { height: 100%; }
 
 .pt-page-2 .branches{
 
-	padding-top: 20px;
+	position: relative;
+  display: block;
+  top: 7%;
+  text-align: center;
+  line-height: 0;
+
+
+}
+
+.pt-page-2 .apples{
+
+	position: relative;
+	display: block;
+	top: 9%;
+	text-align: center;
+	line-height: 0;
+
+
+}
+
+.pt-page-2 .discover-more{
+
+	position: relative;
+	display: block;
+	top: 12%;
+	text-align: center;
+	line-height: 0;
+
+
+}
+
+.pt-page-2 .discover-arrow{
+
+	position: relative;
+	display: block;
+	top: 14%;
+	text-align: center;
+	line-height: 0;
 
 }
 
@@ -108,8 +145,10 @@ html, body { height: 100%; }
 	font-family: 'DINNeuzeitGroteskStd-Light';
 	color: #000000;
 	font-size: 25px;
+	margin-bottom:30px;
 
 }
+
 
 .pt-page-2 .branch-list a{
 
@@ -123,13 +162,6 @@ html, body { height: 100%; }
 
 	padding-top: 40px;
 	max-width:80%;
-
-}
-
-.pt-page-2 .discover-row{
-
-	padding-top: 15px;
-	padding-bottom: 15px;
 
 }
 

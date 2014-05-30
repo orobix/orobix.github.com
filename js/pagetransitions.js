@@ -48,7 +48,7 @@ var PageTransitions = (function() {
 			++animcursor;
 		} );*/
 
-    $('a[data-animation]').on('click', function(e) {
+    $('[data-animation]').on('click', function(e) {
       var options = {
         animation: $(this).data('animation'),
         next:      $(this).data('next')
@@ -406,3 +406,16 @@ var PageTransitions = (function() {
 	};
 
 })();
+
+$(function() {
+  $('.pt-page-5 .bottom > div[data-hash^="#"]').click(function() {
+      var target = $(this).data('hash');
+      console.log($(target).offset());
+      if (target.length) {
+        $('.pt-page-5').animate({
+          scrollTop: $(target).offset().top
+        }, 1000);
+        return false;
+      }
+  });
+});

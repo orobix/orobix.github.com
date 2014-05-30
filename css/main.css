@@ -1,16 +1,7 @@
-.main-content {
-  height: 100%;
-}
-
 .navbar {
   position: relative!important;
+  margin-bottom: 0!important;
   padding-right: 2em;
-
-}
-
-.centercontents {
-
-	text-align: center !important;
 
 }
 
@@ -91,23 +82,33 @@ img.background-home.background-home-right {
   right: 0;
 }
 
+.main-content,
+.main-content > div {
+  height: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
 .branch-head {
   height: 100%;
 }
 
 .branch-head > .top {
-  height: 70%;
+  height: 65%;
   background-color: #f1f1f1;
+  /*background: url(../img/target_customers.png) 50% 50% no-repeat;*/
 }
 
 .branch-head > .bottom {
-  height: 30%;
+  height: 35%;
+  min-height: 220px;
 }
 
 .branch-link {
-  bottom: 60%;
+  bottom: 55%;
   position: absolute;
   width: 100%;
+  z-index: 10;
 }
 
 .branch-link a {
@@ -117,11 +118,44 @@ img.background-home.background-home-right {
 
 .branch-link a:hover {
   text-decoration: none;
-  color: darken(#7d7d7d, 10);
+  color: #7d7d7d;
+  opacity: .7;
 }
 
 .branch-link-right {
   text-align: right;
+}
+
+.branch-link-right img {
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Opera, Chrome, and Safari */
+}
+
+.branch-link-left img {
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Opera, Chrome, and Safari */
+}
+
+.branch-link-left a,
+.branch-link-right a {
+  display: block;
+}
+
+.branch-link-left a > *,
+.branch-link-right a > * {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.branch-link-left a > p,
+.branch-link-right a > p {
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .branch-content {
@@ -136,23 +170,49 @@ img.background-home.background-home-right {
 .branch-title {
   font-family: "DIN-Light";
   color: #000000;
+  margin-top: 10px;
 }
 
 .branch-description {
   font-family: "DIN-Light";
   color: #000000;
+  line-height: 1;
 }
 
 .branch-image {
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
   text-align: -webkit-center;
 }
 
 .branch-image img {
-  max-height: 75%;
+  height: 50%;
+  /*max-height: 370px;*/
 }
 
-.bottom > div {
+.pt-page-2 .bottom,
+.pt-page-5 .bottom > div {
   text-align: center;
+  position: absolute;
+  bottom: 10;
+  cursor: pointer;
+}
+
+.pt-page-2 .bottom {
+  width: 100%;
+}
+
+.pt-page-5 .bottom > div:hover {
+  opacity: .7;
+}
+
+.pt-page-5 .bottom > div:not(:last-child) {
+  border-right: 1px dotted #898989;
+}
+
+.pt-page-5 .bottom > div > img {
+  width: 50px;
 }
 
 .branch-detail-title {
@@ -165,4 +225,92 @@ img.background-home.background-home-right {
 .branch-detail-link {
   font-family: "DINNeuzeitGroteskStd-Light";
   color: #898989;
+}
+
+.branch-detail-link p {
+  margin: 0;
+}
+
+.branch-content {
+  height: 100%;
+  font-family: "DIN-Light";
+  color: #000000;
+}
+
+.branch-content-1 {
+  text-align: left;
+  line-height: 1;
+}
+
+.branch-content-1 > div {
+  top: 25%;
+}
+
+.branch-content-1 .link {
+  text-decoration: none;
+}
+
+.branch-content-1 .link:hover {
+  color: #ffffff;
+  opacity: .7;
+}
+
+.branch-content-1 .link .name {
+  margin-bottom: 0;
+}
+
+.branch-content-1 .link .name, 
+.branch-content-1 .description h3 {
+  font-family: "DINNeuzeitGroteskStd-Light";
+  color: #ffffff;
+}
+
+.branch-content-1 .link .role,
+.branch-content-1 .description p {
+  font-family: "DIN-Light";
+  color: #ffffff;
+}
+
+.branch-content .branch-section-icon {
+  margin-top: 10px;
+}
+
+.pt-page-5 .branch-content-1 {
+  background: url(../img/b3-content1.jpg) no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+  background-color: #000000;
+}
+
+.pt-page-5 .branch-content-2 {
+  background: url(../img/b3-content2.jpg) no-repeat;
+  /*background-size: cover;*/
+  background-size: 100% 80%;
+  background-position: left bottom;
+  background-color: #ffffff;
+}
+
+.branch-content-footer {
+  text-align: center;
+  height: 50%;
+  font-family: "DIN-Light";
+  color: #000000;
+}
+
+.branch-content-footer .products {
+  font-family: "DINNeuzeitGroteskStd-Light";
+  color: #898989;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.branch-content-footer .products .branch-detail-icon {
+  height: 150px;
+}
+
+.branch-content-footer .products .branch-detail-link img {
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Opera, Chrome, and Safari */
+  height: 10px;
 }

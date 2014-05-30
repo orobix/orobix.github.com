@@ -16,7 +16,8 @@ html, body { height: 100%; }
 	top: 0;
 	left: 0;
 	visibility: hidden;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -52,7 +53,7 @@ html, body { height: 100%; }
 
   font-family: 'DINNeuzeitGroteskStd-Light';
   color: #585858;
-  background-size: cover;*/
+  background-size: cover;
   background: -webkit-linear-gradient(left, black, white); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, black, white); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, black, white); /* For Firefox 3.6 to 15 */
@@ -120,10 +121,7 @@ html, body { height: 100%; }
 }
 
 .pt-page-2 .img-branches{
-
-	padding-top: 40px;
-	max-width:80%;
-
+  width: 80%;
 }
 
 .pt-page-2 .discover-row{
@@ -148,15 +146,15 @@ html, body { height: 100%; }
 }
 
 .pt-page-4 {
-	background: #fdc162;
+	/*background: #fdc162;*/
 }
 
 .pt-page-5 {
-	background: #fd6a62;
+	background: #FFFFFF;
 }
 
 .pt-page-6 {
-	/*background: #f68dbb;*/
+	background: #FFFFFF;
 }
 
 /* Triggers (menu and button) */

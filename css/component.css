@@ -52,16 +52,10 @@ html, body { height: 100%; }
 
 	font-family: 'DINNeuzeitGroteskStd-Light';
 	color: #585858;
-	/*background-image:url('../img/background_home_01.jpg');
-	background-position:50% 50%;
-	background-repeat:no-repeat;
-	overflow-y: hidden ! important;
-  overflow-x: hidden ! important;
-  background-size: cover;*/
   background: -webkit-linear-gradient(left, black, white); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, black, white); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, black, white); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, black, white, white, white); /* Standard syntax (must be last) */ 
+  background: linear-gradient(to right, black, white, white, white); /* Standard syntax (must be last) */
 
 }
 
@@ -80,11 +74,65 @@ html, body { height: 100%; }
 
 }
 
-
-
 .pt-page-2 {
-	background: #7bb7fa;
+
+	font-family: 'DINNeuzeitGroteskStd-Light';
+	color: #000000;
+
 }
+
+.pt-page-2 li a:hover{
+
+	font-family: 'DINNeuzeitGroteskStd-Light';
+	color: #959595;
+
+}
+
+.pt-page-2 .branches{
+
+	padding-top: 20px;
+
+}
+
+.pt-page-2 .branch{
+
+	font-family: 'DINNeuzeitGroteskStd-Light';
+	color: #000000;
+	font-size: 25px;
+
+}
+
+.pt-page-2 .branch-list{
+
+	font-family: 'DIN-Light';
+	color: #000000;
+	font-size: 18px;
+
+}
+
+.pt-page-2 .img-branches{
+
+	padding-top: 40px;
+	max-width:80%;
+
+}
+
+.pt-page-2 .discover-row{
+
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+}
+
+.pt-page-2 .discover{
+
+	font-family: 'DINNeuzeitGroteskStd-Light';
+	color: #898989;
+
+}
+
+
+
 
 .pt-page-3 {
 	background: #60d7a9;

@@ -75,6 +75,7 @@ html, body { height: 100%; }
 }
 
 .pt-page-2 {
+
 	background: #FFFFFF;
 	font-family: 'DINNeuzeitGroteskStd-Light';
 	color: #000000;
@@ -83,8 +84,15 @@ html, body { height: 100%; }
 
 .pt-page-2 li a:hover{
 
+	text-decoration: none;
 	font-family: 'DINNeuzeitGroteskStd-Light';
 	color: #959595;
+
+}
+
+.pt-page-2 a:hover{
+
+	text-decoration: none;
 
 }
 
@@ -102,7 +110,7 @@ html, body { height: 100%; }
 
 }
 
-.pt-page-2 .branch-list{
+.pt-page-2 .branch-list a{
 
 	font-family: 'DIN-Light';
 	color: #000000;

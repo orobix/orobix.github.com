@@ -27,6 +27,7 @@ html, body { height: 100%; }
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
+	font-weight: normal !important;
 }
 
 .pt-page-current,
@@ -145,6 +146,12 @@ html, body { height: 100%; }
 .pt-page-2 dl{
 
 	margin-bottom: 50px;
+
+}
+
+.pt-page-2 dt{
+
+	font-weight: normal;
 
 }
 

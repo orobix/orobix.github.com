@@ -61,18 +61,11 @@ html, body { height: 100%; }
 
 }
 
-.pt-page-1 a {
+.pt-page-1 a, a:hover {
 
 	font-family: 'DINNeuzeitGroteskStd-Light';
-	color: #000000;
-
-}
-
-.pt-page-1 a:hover{
-
+	color: #585858;
 	text-decoration: none;
-	font-family: 'DINNeuzeitGroteskStd-Light';
-	color: #959595;
 
 }
 
@@ -160,7 +153,8 @@ html, body { height: 100%; }
 }
 
 .pt-page-2 .img-branches{
-  width: 80%;
+  width: 90%;
+
 }
 
 .pt-page-2 .discover{

@@ -1,3 +1,28 @@
+$(function() {
+  $('.pt-page .bottom > div[data-hash^="#"]').click(function() {
+      var target = $(this).data('hash');
+      $('.pt-page').scrollTo(target);
+  });
+});
+
+$.fn.scrollTo = function( target, options, callback ) {
+  if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
+  var settings = $.extend({
+    scrollTarget  : target,
+    offsetTop     : 0,
+    duration      : 1000,
+    easing        : 'swing'
+  }, options);
+  return this.each(function(){
+    var scrollPane = $(this);
+    var scrollTarget = (typeof settings.scrollTarget == "number") ? settings.scrollTarget : $(settings.scrollTarget);
+    var scrollY = (typeof scrollTarget == "number") ? scrollTarget : scrollTarget.offset().top + scrollPane.scrollTop() - parseInt(settings.offsetTop);
+    scrollPane.animate({scrollTop : scrollY }, parseInt(settings.duration), settings.easing, function(){
+      if (typeof callback == 'function') { callback.call(this); }
+    });
+  });
+}
+
 var PageTransitions = (function() {
 
 	var $main = $( '#pt-main' ),
@@ -21,7 +46,6 @@ var PageTransitions = (function() {
 		support = Modernizr.cssanimations;
 
 	function init() {
-
 		$pages.each( function() {
 			var $page = $( this );
 			$page.data( 'originalClassList', $page.attr( 'class' ) );
@@ -51,14 +75,18 @@ var PageTransitions = (function() {
     $('[data-animation]').on('click', function(e) {
       var options = {
         animation: $(this).data('animation'),
-        next:      $(this).data('next')
+        next:      $(this).data('next'),
+	scroll:    $(this).data('scroll')
       }
-			nextPage(options);
-		});
+      
+      nextPage(options);
+    });
 
-	}
+  }
 
 	function nextPage(options) {
+	        if (options.next == current) return;
+
 		var animation = (options.animation) ? options.animation : 1;
 
 		if( isAnimating ) {
@@ -86,7 +114,7 @@ var PageTransitions = (function() {
 			}
 		}*/
 
-    current = (options.next) ? options.next : 0;
+               current = (options.next) ? options.next : 0;
 
 		var $nextPage = $pages.eq( current ).addClass( 'pt-page-current' ),
 			outClass = '', inClass = '';
@@ -378,11 +406,24 @@ var PageTransitions = (function() {
 			if( endCurrPage ) {
 				onEndAnimation( $currPage, $nextPage );
 			}
+
+			if (options.scroll) {
+			  $('.pt-page').scrollTo(options.scroll);
+			} else {
+			  $('.pt-page').scrollTo(0);
+			}
 		} );
 
 		if( !support ) {
 			onEndAnimation( $currPage, $nextPage );
 		}
+
+		if (current != 0) {
+		  $('#menu').show();
+		}
+
+		$('#menu li').removeClass('pageSelected');
+		$('#menu .next' + current).addClass('pageSelected');
 
 	}
 
@@ -406,16 +447,3 @@ var PageTransitions = (function() {
 	};
 
 })();
-
-$(function() {
-  $('.pt-page-5 .bottom > div[data-hash^="#"]').click(function() {
-      var target = $(this).data('hash');
-      console.log($(target).offset());
-      if (target.length) {
-        $('.pt-page-5').animate({
-          scrollTop: $(target).offset().top
-        }, 1000);
-        return false;
-      }
-  });
-});

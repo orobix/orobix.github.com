@@ -1,8 +1,44 @@
-.navbar {
+html, body {
+  overflow-x: hidden;
+}
+
+#menu.navbar {
   position: fixed;
   margin-bottom: 0!important;
-  padding-right: 2em;
+  display: none;
 
+  font-family: 'DINNeuzeitGroteskStd-Light';
+  font-size: 18px;
+  color: #000000;
+}
+
+#menu.navbar * {
+  color: #000000;
+}
+
+.pt-page-1 ul.nav li:hover *,
+#menu.navbar li:hover *,
+#menu.navbar li.pageSelected * {
+  color: #959595;
+}
+
+.pt-page-1 ul.nav,
+#menu ul.nav {
+  margin: 5px 0px;
+}
+
+.pt-page-1 ul.nav > li:not(:last-child),
+#menu ul.nav > li:not(:last-child) {
+  border-right: 1px solid #ffffff;
+}
+
+.pt-page-1 ul.nav {
+  font-family: 'DINNeuzeitGroteskStd-Light';
+  font-size: 18px;
+}
+
+.pt-page-1 ul.nav > li > a:hover {
+  background-color: transparent;
 }
 
 @font-face {
@@ -58,14 +94,13 @@
 }
 
 .home-logo {
-
   bottom: 40%;
   position:absolute !important;
   text-align:center !important;
-
 }
 
 .orobix-logo-menu {
+  height: 40px;
   padding-left:10px;
   margin: 10px;
 }
@@ -94,6 +129,7 @@ img.background-home.background-home-right {
 
 .main-content {
   padding-top: 58px;
+  overflow: hidden;
 }
 
 .main-content,
@@ -103,7 +139,17 @@ img.background-home.background-home-right {
 }
 
 .main-content p.branch {
-  margin-top: 80px;
+  margin-top: 30px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.main-content > div > dl {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  top: 70px;
 }
 
 .branch-head {
@@ -112,21 +158,25 @@ img.background-home.background-home-right {
 }
 
 .branch-head > .top {
-  height: 65%;
+  height: 70%;
   background-color: #f1f1f1;
   /*background: url(../img/target_customers.png) 50% 50% no-repeat;*/
 }
 
-.branch-head > .bottom {
-  height: 35%;
-  min-height: 220px;
+.branch-head > .top > .branch-content {
+  position: absolute;
 }
 
+/*.branch-head > .bottom {
+  height: 35%;
+  min-height: 220px;
+}*/
+
 .branch-link {
-  bottom: 55%;
+  bottom: 50%;
   position: absolute;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
 }
 
 .branch-link a {
@@ -176,84 +226,53 @@ img.background-home.background-home-right {
   margin-right: -10px;
 }
 
-.branch-content {
-  text-align: center;
-}
-
 .branch-name {
   font-family: "DINNeuzeitGroteskStd-Light";
   color: #7d7d7d;
+  font-size: 32px;
 }
 
 .branch-title {
   font-family: "DIN-Light";
   color: #000000;
+  font-size: 65px;
   margin-top: 10px;
 }
 
 .branch-description {
   font-family: "DIN-Light";
   color: #000000;
+  font-size: 26px;
   line-height: 1;
 }
 
 .branch-image {
   position: absolute;
-  bottom: 20%;
+  bottom: 5px;
   width: 100%;
   text-align: -webkit-center;
 }
 
 .branch-image img {
   height: 50%;
-  /*max-height: 370px;*/
+  max-height: 370px;
 }
 
-.pt-page-2 .bottom,
-.pt-page-5 .bottom > div {
+.pt-page-2 .bottom {
   text-align: center;
   position: absolute;
   bottom: 20;
   cursor: pointer;
-}
-
-.pt-page-2 .bottom {
   width: 100%;
 }
 
-.pt-page-5 .bottom > div:hover {
-  opacity: .7;
-}
-
-.pt-page-5 .bottom > div:not(:last-child) {
-  border-right: 1px dotted #898989;
-}
-
-.pt-page-5 .bottom > div > img {
-  width: 50px;
-}
-
-.branch-detail-title {
-  font-family: "DIN-Light";
-  color: #000000;
-  margin-top: 0;
-  text-align: center;
-}
-
-.branch-detail-link {
-  font-family: "DINNeuzeitGroteskStd-Light";
-  color: #898989;
-}
-
-.branch-detail-link p {
-  margin-bottom: 5px !important;
-  margin: 0;
-}
-
 .branch-content {
+  width: 100%;
+  z-index: 10;
   height: 100%;
   font-family: "DIN-Light";
   color: #000000;
+  text-align: center;
 }
 
 .branch-content-1 {
@@ -261,16 +280,13 @@ img.background-home.background-home-right {
   line-height: 1;
 }
 
-.branch-content-1 > div {
-  top: 25%;
-}
-
 .branch-content-1 .link {
   text-decoration: none;
+  color: #ffffff;
 }
 
-.branch-content-1 .link:hover {
-  color: #ffffff;
+.branch-content-1 .link:hover .name,
+.branch-content-1 .link:hover .role {
   opacity: .7;
 }
 
@@ -290,22 +306,182 @@ img.background-home.background-home-right {
   color: #ffffff;
 }
 
+.branch-content-1 .description {
+  background: url(../img/00_common/quotes_open.png) no-repeat, url(../img/00_common/quotes_close.png) no-repeat;
+  background-position: left top, right bottom;
+  padding: 35px 90px;
+}
+
+.branch-content-1 .link .name,
+.branch-content-1 .link .role {
+  padding: 0 90px;
+} 
+
+.branch-content-1 .description h3 {
+  font-size: 35px;
+}
+
+.branch-content-1 .link .name,
+.branch-content-1 .link .role,
+.branch-content-1 .description p {
+  font-size: 26px;
+}
+
+.branch-content-1 .top {
+  height: 80%;
+  padding-top: 5%;
+}
+
+.branch-content-1 .bottom {
+  height: 20%;
+  text-align: center;
+}
+
+.branch-content-1 .bottom > div {
+  position: absolute;
+  bottom: 15px;
+  cursor: pointer;
+}
+
+.branch-content-1 .bottom > div:hover {
+  opacity: .7;
+}
+
+.branch-content-1 .bottom > div:not(:last-child) {
+  /*border-right: 1px dotted #898989;*/
+}
+
+.branch-content-1 .bottom > div > img {
+  width: 50px;
+}
+
+.branch-content-1 .bottom .branch-detail-title {
+  font-family: "DIN-Light";
+  font-size: 37px;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.branch-content-1 .bottom .branch-detail-link {
+  font-family: "DINNeuzeitGroteskStd-Light";
+  font-size: 15px;
+  color: #898989;
+}
+
+.branch-content-1 .bottom .branch-detail-link p {
+  margin-bottom: 5px !important;
+  margin: 0;
+}
+
 .branch-content .branch-section-icon {
   margin-top: 10px;
 }
 
+.branch-content-2 h2,
+.branch-content-3 h2,
+.branch-content-4 h2 {
+  font-size: 65px;
+}
+
+.branch-content-2 p,
+.branch-content-3 p,
+.branch-content-4 p {
+  font-size: 26px;
+}
+
+.branch-content-footer h2 {
+  font-size: 67px;
+}
+
+.branch-content-footer p {
+  font-size: 26px;
+}
+
+.branch-content-footer h4 {
+  font-size: 32px;
+}
+
 .pt-page-5 .branch-content-1 {
-  background: url(../img/b3-content1.jpg) no-repeat;
+  background: url(../img/05_customers/pietro_customers_color.jpg) no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+  background-color: #000000;
+}
+
+.pt-page-5 .branch-content-2 {
+  background: url(../img/05_customers/pharma.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 20px;
+  background-color: #ffffff;
+}
+
+.pt-page-5 .branch-content-3 {
+  background: url(../img/05_customers/b2b.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 20px;
+  background-color: #ffffff;
+}
+
+.pt-page-5 .branch-content-4 {
+  background: url(../img/05_customers/b2c.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 20px;
+  background-color: #ffffff;
+}
+
+.pt-page-3 .branch-content-1 {
+  background: url(../img/03_science/luca_science_color.jpg) no-repeat;
   background-size: contain;
   background-position: left bottom;
   background-color: #000000;
 }
 
-.pt-page-5 .branch-content-2 {
-  background: url(../img/b3-content2.jpg) no-repeat;
-  /*background-size: cover;*/
-  background-size: 100% 80%;
+.pt-page-3 .branch-content-2 {
+  background: url(../img/03_science/modeling.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 20px;
+  background-color: #ffffff;
+}
+
+.pt-page-3 .branch-content-3 {
+  background: url(../img/03_science/image_an.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 20px;
+  background-color: #ffffff;
+}
+
+.pt-page-3 .branch-content-4 {
+  background: url(../img/03_science/data_eng.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 20px;
+  background-color: #ffffff;
+}
+
+.pt-page-4 .branch-content-1 {
+  background: url(../img/04_design/michele_design_color.jpg) no-repeat;
+  background-size: contain;
   background-position: left bottom;
+  background-color: #000000;
+}
+
+.pt-page-4 .branch-content-2 {
+  background: url(../img/04_design/application_design.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 20px;
+  background-color: #ffffff;
+}
+
+.pt-page-4 .branch-content-3 {
+  background: url(../img/04_design/infrastructure_design.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 20px;
+  background-color: #ffffff;
+}
+
+.pt-page-4 .branch-content-4 {
+  background: url(../img/04_design/software_development.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 20px;
   background-color: #ffffff;
 }
 
@@ -323,13 +499,18 @@ img.background-home.background-home-right {
   margin-bottom: 30px;
 }
 
-.branch-content-footer .products .branch-detail-icon {
-  height: 150px;
+.branch-content-footer .products > div {
+  cursor: pointer;  
+}
+
+.branch-content-footer .products >div:hover {
+  opacity: .7;
 }
 
 .branch-content-footer .products .branch-detail-link img {
-  transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg); /* IE 9 */
-  -webkit-transform: rotate(-90deg); /* Opera, Chrome, and Safari */
-  height: 10px;
+  margin-left: 10px;
+}
+
+.branch-content-footer .products .branch-detail-icon {
+  height: 150px;
 }

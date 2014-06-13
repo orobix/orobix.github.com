@@ -143,12 +143,6 @@ html, body { height: 100%; }
 
 }
 
-.pt-page-2 dl{
-
-	margin-bottom: 50px;
-
-}
-
 .pt-page-2 dt{
 
 	font-weight: normal;
@@ -174,7 +168,9 @@ html, body { height: 100%; }
 
 .pt-page-2 .img-branches{
   width: 90%;
-
+  position: absolute;
+  bottom: 50px;
+  left: 5%;
 }
 
 .pt-page-2 .discover{
@@ -188,7 +184,7 @@ html, body { height: 100%; }
 
 
 .pt-page-3 {
-	background: #60d7a9;
+	background: #ffffff;
 }
 
 .pt-page-4 {

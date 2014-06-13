@@ -93,6 +93,10 @@ html, body {
 
 }
 
+.home-bottom:hover {
+  opacity: .7;
+}
+
 .home-logo {
   bottom: 40%;
   position:absolute !important;
@@ -136,6 +140,10 @@ img.background-home.background-home-right {
 .main-content > div {
   height: 100%;
   text-align: center;
+}
+
+.main-content > div .branch-detail-link:hover {
+  opacity: .7;
 }
 
 .main-content p.branch {

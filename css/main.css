@@ -238,20 +238,31 @@ img.background-home.background-home-right {
   font-family: "DINNeuzeitGroteskStd-Light";
   color: #7d7d7d;
   font-size: 32px;
+  margin-top: 50px;
 }
 
 .branch-title {
   font-family: "DIN-Light";
   color: #000000;
-  font-size: 65px;
-  margin-top: 10px;
+  font-size: 50px;
+  margin-top: 20px;
 }
 
 .branch-description {
   font-family: "DIN-Light";
   color: #000000;
-  font-size: 26px;
-  line-height: 1;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 50px;
+}
+
+.branch-description-section {
+
+  font-family: "DIN-Light";
+  color: #000000;
+  font-size: 20px;
+  margin-top: 20px;
+
 }
 
 .branch-image {
@@ -323,7 +334,7 @@ img.background-home.background-home-right {
 .branch-content-1 .link .name,
 .branch-content-1 .link .role {
   padding: 0 90px;
-} 
+}
 
 .branch-content-1 .description h3 {
   font-size: 35px;
@@ -419,21 +430,21 @@ img.background-home.background-home-right {
 .pt-page-5 .branch-content-2 {
   background: url(../img/05_customers/pharma.jpg) no-repeat;
   background-size: cover;
-  background-position: 0 20px;
+  background-position: 0 200px;
   background-color: #ffffff;
 }
 
 .pt-page-5 .branch-content-3 {
   background: url(../img/05_customers/b2b.jpg) no-repeat;
   background-size: cover;
-  background-position: 0 20px;
+  background-position: 0 200px;
   background-color: #ffffff;
 }
 
 .pt-page-5 .branch-content-4 {
   background: url(../img/05_customers/b2c.jpg) no-repeat;
   background-size: cover;
-  background-position: 0 20px;
+  background-position: 0 200px;
   background-color: #ffffff;
 }
 
@@ -447,21 +458,21 @@ img.background-home.background-home-right {
 .pt-page-3 .branch-content-2 {
   background: url(../img/03_science/modeling.jpg) no-repeat;
   background-size: cover;
-  background-position: 0 20px;
+  background-position: 0 200px;
   background-color: #ffffff;
 }
 
 .pt-page-3 .branch-content-3 {
   background: url(../img/03_science/image_an.jpg) no-repeat;
   background-size: cover;
-  background-position: 0 20px;
+  background-position: 0 200px;
   background-color: #ffffff;
 }
 
 .pt-page-3 .branch-content-4 {
   background: url(../img/03_science/data_eng.jpg) no-repeat;
   background-size: cover;
-  background-position: 0 20px;
+  background-position: 0 200px;
   background-color: #ffffff;
 }
 
@@ -475,21 +486,21 @@ img.background-home.background-home-right {
 .pt-page-4 .branch-content-2 {
   background: url(../img/04_design/application_design.jpg) no-repeat;
   background-size: cover;
-  background-position: 0 20px;
+  background-position: 0 200px;
   background-color: #ffffff;
 }
 
 .pt-page-4 .branch-content-3 {
   background: url(../img/04_design/infrastructure_design.jpg) no-repeat;
   background-size: cover;
-  background-position: 0 20px;
+  background-position: 0 200px;
   background-color: #ffffff;
 }
 
 .pt-page-4 .branch-content-4 {
   background: url(../img/04_design/software_development.jpg) no-repeat;
   background-size: cover;
-  background-position: 0 20px;
+  background-position: 0 200px;
   background-color: #ffffff;
 }
 
@@ -508,7 +519,7 @@ img.background-home.background-home-right {
 }
 
 .branch-content-footer .products > div {
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 .branch-content-footer .products >div:hover {

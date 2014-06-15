@@ -165,6 +165,7 @@ img.background-home.background-home-right {
   padding-top: 58;
 }
 
+
 .branch-head > .top {
   height: 70%;
   background-color: #f1f1f1;
@@ -172,6 +173,32 @@ img.background-home.background-home-right {
 }
 
 .branch-head > .top > .branch-content {
+  position: absolute;
+}
+
+.branch-head-team {
+  height: 70%;
+  padding-top: 58;
+}
+
+.branch-bottom-team {
+  height: 70%;
+}
+
+.branch-bottom-team > .top-team {
+  height: 100%;
+  background-color: #f1f1f1;
+  /*background: url(../img/target_customers.png) 50% 50% no-repeat;*/
+}
+
+
+.branch-head-team > .top-team {
+  height: 100%;
+  background-color: #f1f1f1;
+  /*background: url(../img/target_customers.png) 50% 50% no-repeat;*/
+}
+
+.branch-head-team > .top-team > .branch-content {
   position: absolute;
 }
 
@@ -292,6 +319,16 @@ img.background-home.background-home-right {
   font-family: "DIN-Light";
   color: #000000;
   text-align: center;
+}
+
+.branch-content-team {
+  width: 100%;
+  z-index: 10;
+  height: 400px;
+  font-family: "DIN-Light";
+  color: #000000;
+  text-align: center;
+
 }
 
 .branch-content-1 {
@@ -504,6 +541,27 @@ img.background-home.background-home-right {
   background-color: #ffffff;
 }
 
+.pt-page-6 .branch-content-1 {
+  background: url(../img/06_team/Pietro_Rota.jpg) no-repeat;
+  background-size: cover;
+  /*background-position: 0 200px;*/
+  background-color: #ffffff;
+}
+
+.pt-page-6 .branch-content-2 {
+  background: url(../img/06_team/Luca_Antiga.jpg) no-repeat;
+  background-size: cover;
+  /*background-position: 0 200px;*/
+  background-color: #ffffff;
+}
+
+.pt-page-6 .branch-content-3 {
+  background: url(../img/06_team/Michele_Colombi.jpg) no-repeat;
+  background-size: cover;
+  /*background-position: 0 200px;*/
+  background-color: #ffffff;
+}
+
 .branch-content-footer {
   text-align: center;
   height: 50%;
@@ -532,4 +590,24 @@ img.background-home.background-home-right {
 
 .branch-content-footer .products .branch-detail-icon {
   height: 150px;
+}
+
+
+.team-title {
+  font-family: "DIN-Light";
+  color: #000000;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+.team-name {
+  font-family: "DIN-Light";
+  color: #7d7d7d;
+  font-size: 32px;
+}
+
+.team-description {
+  font-family: "DIN-Light";
+  color: #000000;
+  font-size: 20px;
 }

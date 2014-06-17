@@ -466,21 +466,21 @@ img.background-home.background-home-right {
 
 .pt-page-5 .branch-content-2 {
   background: url(../img/05_customers/pharma.jpg) no-repeat;
-  background-size: cover;
+  /*background-size: cover;*/
   background-position: 0 200px;
   background-color: #ffffff;
 }
 
 .pt-page-5 .branch-content-3 {
   background: url(../img/05_customers/b2b.jpg) no-repeat;
-  background-size: cover;
+  /*background-size: cover;*/
   background-position: 0 200px;
   background-color: #ffffff;
 }
 
 .pt-page-5 .branch-content-4 {
   background: url(../img/05_customers/b2c.jpg) no-repeat;
-  background-size: cover;
+  /*background-size: cover;*/
   background-position: 0 200px;
   background-color: #ffffff;
 }
@@ -494,21 +494,21 @@ img.background-home.background-home-right {
 
 .pt-page-3 .branch-content-2 {
   background: url(../img/03_science/modeling.jpg) no-repeat;
-  background-size: cover;
+  /*background-size: cover;*/
   background-position: 0 200px;
   background-color: #ffffff;
 }
 
 .pt-page-3 .branch-content-3 {
   background: url(../img/03_science/image_an.jpg) no-repeat;
-  background-size: cover;
+  /*background-size: cover;*/
   background-position: 0 200px;
   background-color: #ffffff;
 }
 
 .pt-page-3 .branch-content-4 {
   background: url(../img/03_science/data_eng.jpg) no-repeat;
-  background-size: cover;
+  /*background-size: cover;*/
   background-position: 0 200px;
   background-color: #ffffff;
 }
@@ -522,21 +522,21 @@ img.background-home.background-home-right {
 
 .pt-page-4 .branch-content-2 {
   background: url(../img/04_design/application_design.jpg) no-repeat;
-  background-size: cover;
+  /*background-size: cover;*/
   background-position: 0 200px;
   background-color: #ffffff;
 }
 
 .pt-page-4 .branch-content-3 {
   background: url(../img/04_design/infrastructure_design.jpg) no-repeat;
-  background-size: cover;
+  /*background-size: cover;*/
   background-position: 0 200px;
   background-color: #ffffff;
 }
 
 .pt-page-4 .branch-content-4 {
   background: url(../img/04_design/software_development.jpg) no-repeat;
-  background-size: cover;
+  /*background-size: cover;*/
   background-position: 0 200px;
   background-color: #ffffff;
 }

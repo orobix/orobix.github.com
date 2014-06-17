@@ -59,6 +59,7 @@ html, body { height: 100%; }
   background: -o-linear-gradient(right, black, white); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, black, white); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, black, white, white, white); /* Standard syntax (must be last) */
+	letter-spacing: -1
 
 }
 
@@ -67,6 +68,7 @@ html, body { height: 100%; }
 	font-family: 'DINNeuzeitGroteskStd-Light';
 	color: #585858;
 	text-decoration: none;
+	letter-spacing: -1
 
 }
 
@@ -83,6 +85,7 @@ html, body { height: 100%; }
 	text-decoration: none;
 	font-family: 'DINNeuzeitGroteskStd-Light';
 	color: #959595;
+	letter-spacing: -1
 
 }
 
@@ -140,7 +143,7 @@ html, body { height: 100%; }
 	font-family: 'DINNeuzeitGroteskStd-Light';
 	color: #000000;
 	font-size: 25px;
-
+	letter-spacing: -1
 }
 
 .pt-page-2 dt{
@@ -154,6 +157,7 @@ html, body { height: 100%; }
 	font-family: 'DIN-Light';
 	color: #000000;
 	font-size: 18px;
+	letter-spacing: -1
 
 }
 
@@ -162,6 +166,7 @@ html, body { height: 100%; }
 	font-family: 'DIN-Light';
 	color: #000000;
 	font-size: 18px;
+	letter-spacing: -1
 
 }
 
@@ -177,6 +182,7 @@ html, body { height: 100%; }
 
 	font-family: 'DINNeuzeitGroteskStd-Light';
 	color: #898989;
+	letter-spacing: -1
 
 }
 

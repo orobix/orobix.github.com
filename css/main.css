@@ -6,10 +6,10 @@ html, body {
   position: fixed;
   margin-bottom: 0!important;
   display: none;
-
   font-family: 'DINNeuzeitGroteskStd-Light';
   font-size: 18px;
   color: #000000;
+  letter-spacing: -1
 }
 
 #menu.navbar * {
@@ -35,6 +35,7 @@ html, body {
 .pt-page-1 ul.nav {
   font-family: 'DINNeuzeitGroteskStd-Light';
   font-size: 18px;
+  letter-spacing: -1
 }
 
 .pt-page-1 ul.nav > li > a:hover {
@@ -50,6 +51,7 @@ html, body {
          url('../fonts/dinnneuzeitgroteskstd-light-webfont.svg#din_30640_stdneuzeitgroteskLt') format('svg');
     font-weight: normal;
     font-style: normal;
+    letter-spacing: -1;
 }
 
 @font-face {
@@ -61,6 +63,7 @@ html, body {
          url('../fonts/dinnn-light-webfont.svg#din_lightregular') format('svg');
     font-weight: normal;
     font-style: normal;
+    letter-spacing: -1;
 }
 
 
@@ -132,7 +135,7 @@ img.background-home.background-home-right {
 }
 
 .main-content {
-  padding-top: 58px;
+  padding-top: 100px;
   overflow: hidden;
 }
 
@@ -217,6 +220,7 @@ img.background-home.background-home-right {
 .branch-link a {
   font-family: "DINNeuzeitGroteskStd-Light";
   color: #7d7d7d;
+  letter-spacing: -1
 }
 
 .branch-link a:hover {
@@ -265,14 +269,16 @@ img.background-home.background-home-right {
   font-family: "DINNeuzeitGroteskStd-Light";
   color: #7d7d7d;
   font-size: 32px;
-  margin-top: 50px;
+  margin-top: 40px;
+  letter-spacing: -1
 }
 
 .branch-title {
   font-family: "DIN-Light";
   color: #000000;
   font-size: 50px;
-  margin-top: 20px;
+  margin-top: 5px;
+  letter-spacing: -1
 }
 
 .branch-description {
@@ -280,7 +286,8 @@ img.background-home.background-home-right {
   color: #000000;
   font-size: 20px;
   line-height: 1.5;
-  margin-top: 50px;
+  margin-top: 25px;
+  letter-spacing: -1
 }
 
 .branch-description-section {
@@ -289,12 +296,13 @@ img.background-home.background-home-right {
   color: #000000;
   font-size: 20px;
   margin-top: 20px;
+  letter-spacing: -1
 
 }
 
 .branch-image {
   position: absolute;
-  bottom: 5px;
+  bottom: 35px;
   width: 100%;
   text-align: -webkit-center;
 }
@@ -303,6 +311,11 @@ img.background-home.background-home-right {
   height: 50%;
   max-height: 370px;
 }
+
+.img-arrow-branch-detail-link {
+  height: inherit !important;
+}
+
 
 .pt-page-2 .bottom {
   text-align: center;
@@ -319,6 +332,7 @@ img.background-home.background-home-right {
   font-family: "DIN-Light";
   color: #000000;
   text-align: center;
+  letter-spacing: -1
 }
 
 .branch-content-team {
@@ -328,6 +342,7 @@ img.background-home.background-home-right {
   font-family: "DIN-Light";
   color: #000000;
   text-align: center;
+  letter-spacing: -1
 
 }
 
@@ -354,12 +369,14 @@ img.background-home.background-home-right {
 .branch-content-1 .description h3 {
   font-family: "DINNeuzeitGroteskStd-Light";
   color: #ffffff;
+  letter-spacing: -1
 }
 
 .branch-content-1 .link .role,
 .branch-content-1 .description p {
   font-family: "DIN-Light";
   color: #ffffff;
+  letter-spacing: -1
 }
 
 .branch-content-1 .description {
@@ -416,12 +433,14 @@ img.background-home.background-home-right {
   font-size: 37px;
   color: #ffffff;
   margin-top: 0;
+  letter-spacing: -1
 }
 
 .branch-content-1 .bottom .branch-detail-link {
   font-family: "DINNeuzeitGroteskStd-Light";
   font-size: 15px;
   color: #898989;
+  letter-spacing: -1
 }
 
 .branch-content-1 .bottom .branch-detail-link p {
@@ -567,6 +586,7 @@ img.background-home.background-home-right {
   height: 50%;
   font-family: "DIN-Light";
   color: #000000;
+  letter-spacing: -1
 }
 
 .branch-content-footer .products {
@@ -574,6 +594,7 @@ img.background-home.background-home-right {
   color: #898989;
   margin-top: 40px;
   margin-bottom: 30px;
+  letter-spacing: -1
 }
 
 .branch-content-footer .products > div {
@@ -598,16 +619,19 @@ img.background-home.background-home-right {
   color: #000000;
   font-size: 50px;
   margin-top: 50px;
+  letter-spacing: -1
 }
 
 .team-name {
   font-family: "DIN-Light";
   color: #7d7d7d;
   font-size: 32px;
+  letter-spacing: -1
 }
 
 .team-description {
   font-family: "DIN-Light";
   color: #000000;
   font-size: 20px;
+  letter-spacing: -1
 }

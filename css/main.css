@@ -107,7 +107,6 @@ html, body {
 }
 
 .orobix-logo-menu {
-  height: 40px;
   padding-left:10px;
   margin: 10px;
 }
@@ -150,7 +149,7 @@ img.background-home.background-home-right {
 }
 
 .main-content p.branch {
-  margin-top: 30px;
+  margin-top: 35px;
   position: absolute;
   width: 100%;
   z-index: 10;
@@ -160,7 +159,11 @@ img.background-home.background-home-right {
   position: absolute;
   width: 100%;
   z-index: 10;
-  top: 70px;
+  top: 90px;
+}
+
+.main-content > div > dl img {
+  margin-left: 5px;
 }
 
 .branch-head {

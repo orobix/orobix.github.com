@@ -176,6 +176,15 @@ img.background-home.background-home-right {
 .branch-head {
   height: 100%;
   padding-top: 50;
+  background: #f1f1f1; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f1f1f1 70%, #f1f1f1 70%, #ffffff 70%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%,#f1f1f1), color-stop(70%,#f1f1f1), color-stop(70%,#ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #f1f1f1 70%,#f1f1f1 70%,#ffffff 70%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #f1f1f1 70%,#f1f1f1 70%,#ffffff 70%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #f1f1f1 70%,#f1f1f1 70%,#ffffff 70%); /* IE10+ */
+  background: linear-gradient(to bottom,  #f1f1f1 70%,#f1f1f1 70%,#ffffff 70%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
 }
 
 
@@ -190,7 +199,7 @@ img.background-home.background-home-right {
 }
 
 .branch-head-team {
-  height: 450px;
+  height: 500px;
   padding-top: 58;
 }
 
@@ -324,7 +333,6 @@ img.background-home.background-home-right {
   bottom: 35px;
   width: 100%;
   text-align: -webkit-center;
-  text-align: -moz-center;
 }
 
 .branch-image img {
@@ -334,6 +342,13 @@ img.background-home.background-home-right {
 
 .img-arrow-branch-detail-link {
   height: inherit !important;
+}
+
+.img-apple {
+
+  max-width: 50% !important;
+  display: inline !important;
+
 }
 
 

@@ -352,6 +352,16 @@ img.background-home.background-home-right {
 
 .branch-content {
   width: 100%;
+  height: 100%;
+  z-index: 10;
+  font-family: "DIN-Light";
+  color: #000000;
+  text-align: center;
+  letter-spacing: -1
+}
+
+.branch-content-img {
+  width: 100%;
   z-index: 10;
   font-family: "DIN-Light";
   color: #000000;

@@ -190,7 +190,7 @@ img.background-home.background-home-right {
 }
 
 .branch-head-team {
-  height: 600px;
+  height: 450px;
   padding-top: 58;
 }
 
@@ -291,7 +291,7 @@ img.background-home.background-home-right {
   letter-spacing: -1
 }
 
-.branch-description {
+.cription {
   font-family: "DIN-Light";
   color: #000000;
   font-size: 18px;
@@ -309,11 +309,11 @@ img.background-home.background-home-right {
   letter-spacing: -1
 }
 
-.branch-description-section {
+.branch-description {
 
   font-family: "DIN-Light";
   color: #000000;
-  font-size: 20px;
+  font-size: 22px;
   margin-top: 20px;
   letter-spacing: -1
 
@@ -357,7 +357,8 @@ img.background-home.background-home-right {
   font-family: "DIN-Light";
   color: #000000;
   text-align: center;
-  letter-spacing: -1
+  letter-spacing: -1;
+  margin: 0px !important;
 }
 
 .branch-content-img {
@@ -366,7 +367,20 @@ img.background-home.background-home-right {
   font-family: "DIN-Light";
   color: #000000;
   text-align: center;
-  letter-spacing: -1
+  letter-spacing: -1;
+  margin: 0px !important;
+}
+
+.branch-content-resp {
+  width: 100%;
+  z-index: 10;
+  font-family: "DIN-Light";
+  color: #000000;
+  text-align: center;
+  letter-spacing: -1;
+  margin-left: 0px !important;
+  margin-top: 30px !important;
+  margin-right: 0px !important;
 }
 
 .branch-content-team {
@@ -376,7 +390,8 @@ img.background-home.background-home-right {
   font-family: "DIN-Light";
   color: #000000;
   text-align: center;
-  letter-spacing: -1
+  letter-spacing: -1;
+  margin: 0px !important;
 
 }
 

@@ -142,7 +142,7 @@ html, body { height: 100%; }
 
 	font-family: 'DINNeuzeitGroteskStd-Light';
 	color: #000000;
-	font-size: 32px;
+	font-size: 28px;
 	letter-spacing: -1
 }
 
@@ -172,10 +172,11 @@ html, body { height: 100%; }
 
 
 .pt-page-2 .img-branches{
-  width: 90%;
+  width: 80%;
+	height: auto;
   position: absolute;
   bottom: 10%;
-  left: 5%;
+  left: 10%;
 }
 
 .pt-page-2 .discover{

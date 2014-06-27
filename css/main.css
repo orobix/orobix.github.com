@@ -564,6 +564,10 @@ img.background-home.background-home-right {
   font-size: 32px;
 }
 
+.col-branch {
+  padding: 0px !important;
+}
+
 .pt-page-5 .branch-content-1 {
   background: url(../img/05_customers/pietro_customers_bw.jpg) no-repeat;
   background-size: contain;
@@ -573,10 +577,10 @@ img.background-home.background-home-right {
 
 .pt-page-5 .branch-content-2 {
   background: url(../img/05_customers/pharma.jpg) no-repeat center center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100%;
   max-height: 570px;
   /*background-position: 0 200px;
@@ -585,10 +589,10 @@ img.background-home.background-home-right {
 
 .pt-page-5 .branch-content-3 {
   background: url(../img/05_customers/b2b.jpg) no-repeat center center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100%;
   max-height: 570px;
   /*background-position: 0 200px;
@@ -597,10 +601,10 @@ img.background-home.background-home-right {
 
 .pt-page-5 .branch-content-4 {
   background: url(../img/05_customers/b2c.jpg) no-repeat center center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100%;
   max-height: 570px;
   /*background-position: 0 200px;
@@ -616,10 +620,10 @@ img.background-home.background-home-right {
 
 .pt-page-3 .branch-content-2 {
   background: url(../img/03_science/modeling.jpg) no-repeat center center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100%;
   max-height: 570px;
   /*background-position: 0 200px;
@@ -628,10 +632,10 @@ img.background-home.background-home-right {
 
 .pt-page-3 .branch-content-3 {
   background: url(../img/03_science/image_an.jpg) no-repeat center center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100%;
   max-height: 570px;
   /*background-position: 0 200px;
@@ -640,10 +644,10 @@ img.background-home.background-home-right {
 
 .pt-page-3 .branch-content-4 {
   background: url(../img/03_science/data_eng.jpg) no-repeat center center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100%;
   max-height: 570px;
   /*background-position: 0 200px;
@@ -659,10 +663,10 @@ img.background-home.background-home-right {
 
 .pt-page-4 .branch-content-2 {
   background: url(../img/04_design/application_design.jpg) no-repeat center center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100%;
   max-height: 570px;
   /*background-position: 0 200px;
@@ -671,10 +675,10 @@ img.background-home.background-home-right {
 
 .pt-page-4 .branch-content-3 {
   background: url(../img/04_design/infrastructure_design.jpg) no-repeat center center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100%;
   max-height: 570px;
   /*background-position: 0 200px;
@@ -683,10 +687,10 @@ img.background-home.background-home-right {
 
 .pt-page-4 .branch-content-4 {
   background: url(../img/04_design/software_development.jpg) no-repeat center center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100%;
   max-height: 570px;
   /*background-position: 0 200px;

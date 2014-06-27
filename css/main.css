@@ -699,10 +699,14 @@ img.background-home.background-home-right {
 
 .pt-page-6 .branch-content-1 {
   background: url(../img/06_team/Pietro_Rota.jpg) no-repeat;
-  background-size: contain;
-  height: 900px;
-  /*background-position: 0 200px;*/
-  background-color: #ffffff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 110%;
+  max-height: 937px;
+  /*background-position: 0 200px;
+  background-color: #ffffff;*/
 }
 
 .pt-page-6 .branch-content-2 {

@@ -1,5 +1,5 @@
 $(function() {
-  $('.pt-page .bottom > div[data-hash^="#"]').click(function() {
+  $('.pt-page .bottom *[data-hash^="#"]').click(function() {
       var target = $(this).data('hash');
       $('.pt-page').scrollTo(target);
   });

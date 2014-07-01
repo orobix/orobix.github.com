@@ -401,6 +401,7 @@ img.top {
   height: 50%;
   text-align: -webkit-center;
   text-align: -moz-center;
+  z-index: 10;
 }
 
 .branch-image img {
@@ -417,6 +418,7 @@ img.top {
 
 .img-arrow-branch-detail-link {
   height: inherit !important;
+  cursor: pointer;
 }
 
 .img-apple {

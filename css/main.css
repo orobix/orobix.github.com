@@ -189,7 +189,7 @@ img.top {
   -webkit-animation-name: cf3FadeInOut;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 4s;
+  -webkit-animation-duration: 10s;
   -webkit-animation-direction: alternate;
 
 }
@@ -203,6 +203,11 @@ img.top {
 .main-content > div {
   height: 100%;
   text-align: center;
+}
+
+.pt-page-7 .main-content,
+.pt-page-7 .main-content > div {
+  height: initial;
 }
 
 .main-content > div .branch-detail-link:hover {
@@ -906,4 +911,28 @@ img.top {
   margin: 0;
   font-family: "DINNeuzeitGroteskStd-Light";
   font-size: 11px;
+  text-align: center;
+}
+
+#disclaimerLink {
+  font-size: 11px;
+  font-family: "DINNeuzeitGroteskStd-Light";
+  color: #898989;
+  letter-spacing: normal;
+}
+
+.company-certification {
+  background-color: #f1f1f1;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.disclaimer ul,
+.disclaimer p {
+  text-align: justify;
+}
+
+.disclaimer h2 {
+  text-align: center;
 }

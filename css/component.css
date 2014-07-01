@@ -58,8 +58,8 @@ html, body { height: 100%; }
   background: -webkit-linear-gradient(left, black, white); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, black, white); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, black, white); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, black, white, white, white); /* Standard syntax (must be last) */
-	letter-spacing: -1
+  background: linear-gradient(to right, black, black, black, white, white, white, white, white, white, white, white, white); /* Standard syntax (must be last) */
+  letter-spacing: -1
 
 }
 
@@ -175,13 +175,7 @@ html, body { height: 100%; }
   -moz-height: 75%;
   -webkit-height: 75%;
   -o-height: 75%;
-  margin-top: 25px;
-  padding-top: 58;
-  padding-top: 58;
-  padding-top: 58;
-  padding-top: 58;
-  padding-top: 58;
-  padding-top: 58;
+  margin-top: 15px;
   padding-top: 58;
   /*position: absolute;*/
 }

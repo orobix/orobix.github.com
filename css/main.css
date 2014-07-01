@@ -31,7 +31,7 @@ html, body {
 
 .pt-page-1 ul.nav,
 #menu ul.nav {
-  margin: 21px 0px;
+  margin: 5px 0px;
 }
 
 .pt-page-1 ul.nav > li:not(:last-child),
@@ -116,7 +116,7 @@ html, body {
 .orobix-logo-menu {
   padding-left:10px;
   margin: 10px;
-  /*height: 40px;*/
+  height: 40px;
 }
 
 .img-logo {
@@ -142,7 +142,7 @@ img.background-home.background-home-right {
 }
 
 .main-content {
-  padding-top: 93px;
+  padding-top: 61px;
   overflow: hidden;
 }
 
@@ -176,7 +176,7 @@ img.background-home.background-home-right {
 
 .branch-head {
   height: 100%;
-  padding-top: 93px;
+  padding-top: 61px;
   background: #f1f1f1; /* Old browsers */
   background: -moz-linear-gradient(top,  #f1f1f1 70%, #f1f1f1 70%, #ffffff 70%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(70%,#f1f1f1), color-stop(70%,#f1f1f1), color-stop(70%,#ffffff)); /* Chrome,Safari4+ */
@@ -343,8 +343,8 @@ img.background-home.background-home-right {
 
 .branch-image img {
   width: auto;
-  max-height: 80%;
-  margin-top: 40px;
+  max-height: 70%;
+  margin-top: 35px;
 }
 
 .branch-image .bottom {

@@ -9,7 +9,7 @@ $.fn.scrollTo = function( target, options, callback ) {
   if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
   var settings = $.extend({
     scrollTarget  : target,
-    offsetTop     : 250,
+    offsetTop     : target == '#home' ? 5 : 70,
     duration      : 1000,
     easing        : 'swing'
   }, options);

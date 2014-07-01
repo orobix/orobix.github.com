@@ -117,16 +117,14 @@ html, body { height: 100%; }
 
 }
 
-.pt-page-2 .discover-more{
+/*.pt-page-2 .discover-more{
 
 	position: relative;
 	display: block;
 	top: 12%;
 	text-align: center;
 	line-height: 0;
-
-
-}
+}*/
 
 .pt-page-2 .discover-arrow{
 
@@ -142,8 +140,8 @@ html, body { height: 100%; }
 
 	font-family: 'DINNeuzeitGroteskStd-Light';
 	color: #000000;
-	font-size: 28px;
-	letter-spacing: -1
+	font-size: 35px;
+	letter-spacing: -1;
 }
 
 .pt-page-2 dt{
@@ -172,11 +170,20 @@ html, body { height: 100%; }
 
 
 .pt-page-2 .img-branches{
-  width: 80%;
-	height: auto;
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
+  width: auto;
+  max-height: 75%;
+  -moz-height: 75%;
+  -webkit-height: 75%;
+  -o-height: 75%;
+  margin-top: 25px;
+  padding-top: 58;
+  padding-top: 58;
+  padding-top: 58;
+  padding-top: 58;
+  padding-top: 58;
+  padding-top: 58;
+  padding-top: 58;
+  /*position: absolute;*/
 }
 
 .pt-page-2 .discover{

@@ -55,9 +55,9 @@ html, body { height: 100%; }
   font-family: 'DINNeuzeitGroteskStd-Light';
   color: #585858;
   background-size: cover;
-  background: -webkit-linear-gradient(left, black, white); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, black, white); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, black, white); /* For Firefox 3.6 to 15 */
+  background: -webkit-linear-gradient(left, black, black, black, white, white, white, white, white, white, white, white, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, black, black, black, white, white, white, white, white, white, white, white, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, black, black, black, white, white, white, white, white, white, white, white, white); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, black, black, black, white, white, white, white, white, white, white, white, white); /* Standard syntax (must be last) */
   letter-spacing: -1
 

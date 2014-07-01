@@ -130,6 +130,10 @@ img.background-home {
   height: 90%;
   min-height: 300px;
   margin-top: 50px;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 img.background-home.background-home-left {
@@ -139,6 +143,55 @@ img.background-home.background-home-left {
 img.background-home.background-home-right {
   position: absolute;
   right: 0;
+}
+
+/*img.background-home.background-home-right.top:hover,
+img.background-home.background-home-left.top:hover {
+  opacity: 0;
+}*/
+
+@-webkit-keyframes cf3FadeInOut {
+  0% {
+    opacity:1;
+  }
+  45% {
+    opacity:0.7;
+  }
+  55% {
+    opacity:0.3;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@keyframes cf3FadeInOut {
+  0% {
+    opacity:1;
+  }
+  45% {
+    opacity:0.7;
+  }
+  55% {
+    opacity:0.3;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+img.top {
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  -webkit-animation-name: cf3FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-direction: alternate;
+
 }
 
 .main-content {

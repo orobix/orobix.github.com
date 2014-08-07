@@ -443,7 +443,7 @@ var PageTransitions = (function() {
 
 	return {
 		init : init,
-		nextPage : nextPage,
+		nextPage : nextPage
 	};
 
 })();

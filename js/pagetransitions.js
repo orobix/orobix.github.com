@@ -471,7 +471,7 @@ function pageTransition() {
 
 	return {
 		init : init,
-		nextPage : nextPage,
+		nextPage : nextPage
 	};
 
 }

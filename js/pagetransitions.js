@@ -25,7 +25,6 @@ $.fn.scrollTo = function( target, options, callback ) {
 
 var PageTransitions = (function() {
         if (navigator.userAgent.match(/msie/i) || navigator.userAgent.match(/trident/i) ) {
-	  console.error('ie browser');
 	  iePageTransition();
 	} else {
 	  pageTransition();
@@ -33,7 +32,6 @@ var PageTransitions = (function() {
 })();
 
 function iePageTransition() {
-  console.log('ie function');
   //init
   $('.pt-page-1').css('visibility', 'visible');
 

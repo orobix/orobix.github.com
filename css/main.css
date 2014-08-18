@@ -212,6 +212,17 @@ img.top {
 .main-content > div {
   height: 100%;
   text-align: center;
+
+  <!--[if IE 8]>
+  height: none !important;
+  <![endif]-->
+
+}
+
+.main-content-contact,
+.main-content-contact > div {
+  text-align: center;
+  padding-top: 40px;
 }
 
 .pt-page-7 .main-content,

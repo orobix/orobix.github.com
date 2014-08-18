@@ -20,7 +20,7 @@ html, body {
   font-family: 'DINNeuzeitGroteskStd-Light';
   font-size: 18px;
   color: #000000;
-  letter-spacing: -1
+  letter-spacing: -1;
 }
 
 #menu.navbar * {
@@ -36,6 +36,7 @@ html, body {
 .pt-page-1 ul.nav,
 #menu ul.nav {
   margin: 5px 0px;
+
 }
 
 .pt-page-1 ul.nav > li:not(:last-child),
@@ -112,9 +113,12 @@ html, body {
 }
 
 .home-logo {
+
   bottom: 40%;
+  margin:0 auto;
   position:absolute !important;
-  text-align:center !important;
+  text-align:center;
+  behavior: url(css/PIE.htc);  /*ie 6-9 via PIE*/
 }
 
 .orobix-logo-menu {
@@ -138,6 +142,7 @@ img.background-home {
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
+  behavior: url(css/PIE.htc);  /*ie 6-9 via PIE*/
 }
 
 img.background-home.background-home-left {
@@ -195,7 +200,7 @@ img.top {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-duration: 10s;
   -webkit-animation-direction: alternate;
-
+  behavior: url(css/PIE.htc);  /*ie 6-9 via PIE*/
 }
 
 .main-content {
@@ -247,7 +252,8 @@ img.top {
   background: -ms-linear-gradient(top,  #f1f1f1 70%,#f1f1f1 70%,#ffffff 70%); /* IE10+ */
   background: linear-gradient(to bottom,  #f1f1f1 70%,#f1f1f1 70%,#ffffff 70%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-
+  -pie-background: linear-gradient(to bottom, #f1f1f1 70%, #f1f1f1 70%, #ffffff 70%); /*ie 6-9 via PIE*/
+  behavior: url(css/PIE.htc);  /*ie 6-9 via PIE*/
 }
 
 
@@ -314,17 +320,30 @@ img.top {
   text-align: right;
 }
 
+.branch-link-right {
+  text-align: right;
+}
+
 .branch-link-right img {
-  transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg); /* IE 9 */
-  -webkit-transform: rotate(-90deg); /* Opera, Chrome, and Safari */
+  margin-left: 10px !important;
 }
 
 .branch-link-left img {
-  transform: rotate(90deg);
-  -ms-transform: rotate(90deg); /* IE 9 */
-  -webkit-transform: rotate(90deg); /* Opera, Chrome, and Safari */
+  margin-right: 10px !important;
 }
+
+/*.branch-link-right img {
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+*/
+
+/*.branch-link-left img {
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}*/
 
 .branch-link-left a,
 .branch-link-right a {
@@ -388,7 +407,7 @@ img.top {
 .branch-description {
   font-family: "DIN-Light";
   color: #000000;
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 20px;
   letter-spacing: -1;
   line-height: 1.3;
@@ -401,7 +420,9 @@ img.top {
   height: 50%;
   text-align: -webkit-center;
   text-align: -moz-center;
+  text-align: center;
   z-index: 10;
+  behavior: url(css/PIE.htc);  /*ie 6-9 via PIE*/
 }
 
 .branch-image img {
@@ -432,7 +453,7 @@ img.top {
 .pt-page-2 .bottom {
   text-align: center;
   position: absolute;
-  bottom: 10;
+  bottom: 10px;
   cursor: pointer;
   width: 100%;
   height: 70%;
@@ -553,6 +574,7 @@ img.top {
   background: url(../img/00_common/quotes_open.png) no-repeat, url(../img/00_common/quotes_close.png) no-repeat;
   background-position: left top, right bottom;
   padding: 35px 90px;
+  -pie-background: url(../img/00_common/quotes_open.png) no-repeat, url(../img/00_common/quotes_close.png) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .branch-content-1 .link .name,
@@ -648,6 +670,7 @@ img.top {
 
 .col-branch {
   padding: 0px !important;
+  height: 500px !important;
 }
 
 .pt-page-5 .branch-content-1 {
@@ -655,6 +678,7 @@ img.top {
   background-size: contain;
   background-position: right bottom;
   background-color: #000000;
+  -pie-background: url(../img/05_customers/pietro_customers_bw.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .pt-page-5 .branch-content-2 {
@@ -667,6 +691,7 @@ img.top {
   max-height: 570px;
   /*background-position: 0 200px;
   background-color: #ffffff;*/
+  -pie-background: url(../img/05_customers/pharma.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .pt-page-5 .branch-content-3 {
@@ -679,6 +704,7 @@ img.top {
   max-height: 570px;
   /*background-position: 0 200px;
   background-color: #ffffff;*/
+  -pie-background: url(../img/05_customers/b2b.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .pt-page-5 .branch-content-4 {
@@ -691,6 +717,7 @@ img.top {
   max-height: 570px;
   /*background-position: 0 200px;
   background-color: #ffffff;*/
+  -pie-background: url(../img/05_customers/b2c.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .pt-page-3 .branch-content-1 {
@@ -698,6 +725,7 @@ img.top {
   background-size: contain;
   background-position: left bottom;
   background-color: #000000;
+
 }
 
 .pt-page-3 .branch-content-2 {
@@ -710,6 +738,8 @@ img.top {
   max-height: 570px;
   /*background-position: 0 200px;
   background-color: #ffffff;*/
+  -pie-background: url(../img/03_science/modeling.jpg) no-repeat; /*ie 6-9 via PIE*/
+
 }
 
 .pt-page-3 .branch-content-3 {
@@ -722,6 +752,7 @@ img.top {
   max-height: 570px;
   /*background-position: 0 200px;
   background-color: #ffffff;*/
+  -pie-background: url(../img/03_science/image_an.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .pt-page-3 .branch-content-4 {
@@ -734,6 +765,8 @@ img.top {
   max-height: 570px;
   /*background-position: 0 200px;
   background-color: #ffffff;*/
+  -pie-background: url(../img/03_science/data_eng.jpg) no-repeat; /*ie 6-9 via PIE*/
+
 }
 
 .pt-page-4 .branch-content-1 {
@@ -741,6 +774,7 @@ img.top {
   background-size: contain;
   background-position: left bottom;
   background-color: #000000;
+  -pie-background: url(../img/04_design/michele_design_bw.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .pt-page-4 .branch-content-2 {
@@ -753,6 +787,7 @@ img.top {
   max-height: 570px;
   /*background-position: 0 200px;
   background-color: #ffffff;*/
+  -pie-background: url(../img/04_design/application_design.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .pt-page-4 .branch-content-3 {
@@ -765,6 +800,7 @@ img.top {
   max-height: 570px;
   /*background-position: 0 200px;
   background-color: #ffffff;*/
+  -pie-background: url(../img/04_design/infrastructure_design.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .pt-page-4 .branch-content-4 {
@@ -777,6 +813,7 @@ img.top {
   max-height: 570px;
   /*background-position: 0 200px;
   background-color: #ffffff;*/
+  -pie-background: url(../img/04_design/software_development.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .pt-page-6 .branch-content-1 {
@@ -787,6 +824,7 @@ img.top {
   background-size: cover;
   height: 105%;
   min-height: 937px;
+  -pie-background: url(../img/06_team/Pietro_Rota.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .pt-page-6 .branch-content-1:hover {
@@ -797,6 +835,7 @@ img.top {
   background-size: cover;
   height: 105%;
   min-height: 937px;
+  -pie-background: url(../img/06_team/Pietro_Rota_02.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .pt-page-6 .branch-content-2 {
@@ -807,6 +846,7 @@ img.top {
   background-size: cover;
   height: 105%;
   min-height: 937px;
+  -pie-background: url(../img/06_team/Luca_Antiga.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .pt-page-6 .branch-content-2:hover{
@@ -817,6 +857,7 @@ img.top {
   background-size: cover;
   height: 105%;
   min-height: 937px;
+  -pie-background: url(../img/06_team/Luca_Antiga_02.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .pt-page-6 .branch-content-3 {
@@ -827,6 +868,7 @@ img.top {
   background-size: cover;
   height: 105%;
   min-height: 937px;
+  -pie-background: url(../img/06_team/Michele_Colombi.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .pt-page-6 .branch-content-3:hover {
@@ -837,6 +879,7 @@ img.top {
   background-size: cover;
   height: 105%;
   min-height: 937px;
+  -pie-background: url(../img/06_team/Michele_Colombi_02.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .branch-content-footer {

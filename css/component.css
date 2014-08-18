@@ -7,6 +7,7 @@ html, body { height: 100%; }
 	-webkit-perspective: 1200px;
 	-moz-perspective: 1200px;
 	perspective: 1200px;
+	behavior: url(css/PIE.htc);  /*ie 6-9 via PIE*/
 }
 
 .pt-page {
@@ -28,6 +29,7 @@ html, body { height: 100%; }
 	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	font-weight: normal !important;
+	behavior: url(css/PIE.htc);  /*ie 6-9 via PIE*/
 }
 
 .pt-page-current,
@@ -58,8 +60,10 @@ html, body { height: 100%; }
   background: -webkit-linear-gradient(left, black, black, black, white, white, white, white, white, white, white, white, white); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, black, black, black, white, white, white, white, white, white, white, white, white); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, black, black, black, white, white, white, white, white, white, white, white, white); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, black, black, black, white, white, white, white, white, white, white, white, white); /* Standard syntax (must be last) */
+  -pie-background: linear-gradient(to right, black, black, black, white, white, white, white, white, white, white, white, white); /*ie 6-9 via PIE*/
+	background: linear-gradient(to right, black, black, black, white, white, white, white, white, white, white, white, white); /* Standard syntax (must be last) */
   letter-spacing: -1
+	behavior: url(css/PIE.htc);  /*ie 6-9 via PIE*/
 
 }
 
@@ -179,6 +183,7 @@ html, body { height: 100%; }
   margin-top: 15px;
   padding-top: 58;
   /*position: absolute;*/
+	behavior: url(css/PIE.htc);  /*ie 6-9 via PIE*/
 }
 
 .pt-page-2 .discover{
@@ -221,6 +226,7 @@ html, body { height: 100%; }
 	-moz-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	transform: translateX(-50%);
+	behavior: url(css/PIE.htc);  /*ie 6-9 via PIE*/
 }
 
 .no-js .pt-triggers {
@@ -249,6 +255,7 @@ html, body { height: 100%; }
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	behavior: url(css/PIE.htc);  /*ie 6-9 via PIE*/
 }
 
 .pt-touch-button {

@@ -337,9 +337,9 @@ img.top {
   /*background: url(../img/target_customers.png) 50% 50% no-repeat;*/
 }
 
-.branch-head-team > .top-team > .branch-content {
+/*.branch-head-team > .top-team > .branch-content {
   position: absolute;
-}
+}*/
 
 /*.branch-head > .bottom {
   height: 35%;
@@ -863,28 +863,6 @@ img.top {
 }
 
 .pt-page-6 .branch-content-1 {
-  background: url(../img/06_team/Pietro_Rota.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 105%;
-  min-height: 937px;
-  -pie-background: url(../img/06_team/Pietro_Rota.jpg) no-repeat; /*ie 6-9 via PIE*/
-}
-
-.pt-page-6 .branch-content-1:hover {
-  background: url(../img/06_team/Pietro_Rota_02.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 105%;
-  min-height: 937px;
-  -pie-background: url(../img/06_team/Pietro_Rota_02.jpg) no-repeat; /*ie 6-9 via PIE*/
-}
-
-.pt-page-6 .branch-content-2 {
   background: url(../img/06_team/Luca_Antiga.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -895,7 +873,7 @@ img.top {
   -pie-background: url(../img/06_team/Luca_Antiga.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
-.pt-page-6 .branch-content-2:hover{
+.pt-page-6 .branch-content-1:hover{
   background: url(../img/06_team/Luca_Antiga_02.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -906,26 +884,26 @@ img.top {
   -pie-background: url(../img/06_team/Luca_Antiga_02.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
-.pt-page-6 .branch-content-3 {
-  background: url(../img/06_team/Michele_Colombi.jpg) no-repeat center center;
+.pt-page-6 .branch-content-2 {
+  background: url(../img/06_team/Pietro_Rota.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 105%;
   min-height: 937px;
-  -pie-background: url(../img/06_team/Michele_Colombi.jpg) no-repeat; /*ie 6-9 via PIE*/
+  -pie-background: url(../img/06_team/Pietro_Rota.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
-.pt-page-6 .branch-content-3:hover {
-  background: url(../img/06_team/Michele_Colombi_02.jpg) no-repeat center center;
+.pt-page-6 .branch-content-2:hover {
+  background: url(../img/06_team/Pietro_Rota_02.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 105%;
   min-height: 937px;
-  -pie-background: url(../img/06_team/Michele_Colombi_02.jpg) no-repeat; /*ie 6-9 via PIE*/
+  -pie-background: url(../img/06_team/Pietro_Rota_02.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .branch-content-footer {
@@ -1022,6 +1000,28 @@ img.top {
   margin-bottom: 10px;
   padding-bottom: 20px;
 }
+
+.products-vmtklab {
+  background-color: #white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.products-dicomnext {
+  background-color: #f1f1f1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.products-vmtk {
+  background-color: #white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
 
 .disclaimer ul,
 .disclaimer p {

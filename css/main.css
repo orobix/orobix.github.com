@@ -802,7 +802,7 @@ img.top {
 }
 
 .pt-page-3 .branch-content-4 {
-  background: url(../img/03_science/data_eng.jpg) no-repeat center center;
+  background: url(../img/03_science/machine_learning.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -811,16 +811,16 @@ img.top {
   max-height: 570px;
   /*background-position: 0 200px;
   background-color: #ffffff;*/
-  -pie-background: url(../img/03_science/data_eng.jpg) no-repeat; /*ie 6-9 via PIE*/
+  -pie-background: url(../img/03_science/machine_learning.jpg) no-repeat; /*ie 6-9 via PIE*/
 
 }
 
 .pt-page-4 .branch-content-1 {
-  background: url(../img/04_design/michele_design_bw.jpg) no-repeat;
+  /*background: url(../img/04_design/foto_ufficio.jpg) no-repeat;*/
   background-size: contain;
   background-position: left bottom;
   background-color: #000000;
-  -pie-background: url(../img/04_design/michele_design_bw.jpg) no-repeat; /*ie 6-9 via PIE*/
+  /*-pie-background: url(../img/04_design/foto_ufficio.jpg) no-repeat; /*ie 6-9 via PIE*/*/
 }
 
 .pt-page-4 .branch-content-2 {
@@ -837,7 +837,7 @@ img.top {
 }
 
 .pt-page-4 .branch-content-3 {
-  background: url(../img/04_design/infrastructure_design.jpg) no-repeat center center;
+  background: url(../img/04_design/data_eng.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -846,7 +846,7 @@ img.top {
   max-height: 570px;
   /*background-position: 0 200px;
   background-color: #ffffff;*/
-  -pie-background: url(../img/04_design/infrastructure_design.jpg) no-repeat; /*ie 6-9 via PIE*/
+  -pie-background: url(../img/04_design/data_eng.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .pt-page-4 .branch-content-4 {
@@ -957,7 +957,7 @@ img.top {
 .team-name {
   font-family: "DIN-Light";
   color: #7d7d7d;
-  font-size: 32px;
+  font-size: 26px;
   letter-spacing: -1
 }
 
@@ -978,6 +978,8 @@ img.top {
 #companyVAT {
   color: #898989;
   text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #companyVAT > p {
@@ -1001,27 +1003,19 @@ img.top {
   padding-bottom: 20px;
 }
 
-.products-vmtklab {
+.products-white {
   background-color: #white;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-bottom: 20px;
 }
 
-.products-dicomnext {
+.products-gray {
   background-color: #f1f1f1;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-bottom: 20px;
 }
-
-.products-vmtk {
-  background-color: #white;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-bottom: 20px;
-}
-
 
 .disclaimer ul,
 .disclaimer p {
@@ -1030,4 +1024,10 @@ img.top {
 
 .disclaimer h2 {
   text-align: center;
+}
+
+.row-bottom {
+
+  margin-bottom: 50px;
+
 }

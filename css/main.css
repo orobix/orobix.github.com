@@ -20,7 +20,7 @@ html, body {
   font-family: 'DINNeuzeitGroteskStd-Light';
   font-size: 18px;
   color: #000000;
-  letter-spacing: -1;
+  letter-spacing: -1px;
 }
 
 #menu.navbar * {
@@ -47,7 +47,7 @@ html, body {
 .pt-page-1 ul.nav {
   font-family: 'DINNeuzeitGroteskStd-Light';
   font-size: 18px;
-  letter-spacing: -1
+  letter-spacing: -1px
 }
 
 .pt-page-1 ul.nav > li > a:hover {
@@ -63,7 +63,7 @@ html, body {
          url('../fonts/dinnneuzeitgroteskstd-light-webfont.svg#din_30640_stdneuzeitgroteskLt') format('svg');
     font-weight: normal;
     font-style: normal;
-    letter-spacing: -1;
+    letter-spacing: -1px;
 }
 
 @font-face {
@@ -75,7 +75,7 @@ html, body {
          url('../fonts/dinnn-light-webfont.svg#din_lightregular') format('svg');
     font-weight: normal;
     font-style: normal;
-    letter-spacing: -1;
+    letter-spacing: -1px;
 }
 
 
@@ -357,7 +357,7 @@ img.top {
 .branch-link a {
   font-family: "DINNeuzeitGroteskStd-Light";
   color: #7d7d7d;
-  letter-spacing: -1
+  letter-spacing: -1px
 }
 
 .branch-link a:hover {
@@ -425,7 +425,7 @@ img.top {
   color: #7d7d7d;
   font-size: 32px;
   margin-top: 40px;
-  letter-spacing: -1px;
+  letter-spacing: -1pxpx;
 }
 
 .branch-title {
@@ -442,7 +442,7 @@ img.top {
   font-size: 18px;
   line-height: 1.3;
   margin-top: 25px;
-  letter-spacing: -1
+  letter-spacing: -1px
 }
 
 .branch-description-team {
@@ -451,15 +451,15 @@ img.top {
   font-size: 22px;
   line-height: 1.3;
   margin-top: 25px;
-  letter-spacing: -1
+  letter-spacing: -1px
 }
 
 .branch-description {
   font-family: "DIN-Light";
   color: #000000;
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 20px;
-  letter-spacing: -1;
+  letter-spacing: -1px;
   line-height: 1.3;
 }
 
@@ -477,8 +477,8 @@ img.top {
 
 .branch-image img {
   width: auto;
-  max-height: 70%;
-  margin-top: 35px;
+  max-height: 100%;
+  /*margin-top: 35px;*/
 }
 
 .branch-image .bottom {
@@ -521,7 +521,7 @@ img.top {
   font-family: "DIN-Light";
   color: #000000;
   text-align: center;
-  letter-spacing: -1;
+  letter-spacing: -1px;
   margin: 0px !important;
   margin-top: 93px;
 }
@@ -532,7 +532,7 @@ img.top {
   font-family: "DIN-Light";
   color: #000000;
   text-align: center;
-  letter-spacing: -1;
+  letter-spacing: -1px;
   margin: 0px !important;
 }
 
@@ -542,7 +542,7 @@ img.top {
   font-family: "DIN-Light";
   color: #000000;
   text-align: center;
-  letter-spacing: -1;
+  letter-spacing: -1px;
   margin-left: 0px !important;
   margin-top: 30px !important;
   margin-right: 0px !important;
@@ -555,7 +555,7 @@ img.top {
   font-family: "DIN-Light";
   color: #000000;
   text-align: center;
-  letter-spacing: -1;
+  letter-spacing: -1px;
   margin: 0px !important;
 
 }
@@ -567,7 +567,7 @@ img.top {
   font-family: "DIN-Light";
   color: #000000;
   text-align: center;
-  letter-spacing: -1
+  letter-spacing: -1px
 
 }
 
@@ -579,7 +579,7 @@ img.top {
   color: #000000;
   margin-top: 40px;
   text-align: center;
-  letter-spacing: -1;
+  letter-spacing: -1px;
   margin-top: 50px;
 
 }
@@ -607,14 +607,14 @@ img.top {
 .branch-content-1 .description h3 {
   font-family: "DINNeuzeitGroteskStd-Light";
   color: #ffffff;
-  letter-spacing: -1
+  letter-spacing: -1px
 }
 
 .branch-content-1 .link .role,
 .branch-content-1 .description p {
   font-family: "DIN-Light";
   color: #ffffff;
-  letter-spacing: -1
+  letter-spacing: -1px
 }
 
 .branch-content-1 .description {
@@ -672,14 +672,14 @@ img.top {
   font-size: 37px;
   color: #ffffff;
   margin-top: 0;
-  letter-spacing: -1
+  letter-spacing: -1px
 }
 
 .branch-content-1 .bottom .branch-detail-link {
   font-family: "DINNeuzeitGroteskStd-Light";
   font-size: 15px;
   color: #898989;
-  letter-spacing: -1
+  letter-spacing: -1px
 }
 
 .branch-content-1 .bottom .branch-detail-link p {
@@ -912,7 +912,7 @@ img.top {
   height: 50%;
   font-family: "DIN-Light";
   color: #000000;
-  letter-spacing: -1
+  letter-spacing: -1px
 }
 
 .branch-content-footer .products {
@@ -920,7 +920,7 @@ img.top {
   color: #898989;
   margin-top: 40px;
   margin-bottom: 30px;
-  letter-spacing: -1
+  letter-spacing: -1px
 }
 
 .branch-content-footer .products > div {
@@ -945,35 +945,35 @@ img.top {
   color: #000000;
   font-size: 50px;
   margin-top: 50px;
-  letter-spacing: -1
+  letter-spacing: -1px
 }
 
 .team-title-bottom {
   font-family: "DIN-Light";
   color: #000000;
   font-size: 50px;
-  letter-spacing: -1
+  letter-spacing: -1px
 }
 
 .team-name {
   font-family: "DIN-Light";
   color: #7d7d7d;
   font-size: 26px;
-  letter-spacing: -1
+  letter-spacing: -1px
 }
 
 .team-description {
   font-family: "DIN-Light";
   color: #000000;
   font-size: 20px;
-  letter-spacing: -1
+  letter-spacing: -1px
 }
 
 .team-description-bottom {
   font-family: "DIN-Light";
   color: #000000;
   font-size: 18px;
-  letter-spacing: -1
+  letter-spacing: -1px
 }
 
 #companyVAT {

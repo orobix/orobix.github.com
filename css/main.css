@@ -1012,6 +1012,10 @@ img.top {
   text-align: center;
 }
 
+.main-content-partners {
+  text-align: center;
+}
+
 .vmtklab {
   background: url(../img/08_products/vmtk_lab.jpg) no-repeat;
   background-size: contain;

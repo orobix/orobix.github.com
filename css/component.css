@@ -50,8 +50,6 @@ html, body { height: 100%; }
 
 /* Home Page */
 
-
-
 .pt-page-1 {
 
   font-family: 'DINNeuzeitGroteskStd-Light';
@@ -142,10 +140,16 @@ html, body { height: 100%; }
 
 	font-family: 'DINNeuzeitGroteskStd-Light';
 	color: #000000;
-	font-size: 35px;
+	font-size: 26px;
 	letter-spacing: -1px;;
 	margin-top: 20px;
 
+}
+
+@media (min-width: 1205px) {
+  .pt-page-2 .branch {
+    font-size: 35px;
+  }
 }
 
 .pt-page-2 dt{

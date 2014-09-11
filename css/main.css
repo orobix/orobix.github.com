@@ -1028,3 +1028,17 @@ img.top {
   background-color: #ffffff;*/
   -pie-background: url(../img/06_team/separator.gif) no-repeat; /*ie 6-9 via PIE*/
 }
+
+.socials {
+  position: absolute;
+  padding: 10px;
+  bottom: 0;
+  right: 0;
+  z-index: 999999;
+  display: none;
+}
+
+.socials > * {
+  margin-right: 10px;
+  color: #89959B;
+}

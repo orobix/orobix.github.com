@@ -41,8 +41,10 @@ function iePageTransition() {
 
       if (next == 1) {
 	  $('#menu').hide();
+	  $('.socials').hide();
       } else {
       	  $('#menu').show();
+      	  $('.socials').show();
       }
 
       $('.pt-page').css('visibility', 'hidden');
@@ -446,6 +448,7 @@ function pageTransition() {
 
 		if (current != 0) {
 		  $('#menu').show();
+		  $('.socials').show();
 		}
 
 		$('#menu li').removeClass('pageSelected');

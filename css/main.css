@@ -459,6 +459,26 @@ img.top {
   line-height: 1.3;
 }
 
+.branch-description-white{
+  font-family: "DIN-Light";
+  color: #FFFFFF;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  line-height: 1.3;
+}
+
+.white-a {
+  color: #FFFFFF !important;
+  font-size: 16px !important;
+}
+
+.black-a {
+  color: #000000 !important;
+  font-size: 16px !important;
+}
+
 .branch-image {
   /*position: absolute;
   bottom: 10px;*/
@@ -1001,14 +1021,14 @@ img.top {
 }
 
 .products-white {
-  background-color: #white;
+  background-color: #FFFFFF;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-bottom: 20px;
 }
 
-.products-gray {
-  background-color: #f1f1f1;
+.products-black {
+  background-color: #000000;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-bottom: 20px;
@@ -1027,4 +1047,12 @@ img.top {
 
   margin-bottom: 50px;
 
+}
+
+.vmtklab {
+  background: url(../img/08_products/vmtk_lab.jpg) no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+  background-color: #000000;
+  -pie-background: url(../img/05_customers/vmtk_lab.jpg) no-repeat; /*ie 6-9 via PIE*/
 }

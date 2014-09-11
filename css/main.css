@@ -283,7 +283,7 @@ img.top {
   position: absolute;
   width: 100%;
   z-index: 10;
-  top: 90px;
+  top: 75px;
 }
 
 .main-content-responsive > div > dl img {
@@ -424,15 +424,15 @@ img.top {
   color: #7d7d7d;
   font-size: 32px;
   margin-top: 40px;
-  letter-spacing: -1
+  letter-spacing: -1px;
 }
 
 .branch-title {
   font-family: "DIN-Light";
   color: #000000;
-  font-size: 35px;
+  font-size: 65px;
   margin-top: 5px;
-  letter-spacing: -1
+  letter-spacing: -3px;
 }
 
 .cription {

@@ -978,10 +978,9 @@ img.top {
   text-align: center;
 }
 
-.row-bottom {
-
+.container-bottom {
+  margin-top: 50px;
   margin-bottom: 50px;
-
 }
 
 .main-content-products {
@@ -990,6 +989,10 @@ img.top {
 
 .main-content-partners {
   text-align: center;
+}
+
+.main-content-partners .thumbnail {
+  margin-left: calc(50% - 101px);
 }
 
 .vmtklab {

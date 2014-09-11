@@ -205,9 +205,10 @@ html, body { height: 100%; }
 }
 
 .pt-page-9 {
-  background: #f1f1f1;
+  background: #FFFFFF;
   top: 61px;
   height: calc(100% - 61px);
+
 }
 
 /* Triggers (menu and button) */

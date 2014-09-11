@@ -205,14 +205,8 @@ img.top {
   behavior: url(css/PIE.htc);  /*ie 6-9 via PIE*/
 }
 
-.main-content {
-  /*padding-top: 61px;*/
-  overflow: hidden;
-}
-
 .main-content,
 .main-content > div {
-  height: 100%;
   text-align: center;
 
   <!--[if IE 8]>
@@ -303,42 +297,15 @@ img.top {
   behavior: url(css/PIE.htc);  /*ie 6-9 via PIE*/
 }
 
-
-.branch-head > .top {
-  /*height: 630px;
+.branch-bottom-team {
   background-color: #f1f1f1;
-  background: url(../img/target_customers.png) 50% 50% no-repeat;*/
+  padding-bottom: 30px;
 }
 
 .branch-head-team {
-  height: 300px;
-}
-
-.branch-bottom-team {
-  height: 70%;
-}
-
-.branch-bottom-team > .top-team {
-  height: 100%;
   background-color: #f1f1f1;
-  /*background: url(../img/target_customers.png) 50% 50% no-repeat;*/
+  padding-bottom: 30px;
 }
-
-
-.branch-head-team > .top-team {
-  height: 100%;
-  background-color: #f1f1f1;
-  /*background: url(../img/target_customers.png) 50% 50% no-repeat;*/
-}
-
-/*.branch-head-team > .top-team > .branch-content {
-  position: absolute;
-}*/
-
-/*.branch-head > .bottom {
-  height: 35%;
-  min-height: 220px;
-}*/
 
 .branch-link {
   bottom: 50%;
@@ -580,13 +547,12 @@ img.top {
 .branch-content-team {
   width: 100%;
   z-index: 10;
-  height: 400px;
   font-family: "DIN-Light";
   color: #000000;
   text-align: center;
   letter-spacing: -1px;
   margin: 0px !important;
-
+  padding-bottom: 40px;
 }
 
 .branch-content-team-bottom {
@@ -854,29 +820,31 @@ img.top {
 
 .pt-page-6 .branch-content-1 {
   background: url(../img/06_team/Luca_Antiga.jpg) no-repeat center center;
-  height: 105%;
-  min-height: 937px;
+  background-size: 100% auto;
+  /*height: 100%;
+  min-height: 937px;*/
   -pie-background: url(../img/06_team/Luca_Antiga.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .pt-page-6 .branch-content-1:hover{
   background: url(../img/06_team/Luca_Antiga_02.jpg) no-repeat center center;
-  height: 105%;
-  min-height: 937px;
+  background-size: 100% auto;
+  /*height: 100%;
+  min-height: 937px;*/
   -pie-background: url(../img/06_team/Luca_Antiga_02.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .pt-page-6 .branch-content-2 {
   background: url(../img/06_team/Pietro_Rota.jpg) no-repeat center center;
-  height: 105%;
-  min-height: 937px;
+  /*height: 100%;
+  min-height: 937px;*/
   -pie-background: url(../img/06_team/Pietro_Rota.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .pt-page-6 .branch-content-2:hover {
   background: url(../img/06_team/Pietro_Rota_02.jpg) no-repeat center center;
-  height: 105%;
-  min-height: 937px;
+  /*height: 100%;
+  min-height: 937px;*/
   -pie-background: url(../img/06_team/Pietro_Rota_02.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
@@ -1048,10 +1016,10 @@ img.top {
   margin-top: 47px;
 }
 
-.we-are-orobix {
+/*.we-are-orobix {
   font-size: 60px;
   letter-spacing: -3px;
-}
+}*/
 
 .separator-div {
   background: url(../img/06_team/separator.gif) no-repeat center center;

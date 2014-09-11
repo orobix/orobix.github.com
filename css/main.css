@@ -962,6 +962,12 @@ img.top {
   padding-bottom: 20px;
 }
 
+.disclaimer {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 .disclaimer ul,
 .disclaimer p {
   text-align: justify;

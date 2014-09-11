@@ -970,16 +970,12 @@ img.top {
 
 .products-white {
   background-color: #FFFFFF;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-bottom: 20px;
+  height: 495px;
 }
 
 .products-black {
   background-color: #000000;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-bottom: 20px;
+  height: 495px;
 }
 
 .disclaimer ul,
@@ -997,10 +993,42 @@ img.top {
 
 }
 
+.main-content-products {
+  text-align: center;
+}
+
 .vmtklab {
   background: url(../img/08_products/vmtk_lab.jpg) no-repeat;
   background-size: contain;
   background-position: right bottom;
   background-color: #000000;
-  -pie-background: url(../img/05_customers/vmtk_lab.jpg) no-repeat; /*ie 6-9 via PIE*/
+  -pie-background: url(../img/08_products/vmtk_lab.jpg) no-repeat; /*ie 6-9 via PIE*/
+}
+
+.dicom {
+  background: url(../img/08_products/dicom.jpg) no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+  background-color: #FFFFFF;
+  -pie-background: url(../img/08_products/dicom.jpg) no-repeat; /*ie 6-9 via PIE*/
+}
+
+.vmtk {
+  background: url(../img/08_products/vmtk.jpg) no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+  background-color: #000000;
+  -pie-background: url(../img/08_products/vmtk.jpg) no-repeat; /*ie 6-9 via PIE*/
+}
+
+.invariant {
+  background: url(../img/08_products/invariant.jpg) no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+  background-color: #FFFFFF;
+  -pie-background: url(../img/08_products/invariant.jpg) no-repeat; /*ie 6-9 via PIE*/
+}
+
+.col-products {
+  margin-top: 47px;
 }

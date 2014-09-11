@@ -129,8 +129,9 @@ html, body {
 
 .img-logo {
 
-  max-width :353px;
+  max-width: 353px;
   float: initial !important;
+  width: 30%;
 
 }
 

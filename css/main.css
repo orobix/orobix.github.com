@@ -978,6 +978,12 @@ img.top {
   height: 495px;
 }
 
+.disclaimer {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 .disclaimer ul,
 .disclaimer p {
   text-align: justify;

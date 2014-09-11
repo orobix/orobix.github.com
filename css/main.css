@@ -520,6 +520,10 @@ img.top {
   letter-spacing: -1px;
   margin: 0px !important;
   margin-top: 93px;
+  -webkit-background-size: contain!important;
+  -moz-background-size: contain!important;
+  -o-background-size: contain!important;
+  background-size: contain!important;
 }
 
 .branch-content-img {
@@ -718,7 +722,6 @@ img.top {
 
 .pt-page-5 .branch-content-1 {
   background: url(../img/05_customers/pietro_customers_bw.jpg) no-repeat;
-  background-size: contain;
   background-position: right bottom;
   background-color: #000000;
   -pie-background: url(../img/05_customers/pietro_customers_bw.jpg) no-repeat; /*ie 6-9 via PIE*/
@@ -726,10 +729,6 @@ img.top {
 
 .pt-page-5 .branch-content-2 {
   background: url(../img/05_customers/pharma.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   height: 100%;
   max-height: 570px;
   /*background-position: 0 200px;
@@ -739,10 +738,6 @@ img.top {
 
 .pt-page-5 .branch-content-3 {
   background: url(../img/05_customers/b2b.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   height: 100%;
   max-height: 570px;
   /*background-position: 0 200px;
@@ -752,10 +747,6 @@ img.top {
 
 .pt-page-5 .branch-content-4 {
   background: url(../img/05_customers/b2c.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   height: 100%;
   max-height: 570px;
   /*background-position: 0 200px;
@@ -765,18 +756,12 @@ img.top {
 
 .pt-page-3 .branch-content-1 {
   background: url(../img/03_science/luca_science_bw.jpg) no-repeat;
-  background-size: contain;
   background-position: left bottom;
   background-color: #000000;
-
 }
 
 .pt-page-3 .branch-content-2 {
   background: url(../img/03_science/modeling.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   height: 100%;
   max-height: 570px;
   /*background-position: 0 200px;
@@ -787,10 +772,6 @@ img.top {
 
 .pt-page-3 .branch-content-3 {
   background: url(../img/03_science/image_an.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   height: 100%;
   max-height: 570px;
   /*background-position: 0 200px;
@@ -800,10 +781,6 @@ img.top {
 
 .pt-page-3 .branch-content-4 {
   background: url(../img/03_science/machine_learning.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   height: 100%;
   max-height: 570px;
   /*background-position: 0 200px;
@@ -814,7 +791,6 @@ img.top {
 
 .pt-page-4 .branch-content-1 {
   /*background: url(../img/04_design/foto_ufficio.jpg) no-repeat;*/
-  background-size: contain;
   background-position: left bottom;
   background-color: #000000;
   /*-pie-background: url(../img/04_design/foto_ufficio.jpg) no-repeat; /*ie 6-9 via PIE*/*/
@@ -822,10 +798,6 @@ img.top {
 
 .pt-page-4 .branch-content-2 {
   background: url(../img/04_design/application_design.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   height: 100%;
   max-height: 570px;
   /*background-position: 0 200px;
@@ -835,10 +807,6 @@ img.top {
 
 .pt-page-4 .branch-content-3 {
   background: url(../img/04_design/data_eng.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   height: 100%;
   max-height: 570px;
   /*background-position: 0 200px;
@@ -848,10 +816,6 @@ img.top {
 
 .pt-page-4 .branch-content-4 {
   background: url(../img/04_design/software_development.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   height: 100%;
   max-height: 570px;
   /*background-position: 0 200px;
@@ -861,10 +825,6 @@ img.top {
 
 .pt-page-6 .branch-content-1 {
   background: url(../img/06_team/Luca_Antiga.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   height: 105%;
   min-height: 937px;
   -pie-background: url(../img/06_team/Luca_Antiga.jpg) no-repeat; /*ie 6-9 via PIE*/
@@ -872,10 +832,6 @@ img.top {
 
 .pt-page-6 .branch-content-1:hover{
   background: url(../img/06_team/Luca_Antiga_02.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   height: 105%;
   min-height: 937px;
   -pie-background: url(../img/06_team/Luca_Antiga_02.jpg) no-repeat; /*ie 6-9 via PIE*/
@@ -883,10 +839,6 @@ img.top {
 
 .pt-page-6 .branch-content-2 {
   background: url(../img/06_team/Pietro_Rota.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   height: 105%;
   min-height: 937px;
   -pie-background: url(../img/06_team/Pietro_Rota.jpg) no-repeat; /*ie 6-9 via PIE*/
@@ -894,10 +846,6 @@ img.top {
 
 .pt-page-6 .branch-content-2:hover {
   background: url(../img/06_team/Pietro_Rota_02.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   height: 105%;
   min-height: 937px;
   -pie-background: url(../img/06_team/Pietro_Rota_02.jpg) no-repeat; /*ie 6-9 via PIE*/

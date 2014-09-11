@@ -54,7 +54,6 @@ html, body { height: 100%; }
 
   font-family: 'DINNeuzeitGroteskStd-Light';
   color: #585858;
-  background-size: cover;
   background: url(../img/01_intro/sfondo_intro.gif) repeat-y;
   background-color: #FFFFFF;
   background-size: 40% 100%;

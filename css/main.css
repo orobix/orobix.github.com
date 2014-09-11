@@ -254,9 +254,6 @@ img.top {
   margin-left: 5px;
 }
 
-.main-content-responsive {
-  padding-top: 30px;
-}
 
 .main-content-responsive,
 .main-content-responsive > div {
@@ -457,6 +454,7 @@ img.top {
   color: #000000;
   font-size: 25px;
   margin-top: 20px;
+  margin-bottom: 20px;
   letter-spacing: -1px;
   line-height: 1.3;
 }

@@ -53,18 +53,13 @@ html, body { height: 100%; }
 
 
 .pt-page-1 {
-
+  
   font-family: 'DINNeuzeitGroteskStd-Light';
   color: #585858;
   background-size: cover;
   background: url(../img/01_intro/sfondo_intro.gif) repeat-y;
   background-size: 40% 100%;
-  /*background: -webkit-linear-gradient(left, black, black, black, white, white, white, white, white, white, white, white, white); /* For Safari 5.1 to 6.0 */
-  /*background: -o-linear-gradient(right, black, black, black, white, white, white, white, white, white, white, white, white); /* For Opera 11.1 to 12.0 */
-  /*background: -moz-linear-gradient(right, black, black, black, white, white, white, white, white, white, white, white, white); /* For Firefox 3.6 to 15 */
-  /*-pie-background: linear-gradient(to right, black, black, black, white, white, white, white, white, white, white, white, white); /*ie 6-9 via PIE*/
-  /*background: linear-gradient(to right,  black, black, black, white, white, white, white, white, white, white, white, white); /* Standard syntax (must be last) */
-  letter-spacing: -1
+  letter-spacing: -1;
   behavior: url(css/PIE.htc);  /*ie 6-9 via PIE*/
 
 }
@@ -199,23 +194,10 @@ html, body { height: 100%; }
 
 }
 
-
-
-
-.pt-page-3 {
-	background: #ffffff;
-}
-
-.pt-page-4 {
-	/*background: #fdc162;*/
-}
-
-.pt-page-5 {
+.pt-page-2, .pt-page-3, .pt-page-4, .pt-page-5, .pt-page-6, .pt-page-7, .pt-page-8, .pt-page-9 {
 	background: #FFFFFF;
-}
-
-.pt-page-6 {
-	background: #FFFFFF;
+	top: 61px;
+	height: calc(100% - 61px);
 }
 
 /* Triggers (menu and button) */

@@ -294,7 +294,7 @@ img.top {
 
 .branch-head {
   height: 100%;
-  padding-top: 61px;
+  padding-top: 10px;
   background: #f1f1f1; /* Old browsers */
   background: -moz-linear-gradient(top,  #f1f1f1 70%, #f1f1f1 70%, #ffffff 70%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(70%,#f1f1f1), color-stop(70%,#f1f1f1), color-stop(70%,#ffffff)); /* Chrome,Safari4+ */

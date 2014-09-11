@@ -818,36 +818,6 @@ img.top {
   -pie-background: url(../img/04_design/software_development.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
-.pt-page-6 .branch-content-1 {
-  background: url(../img/06_team/Luca_Antiga.jpg) no-repeat center center;
-  background-size: 100% auto;
-  /*height: 100%;
-  min-height: 937px;*/
-  -pie-background: url(../img/06_team/Luca_Antiga.jpg) no-repeat; /*ie 6-9 via PIE*/
-}
-
-.pt-page-6 .branch-content-1:hover{
-  background: url(../img/06_team/Luca_Antiga_02.jpg) no-repeat center center;
-  background-size: 100% auto;
-  /*height: 100%;
-  min-height: 937px;*/
-  -pie-background: url(../img/06_team/Luca_Antiga_02.jpg) no-repeat; /*ie 6-9 via PIE*/
-}
-
-.pt-page-6 .branch-content-2 {
-  background: url(../img/06_team/Pietro_Rota.jpg) no-repeat center center;
-  /*height: 100%;
-  min-height: 937px;*/
-  -pie-background: url(../img/06_team/Pietro_Rota.jpg) no-repeat; /*ie 6-9 via PIE*/
-}
-
-.pt-page-6 .branch-content-2:hover {
-  background: url(../img/06_team/Pietro_Rota_02.jpg) no-repeat center center;
-  /*height: 100%;
-  min-height: 937px;*/
-  -pie-background: url(../img/06_team/Pietro_Rota_02.jpg) no-repeat; /*ie 6-9 via PIE*/
-}
-
 .branch-content-footer {
   text-align: center;
   height: 50%;

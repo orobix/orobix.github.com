@@ -358,7 +358,15 @@ img.top {
 
 .branch-link-left a,
 .branch-link-right a {
-  display: block;
+  display: flex;
+}
+
+.branch-link-right a {
+  float: right;
+}
+
+.branch-link-left a {
+  float: inherit;
 }
 
 .branch-link-left a > *,
@@ -372,8 +380,8 @@ img.top {
 
 .branch-link-left a > p,
 .branch-link-right a > p {
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-bottom: 0px;
+  margin-top: 8px;
 }
 
 .branch-detail-link {
@@ -943,7 +951,8 @@ img.top {
   font-family: "DIN-Light";
   color: #000000;
   font-size: 50px;
-  letter-spacing: -1px
+  letter-spacing: -1px;
+  margin-top: 0px;
 }
 
 .team-name {

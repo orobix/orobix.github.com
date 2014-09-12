@@ -1,7 +1,6 @@
 
 $(function() {
   $('[data-hash]').click(function() {
-      console.log("scroll1");
       var target = $(this).data('hash');
       $('.pt-page').scrollTo(target);
   });
@@ -11,7 +10,7 @@ $.fn.scrollTo = function( target, options, callback ) {
   if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
   var settings = $.extend({
     scrollTarget  : target,
-    offsetTop     : 0,
+    offsetTop     : 71,
     duration      : 1000,
     easing        : 'swing'
   }, options);
@@ -33,14 +32,14 @@ var PageTransitions = (function() {
   }
 })();
 
-function ieTransition() {
+function ieTransition() { 
   //init
   $('.pt-page-1').addClass('pt-page-current');
 
   //change page
   $('[data-animation]').on('click', function(e) {
       var next = $(this).data('next') + 1;
-      var current = $('.pt-page-current').data('page');
+      var scroll = $(this).data('scroll');
 
       if (next == 1) {
 	  $('#menu').hide();
@@ -50,11 +49,16 @@ function ieTransition() {
       	  $('.socials').show();
 
 	  $('#menu li').removeClass('pageSelected');
-	  $('#menu .next' + current).addClass('pageSelected');
+	  $('#menu .next' + (next-1)).addClass('pageSelected');
       }
 
       $('.pt-page').removeClass('pt-page-current');
       $('.pt-page-' + next).addClass('pt-page-current');
+
+      //scroll
+      if (scroll) {
+        $('.pt-page').scrollTo(scroll);
+      }
   });
 }
 
@@ -67,7 +71,7 @@ function transition() {
       var animation = $(this).data('animation');
       var next = $(this).data('next') + 1;
       var current = $('.pt-page-current').data('page');
-      var scroll = $(this).data('hash');
+      var scroll = $(this).data('scroll');
 
       if (next == 1) {
 	  $('#menu').hide();
@@ -105,9 +109,7 @@ function transition() {
 	$('.pt-page-' + current).removeClass('pt-page-current').removeClass(animationClass).css('z-index', 1);
 
 	//scroll
-	console.log('scroll', scroll);
 	if (scroll) {
-	  console.log('scroll2');
 	  $('.pt-page').scrollTo(scroll);
 	} /*else {
 	  $('.pt-page').scrollTo(0);

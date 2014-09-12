@@ -1283,6 +1283,10 @@ img.top {
   margin-top: -30px;
 }
 
+*[data-hash] {
+  cursor: pointer;
+}
+
 /* animations */
 .pt-page-moveToLeftEasing {
   -webkit-animation: moveToLeft .7s ease-in-out both;

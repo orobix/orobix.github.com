@@ -582,17 +582,31 @@ img.top {
 }
 
 .branch-content-team-bottom {
-  width: 100%;
+  /*width: 100%;*/
   z-index: 10;
-  max-height: 500px;
+  /*max-height: 500px;*/
   font-family: "DIN-Light";
   color: #000000;
   text-align: center;
-  letter-spacing: -1px
-
+  letter-spacing: -1px;
 }
 
-.branch-content-team-separator{
+.branch-content-team-bottom  > div {
+  width: 990px;
+  display: inline;
+}
+
+.branch-content-team-bottom  > div > * {
+  display: inline-block;
+}
+
+/*.border-flex {
+  display: inline-flex;
+  border-image: url(../img/06_team/separator.gif) 10 10;
+  border-image-outset: 40px;
+}*/
+
+.branch-content-team-separator {
   width: 100%;
   z-index: 10;
   height: 50px;
@@ -1073,6 +1087,7 @@ img.top {
 
 .team-text{
   text-align:left;
-  margin-left: 20px;
+  margin-left: 42px;
+  vertical-align: top;
 
 }

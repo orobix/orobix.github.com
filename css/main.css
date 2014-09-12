@@ -465,7 +465,7 @@ img.top {
   font-size: 25px;
   margin-top: 20px;
   margin-bottom: 20px;
-  letter-spacing: -3px;
+  letter-spacing: -1px;
   line-height: 1.3;
 }
 
@@ -503,13 +503,19 @@ img.top {
 }
 
 .white-a {
-  color: #FFFFFF !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
+  color: #898989 !important;
+  text-decoration: none !important;
+  font-family: "DINNeuzeitGroteskStd-Light" !important;
+  letter-spacing: -1px !important;
 }
 
 .black-a {
-  color: #000000 !important;
-  font-size: 16px !important;
+  color: #898989 !important;
+  font-size: 15px !important;
+  text-decoration: none !important;
+  font-family: "DINNeuzeitGroteskStd-Light" !important;
+  letter-spacing: -1px !important;
 }
 
 .branch-image {

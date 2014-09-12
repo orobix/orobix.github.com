@@ -605,6 +605,18 @@ img.top {
 
 }
 
+.branch-content-team-separator-first {
+  margin-top: 0px !important;
+  width: 100%;
+  z-index: 10;
+  height: 50px;
+  font-family: "DIN-Light";
+  color: #000000;
+  margin-top: 40px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
 .branch-content-1 {
   text-align: left;
   line-height: 1;
@@ -925,10 +937,11 @@ img.top {
   text-align: center;
   margin-top: 5px;
   margin-bottom: 5px;
+  height: 25px;
 }
 
 #companyVAT > p {
-  margin: 0;
+  margin: 20px 0 0 0;
   font-family: "DINNeuzeitGroteskStd-Light";
   font-size: 11px;
   text-align: center;
@@ -1060,6 +1073,6 @@ img.top {
 
 .team-text{
   text-align:left;
-  margin-left: 38px;
+  margin-left: 20px;
 
 }

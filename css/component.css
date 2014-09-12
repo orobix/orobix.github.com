@@ -191,17 +191,15 @@ html, body { height: 100%; }
 }
 
 .pt-page-2 .discover{
-
-	font-family: 'DINNeuzeitGroteskStd-Light';
-	color: #898989;
-	letter-spacing: -1px;
-
+  font-family: 'DINNeuzeitGroteskStd-Light';
+  color: #898989;
+  letter-spacing: -1px;
 }
 
-.pt-page-2, .pt-page-3, .pt-page-4, .pt-page-5, .pt-page-6, .pt-page-7, .pt-page-8 {
-	background: #FFFFFF;
-	top: 61px;
-	height: calc(100% - 61px);
+.pt-page-2, .pt-page-3, .pt-page-4, .pt-page-5, .pt-page-6, .pt-page-7, .pt-page-8, .pt-page-10 {
+  background: #FFFFFF;
+  top: 61px;
+  height: calc(100% - 61px);
 }
 
 .pt-page-9 {

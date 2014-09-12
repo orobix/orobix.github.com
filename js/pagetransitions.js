@@ -33,7 +33,7 @@ var PageTransitions = (function() {
 
 function iePageTransition() {
   //init
-  $('.pt-page-1').css('visibility', 'visible');
+  $('.pt-page-1').addClass('pt-page-current');
 
   //change page
   $('[data-animation]').on('click', function(e) {
@@ -47,8 +47,8 @@ function iePageTransition() {
       	  $('.socials').show();
       }
 
-      $('.pt-page').css('visibility', 'hidden');
-      $('.pt-page-' + next).css('visibility', 'visible');
+      $('.pt-page').removeClass('pt-page-current');
+      $('.pt-page-' + next).addClass('pt-page-current');
   });
 }
 

@@ -617,8 +617,9 @@ img.top {
 
 .branch-content-resp .image-text {
   position: absolute;
-  margin-right: 30%;
-  margin-top: 40%;
+  right: 30%;
+  margin-top: 10%;
+  color: #FFFFFF;
 }
 
 .branch-content-team {

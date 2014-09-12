@@ -411,6 +411,16 @@ img.top {
   letter-spacing: -3px;
 }
 
+.branch-name-customers-white {
+  font-family: "DINNeuzeitGroteskStd-Light";
+  color: #7d7d7d;
+  font-size: 32px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  letter-spacing: -3px;
+  padding-top: 40px;
+}
+
 .branch-title {
   font-family: "DIN-Light";
   color: #000000;
@@ -463,7 +473,7 @@ img.top {
   font-size: 25px;
   margin-top: 20px;
   margin-bottom: 20px;
-  letter-spacing: -3px;
+  letter-spacing: -1px;
   line-height: 1.3;
 }
 
@@ -501,13 +511,19 @@ img.top {
 }
 
 .white-a {
-  color: #FFFFFF !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
+  color: #898989 !important;
+  text-decoration: none !important;
+  font-family: "DINNeuzeitGroteskStd-Light" !important;
+  letter-spacing: -1px !important;
 }
 
 .black-a {
-  color: #000000 !important;
-  font-size: 16px !important;
+  color: #898989 !important;
+  font-size: 15px !important;
+  text-decoration: none !important;
+  font-family: "DINNeuzeitGroteskStd-Light" !important;
+  letter-spacing: -1px !important;
 }
 
 .branch-image {
@@ -1048,12 +1064,18 @@ img.top {
   text-align: center;
 }
 
-.main-content-partners {
+.main-content-partners-gray {
   text-align: center;
+  background-color: #f1f1f1;
 }
 
-.main-content-partners .thumbnail {
-  margin-left: calc(50% - 101px);
+.main-content-partners-white {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.main-content-partners-gray .thumbnail {
+  margin-left: calc(52% - 101px);
 }
 
 .vmtklab {
@@ -1112,6 +1134,7 @@ img.top {
   right: 0;
   z-index: 999999;
   display: none;
+  margin-right: 10px;
 }
 
 .socials > * {

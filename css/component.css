@@ -205,7 +205,7 @@ html, body { height: 100%; }
 }
 
 .pt-page-9 {
-  background: #FFFFFF;
+  background-color: #f1f1f1;
   top: 61px;
   height: calc(100% - 61px);
 

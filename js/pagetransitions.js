@@ -1,3 +1,6 @@
+$(document).ready(function() {
+});
+
 $(function() {
   $('.pt-page .bottom > div[data-hash^="#"]').click(function() {
       var target = $(this).data('hash');
@@ -45,6 +48,9 @@ function iePageTransition() {
       } else {
       	  $('#menu').show();
       	  $('.socials').show();
+
+	  $('#menu li').removeClass('pageSelected');
+	  $('#menu .next' + (next-1)).addClass('pageSelected');
       }
 
       $('.pt-page').removeClass('pt-page-current');

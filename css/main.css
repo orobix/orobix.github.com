@@ -615,6 +615,12 @@ img.top {
   margin-right: 0px !important;
 }
 
+.branch-content-resp .image-text {
+  position: absolute;
+  margin-right: 30%;
+  margin-top: 40%;
+}
+
 .branch-content-team {
   width: 100%;
   z-index: 10;

@@ -40,7 +40,7 @@ function ieTransition() {
   //change page
   $('[data-animation]').on('click', function(e) {
       var next = $(this).data('next') + 1;
-      var current = next -1 ;
+      var current = $('.pt-page-current').data('page');
 
       if (next == 1) {
 	  $('#menu').hide();
@@ -67,7 +67,7 @@ function transition() {
       var animation = $(this).data('animation');
       var next = $(this).data('next') + 1;
       var current = $('.pt-page-current').data('page');
-      var scroll = $(this).data('scroll');
+      var scroll = $(this).data('hash');
 
       if (next == 1) {
 	  $('#menu').hide();
@@ -77,7 +77,7 @@ function transition() {
       	  $('.socials').show();
 
 	  $('#menu li').removeClass('pageSelected');
-	  $('#menu .next' + current).addClass('pageSelected');
+	  $('#menu .next' + (next-1)).addClass('pageSelected');
       }
 
       var animationClass = '';

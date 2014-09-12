@@ -34,8 +34,8 @@ html, body { height: 100%; }
 
 .pt-page-current,
 .no-js .pt-page {
-	visibility: visible;
-	z-index: 1;
+  visibility: visible;
+  z-index: 1;
 }
 
 .no-js body {

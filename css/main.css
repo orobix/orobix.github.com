@@ -1125,6 +1125,7 @@ img.top {
   right: 0;
   z-index: 999999;
   display: none;
+  margin-right: 10px;
 }
 
 .socials > * {

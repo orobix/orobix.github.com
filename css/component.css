@@ -181,10 +181,10 @@ html, body { height: 100%; }
 
 .pt-page-2 .img-branches{
   width: auto;
-  max-height: 85%;
-  -moz-height: 85%;
-  -webkit-height: 55%;
-  -o-height: 85%;
+  max-height: 75%;
+  -moz-height: 75%;
+  -webkit-height: 75%;
+  -o-height: 75%;
   padding-top: 58;
   /*position: absolute;*/
 	behavior: url(css/PIE.htc);  /*ie 6-9 via PIE*/

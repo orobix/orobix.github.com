@@ -189,9 +189,11 @@ html, body {
 
 .img-logo {
 
-  max-width: 353px;
+  /*max-width: 353px;
   float: initial !important;
-  width: 30%;
+  width: 30%;*/
+  height: auto;
+  max-width: 100%;
 
 }
 

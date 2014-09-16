@@ -7,6 +7,7 @@ $(function() {
 });
 
 $.fn.scrollTo = function( target, options, callback ) {
+
   if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
   var settings = $.extend({
     scrollTarget  : target,
@@ -32,7 +33,7 @@ var PageTransitions = (function() {
   }
 })();
 
-function ieTransition() { 
+function ieTransition() {
   //init
   $('.pt-page-1').addClass('pt-page-current');
 
@@ -104,9 +105,15 @@ function transition() {
       $('.pt-page-' + current).css('z-index', 2).addClass(animationClass);
       $('.pt-page-' + next).addClass('pt-page-current');
 
+      $('.pt-page-' + next).attr('hidden', false);
+      //$('.pt-page-' + current).attr('hidden', true);
+
       $('.pt-page-' + current).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
-        // code to execute after animation ends
-	$('.pt-page-' + current).removeClass('pt-page-current').removeClass(animationClass).css('z-index', 1);
+
+      // code to execute after animation ends
+	    $('.pt-page-' + current).removeClass('pt-page-current').removeClass(animationClass).css('z-index', 1);
+
+      if ( current ) {  $('.pt-page-' + current).attr('hidden', true); }
 
 	//scroll
 	if (scroll) {
@@ -115,5 +122,9 @@ function transition() {
 	  $('.pt-page').scrollTo(0);
 	} scatta!*/
       });
+
+
   });
+
+
 }

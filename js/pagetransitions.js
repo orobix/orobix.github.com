@@ -74,32 +74,34 @@ function transition() {
       var current = $('.pt-page-current').data('page');
       var scroll = $(this).data('scroll');
 
-      if (next == 1) {
-	  $('#menu').hide();
-	  $('.socials').hide();
-      } else {
-      	  $('#menu').show();
-      	  $('.socials').show();
+      if ( ! current  || current == next ) { return false; }
 
-	  $('#menu li').removeClass('pageSelected');
-	  $('#menu .next' + (next-1)).addClass('pageSelected');
+      if (next == 1) {
+    	  $('#menu').hide();
+    	  $('.socials').hide();
+          } else {
+          	  $('#menu').show();
+          	  $('.socials').show();
+
+    	  $('#menu li').removeClass('pageSelected');
+    	  $('#menu .next' + (next-1)).addClass('pageSelected');
       }
 
       var animationClass = '';
 
       switch (animation) {
         case 13:
-	  animationClass = 'pt-page-moveToLeftEasing';
-	  break;
-	case 14:
-	  animationClass = 'pt-page-moveToRightEasing';
-	  break;
-	case 15:
-	  animationClass = 'pt-page-moveToTopEasing';
-	  break;
-	default:
-	  animationClass = 'pt-page-moveToLeftEasing';
-	  break;
+      	  animationClass = 'pt-page-moveToLeftEasing';
+      	  break;
+      	case 14:
+      	  animationClass = 'pt-page-moveToRightEasing';
+      	  break;
+      	case 15:
+      	  animationClass = 'pt-page-moveToTopEasing';
+      	  break;
+      	default:
+      	  animationClass = 'pt-page-moveToLeftEasing';
+      	  break;
       }
 
       $('.pt-page-' + current).css('z-index', 2).addClass(animationClass);
@@ -113,15 +115,15 @@ function transition() {
       // code to execute after animation ends
 	    $('.pt-page-' + current).removeClass('pt-page-current').removeClass(animationClass).css('z-index', 1);
 
-      if ( current ) {  $('.pt-page-' + current).attr('hidden', true); }
+      $('.pt-page-' + current).attr('hidden', true);
 
-	//scroll
-	if (scroll) {
-	  $('.pt-page').scrollTo(scroll);
-	} /*else {
-	  $('.pt-page').scrollTo(0);
-	} scatta!*/
-      });
+    	//scroll
+    	if (scroll) {
+    	  $('.pt-page').scrollTo(scroll);
+    	} /*else {
+    	  $('.pt-page').scrollTo(0);
+    	} scatta!*/
+          });
 
 
   });

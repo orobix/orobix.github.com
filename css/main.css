@@ -87,12 +87,19 @@ and (max-device-width : 480px) {
 
 /* Smartphones (landscape) ----------- */
 @media only screen
-/*and (min-device-width : 361px) */
-and (orientation: landscape){
+/*and (min-device-width : 361px)*/
+and (max-device-width : 1024px)
+and (orientation: landscape) {
 /* Styles */
   .pt-page-2 .col-xs-12,
   .pt-page-2 .col-sm-12 {
     width: 33.33333333%!important;
+  }
+
+  .pt-page-2 .bottom,
+  .pt-page-2 .branch-detail-link,
+  .pt-page-2 .main-content-responsive > div > dl {
+    position: static!important;
   }
 
 }
@@ -100,7 +107,7 @@ and (orientation: landscape){
 /* Smartphones (portrait) ----------- */
 @media only screen
 /*/and (max-device-width : 320px)*/
-and (orientation: portrait){
+and (orientation: portrait) {
   .pt-page-1 {
     background-size: 90% 100%!important;
   }
@@ -133,6 +140,21 @@ and (orientation: portrait){
   .pt-page-1 img.background-home {
     max-width: 42%;
     height: auto;
+  }
+
+  .pt-page-2 .img-branches {
+    /* TODO bigger image */
+  }
+
+  .pt-page-2 .color-middle {
+    background-color: #f1f1f1; 
+  }
+
+  .branch-link {
+    position: static!important;
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 20px;
   }
   
 }
@@ -490,9 +512,8 @@ img.top {
   position: absolute;
   width: 100%;
   z-index: 10;
-  /*top: 75px;*/
-  top: 10%;
-  margin-top: 20px;
+  /*top: 75px;
+  margin-top: 20px;*/
 }
 
 .main-content-responsive > div > dl img {
@@ -779,7 +800,7 @@ img.top {
 .pt-page-2 .bottom {
   text-align: center;
   position: absolute;
-  bottom: 5%;
+  bottom: 0;
   cursor: pointer;
   width: 100%;
   height: 70%;

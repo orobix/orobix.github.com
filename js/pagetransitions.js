@@ -7,11 +7,10 @@ $(function() {
 });
 
 $.fn.scrollTo = function( target, options, callback ) {
-
-  if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
+  if (typeof options == 'function' && arguments.length == 2) { callback = options; options = target; }
   var settings = $.extend({
     scrollTarget  : target,
-    offsetTop     : 71,
+    offsetTop     : $('#menu').outerHeight() + 10,
     duration      : 1000,
     easing        : 'swing'
   }, options);
@@ -107,27 +106,24 @@ function transition() {
       }
 
       $('.pt-page-' + current).css('z-index', 2).addClass(animationClass);
+      
+      $('.pt-page-' + next).animate({ scrollTop: 0 }, 1);
       $('.pt-page-' + next).addClass('pt-page-current');
-
       $('.pt-page-' + next).attr('hidden', false);
 
       $('.pt-page-' + current).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
+        // code to execute after animation ends
+	$('.pt-page-' + current).removeClass('pt-page-current').removeClass(animationClass).css('z-index', 1);
+        $('.pt-page-' + current).attr('hidden', true);
+	$('.pt-page-' + current).animate({ scrollTop: 0 }, 1);
 
-      // code to execute after animation ends
-	    $('.pt-page-' + current).removeClass('pt-page-current').removeClass(animationClass).css('z-index', 1);
-
-      $('.pt-page-' + current).attr('hidden', true);
-
-    	//scroll
-    	if (scroll) {
-    	  $('.pt-page').scrollTo(scroll);
-    	} /*else {
-    	  $('.pt-page').scrollTo(0);
-    	} scatta!*/
-          });
-
+        //scroll
+        if (scroll) {
+          $('.pt-page').scrollTo(scroll);
+        }
+     
+     });
 
   });
-
 
 }

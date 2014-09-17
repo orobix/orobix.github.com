@@ -42,8 +42,6 @@ function ieTransition() {
       var next = $(this).data('next') + 1;
       var scroll = $(this).data('scroll');
 
-      if ( ! current  || current == next ) { return false; }
-
       if (next == 1) {
     	  $('#menu').hide();
     	  $('.socials').hide();
@@ -59,8 +57,6 @@ function ieTransition() {
 
       $('.pt-page').removeClass('pt-page-current');
       $('.pt-page-' + next).addClass('pt-page-current');
-
-      $('.pt-page-' + current).attr('hidden', true);
 
       //scroll
       if (scroll) {

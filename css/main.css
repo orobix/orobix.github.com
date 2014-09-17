@@ -83,8 +83,9 @@ and (max-device-width : 480px) {
 
 }
 
+/* team page */
 @media only screen
-and (max-device-width : 997px) {
+and (max-width : 997px) {
   .branch-content-team-bottom > .wrap-center {
     width: 100%!important;
   }
@@ -216,15 +217,73 @@ and (max-device-width : 1024px)
 and (orientation : landscape) {
 /* Styles */
 
-  .img-branches {
+  /*.img-branches {
     max-height: 70% !important;
     margin-top: 25px !important;
   }
 
   .apple-white-branch{
     font-size: 33px;
-  }
+  }*/
 
+}
+
+/* mobile navbar */
+@media (min-width: 866px) {
+.navbar-collapse {
+  width: auto;
+  border-top: 0;
+  box-shadow: none;
+}}
+
+@media (min-width: 866px) {
+.navbar-collapse.collapse {
+  display: block!important;
+  height: auto!important;
+  padding-bottom: 0;
+  overflow: visible!important;
+}}
+
+@media (min-width: 866px) {
+.navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}}
+
+@media only screen
+and (max-width: 865px)
+and (orientation: landscape) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
 }
 
 

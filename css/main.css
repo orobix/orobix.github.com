@@ -87,14 +87,50 @@ and (max-device-width : 480px) {
 
 /* Smartphones (landscape) ----------- */
 @media only screen
-and (min-width : 321px) {
+/*and (min-device-width : 361px) */
+and (orientation: landscape){
 /* Styles */
+  .pt-page-2 .col-xs-12,
+  .pt-page-2 .col-sm-12 {
+    width: 33.33333333%!important;
+  }
+
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen
-and (max-width : 320px) {
-/* Styles */
+/*/and (max-device-width : 320px)*/
+and (orientation: portrait){
+  .pt-page-1 {
+    background-size: 90% 100%!important;
+  }
+
+  .pt-page-1 .home-logo {
+    /*display: inline-block;
+    text-align: center;*/
+    position: static;
+    background-color: #FFFFFF;
+  }
+
+  .pt-page-1 .home-logo .img-logo {
+    width: 100%;
+  }
+
+  .pt-page-1 .home-logo .home-bottom {
+    position: static;
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .pt-page-1 .home-background {
+    position: static;
+  }
+
+  .pt-page-1 img.background-home {
+    max-width: 42%;
+    height: auto;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -132,13 +168,29 @@ and (orientation : landscape) {
 }
 
 
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
+/* iPhone 2G-4S in landscape */
+/*@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : landscape) { 
+  .pt-page-2 .col-xs-12,
+  .pt-page-2 .col-sm-12 {
+    width: 33.33333333%!important;
+  }
 
-}
+}*/
+
+/* iPhone 5 in landscape */
+/*@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) {
+  .pt-page-2 .col-xs-12,
+  .pt-page-2 .col-sm-12 {
+    width: 33.33333333%!important;
+  }
+
+}*/
 
 
 
@@ -251,11 +303,41 @@ html, body {
 
 }
 
+.orobix-logo-menu {
+  padding: 10px;
+}
+
+.home-logo {
+
+  /*bottom: 40%;
+  margin:0 auto;
+  position:absolute !important;*/
+  position: absolute;
+  width: 100%;
+  text-align:center;
+  behavior: url(css/PIE.htc);  /*ie 6-9 via PIE*/
+  top: 20%;
+
+}
+
+.img-logo {
+
+  height: auto;
+  max-width: 353px;
+  width: 50%;
+  margin-top: 20px;
+
+}
+
 .home-bottom {
 
-  bottom: 40px;
+  /*bottom: 40px;
   position:absolute !important;
-  text-align:center;
+  text-align:center;*/
+  position: fixed;
+  width: 100%;
+  bottom: 40px;
+  left: 0;
   font-size: 21px;
 
 }
@@ -264,36 +346,11 @@ html, body {
   opacity: .7;
 }
 
-.home-logo {
-
-  bottom: 40%;
-  margin:0 auto;
-  position:absolute !important;
-  text-align:center;
-  behavior: url(css/PIE.htc);  /*ie 6-9 via PIE*/
-}
-
-.orobix-logo-menu {
-  padding: 10px;
-  /*padding-left:10px;
-  margin: 10px;
-  height: 40px;*/
-}
-
-.img-logo {
-
-  /*max-width: 353px;
-  float: initial !important;
-  width: 30%;*/
-  height: auto;
-  max-width: 100%;
-
-}
-
 img.background-home {
   height: 90%;
   min-height: 300px;
-  margin-top: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;

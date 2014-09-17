@@ -1267,8 +1267,8 @@ img.top {
   background-color: #ffffff;
 }
 
-.main-content-partners-gray .thumbnail {
-  margin-left: calc(52% - 101px);
+.main-content-partners-gray a {
+  display: inline-block;
 }
 
 .vmtklab {

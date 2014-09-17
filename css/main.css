@@ -114,23 +114,27 @@ and (orientation: portrait){
 
   .pt-page-1 .home-logo .img-logo {
     width: 100%;
+    max-width: 65%;
   }
 
   .pt-page-1 .home-logo .home-bottom {
     position: static;
     display: inline-block;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 40px;
   }
 
   .pt-page-1 .home-background {
     position: static;
+    height: 50%;
   }
 
   .pt-page-1 img.background-home {
     max-width: 42%;
     height: auto;
   }
+  
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -325,7 +329,7 @@ html, body {
   height: auto;
   max-width: 353px;
   width: 50%;
-  margin-top: 20px;
+  margin-top: 30px;
 
 }
 

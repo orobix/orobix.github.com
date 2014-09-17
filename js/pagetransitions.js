@@ -42,19 +42,25 @@ function ieTransition() {
       var next = $(this).data('next') + 1;
       var scroll = $(this).data('scroll');
 
-      if (next == 1) {
-	  $('#menu').hide();
-	  $('.socials').hide();
-      } else {
-      	  $('#menu').show();
-      	  $('.socials').show();
+      if ( ! current  || current == next ) { return false; }
 
-	  $('#menu li').removeClass('pageSelected');
-	  $('#menu .next' + (next-1)).addClass('pageSelected');
+      if (next == 1) {
+    	  $('#menu').hide();
+    	  $('.socials').hide();
+          } else {
+          	  $('#menu').show();
+          	  $('.socials').show();
+
+    	  $('#menu li').removeClass('pageSelected');
+    	  $('#menu .next' + (next-1)).addClass('pageSelected');
       }
+
+      $('.pt-page-' + next).attr('hidden', false);
 
       $('.pt-page').removeClass('pt-page-current');
       $('.pt-page-' + next).addClass('pt-page-current');
+
+      $('.pt-page-' + current).attr('hidden', true);
 
       //scroll
       if (scroll) {
@@ -108,7 +114,6 @@ function transition() {
       $('.pt-page-' + next).addClass('pt-page-current');
 
       $('.pt-page-' + next).attr('hidden', false);
-      //$('.pt-page-' + current).attr('hidden', true);
 
       $('.pt-page-' + current).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
 

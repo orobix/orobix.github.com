@@ -1,6 +1,6 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
-and (min-device-width : 320px)
+/*and (min-device-width : 320px)*/
 and (max-device-width : 480px) {
 /* Styles */
 
@@ -69,11 +69,6 @@ and (max-device-width : 480px) {
     font-size: 36px !important;
   }
 
-  .team-text{
-    width: 80% !important;
-    text-align: center !important;
-  }
-
   .pt-page-8 .branch-description {
     font-size: 30px !important;
   }
@@ -82,12 +77,46 @@ and (max-device-width : 480px) {
     font-size: 30px !important;
   }
 
+  .socials {
+    font-size: 35px;
+  }
+
+}
+
+@media only screen
+and (max-device-width : 997px) {
+  .branch-content-team-bottom > .wrap-center {
+    width: 100%!important;
+  }
+
+  .branch-content-team-bottom > .wrap-center > div {
+    display: block!important;
+    float: left!important;
+    width: 100%!important;
+  }
+
+  .branch-content-team-bottom > .wrap-center > div > img {
+    width: 100%!important;
+    margin-top: 40px;
+  }
+
+  .team-text {
+    padding: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+    line-height: 1;
+  }
+
+  .team-description {
+    margin-top: 40px;
+  }
+
 }
 
 
 /* Smartphones (landscape) ----------- */
 @media only screen
-/*and (min-device-width : 361px)*/
+and (min-device-width : 361px)
 and (max-device-width : 1024px)
 and (orientation: landscape) {
 /* Styles */

@@ -137,6 +137,12 @@ and (orientation: landscape) {
     position: static!important;
   }
 
+  .home-bottom {
+    position: static!important;
+    margin-top: 20px;
+    display: block;
+  }
+
 }
 
 /* Smartphones (portrait) ----------- */

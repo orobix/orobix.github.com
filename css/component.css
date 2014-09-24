@@ -19,6 +19,8 @@ html, body { height: 100%; }
 	visibility: hidden;
 	overflow-x: hidden;
 	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;

@@ -183,12 +183,13 @@ and (orientation: portrait) {
     height: auto;
   }
 
-  .pt-page-2 .img-branches {
-    /* TODO bigger image */
-  }
-
   .pt-page-2 .color-middle {
     background-color: #f1f1f1; 
+  }
+
+  .pt-page-2 .color-middle .img-branches {
+    /* TODO bigger image */
+    content: url(../img/02_main/apple_design_mob.jpg);
   }
 
   .branch-link {
@@ -197,7 +198,6 @@ and (orientation: portrait) {
     font-size: 22px;
     margin-top: 20px;
   }
-  
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -235,27 +235,6 @@ and (orientation : landscape) {
 }
 
 /* mobile navbar */
-/*@media (min-width: 866px) {
-.navbar-collapse {
-  width: auto;
-  border-top: 0;
-  box-shadow: none;
-}}
-
-@media (min-width: 866px) {
-.navbar-collapse.collapse {
-  display: block!important;
-  height: auto!important;
-  padding-bottom: 0;
-  overflow: visible!important;
-}}
-
-@media (min-width: 866px) {
-.navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
-  padding-left: 0;
-  padding-right: 0;
-}}*/
-
 @media only screen and (max-device-width: 480px) {
   .navbar-header {
         float: none;
@@ -920,7 +899,7 @@ img.top {
 
 .branch-image img {
   width: auto;
-  max-height: 100%;
+  /*max-height: 100%;*/
   /*margin-top: 35px;*/
 }
 

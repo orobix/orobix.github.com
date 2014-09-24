@@ -469,20 +469,15 @@ html, body {
 }
 
 .img-logo {
-
   height: auto;
   max-width: 353px;
   /*width: 50%; TODO ie*/
-  margin-top: 30px;
-
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .home-bottom {
-
-  /*bottom: 40px;
-  position:absolute !important;
-  text-align:center;*/
-  position: fixed;
+  /*position: fixed;*/
   width: 100%;
   bottom: 40px;
   left: 0;

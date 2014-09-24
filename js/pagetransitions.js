@@ -2,12 +2,10 @@ $('.nav a').on('click', function(){
     $(".navbar-toggle").click();
 });
 
-$(function() {
-  $('[data-hash]').click(function() {
-      var target = $(this).data('hash');
-      $('.pt-page').scrollTo(target);
-  });
-});
+function isIE () {
+  var myNav = navigator.userAgent.toLowerCase();
+  return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+}
 
 $.fn.scrollTo = function( target, options, callback ) {
   if (typeof options == 'function' && arguments.length == 2) { callback = options; options = target; }
@@ -27,115 +25,102 @@ $.fn.scrollTo = function( target, options, callback ) {
   });
 }
 
-function isIE () {
-  var myNav = navigator.userAgent.toLowerCase();
-  return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
-}
+$(function() {
+  $('[data-hash]').click(function() {
+    var target = $(this).data('hash');
+    var paths = location.hash.split('/');
+    
+    if (paths.length == 1) {
+      paths.push(target);
+      location.hash = paths.join('/');
+    }
+    
+    if (paths.length == 2) {
+      paths[1] = target;
+      location.hash = paths.join('/');
+    }
 
-var PageTransitions = (function() {
-  //if (navigator.userAgent.match(/msie/i) || navigator.userAgent.match(/trident/i) ) {
+    $('.pt-page').scrollTo('#' + target);
+  });
+});
+
+
+/*var PageTransitions = (function() {
+  //$('.pt-page-1').addClass('pt-page-current');
+
   if ((isIE() && isIE() < 10) || navigator.userAgent.match(/trident/i)) {
     ieTransition();
   } else {
     transition();
   }
-})();
-
-function ieTransition() {
-  //init
-  $('.pt-page-1').addClass('pt-page-current');
-
-  //change page
-  $('[data-animation]').on('click', function(e) {
-      var next = $(this).data('next') + 1;
-      var scroll = $(this).data('scroll');
-
-      if (next == 1) {
-    	  $('#menu').hide();
-    	  $('.socials').hide();
-          } else {
-          	  $('#menu').show();
-          	  $('.socials').show();
-
-    	  $('#menu li').removeClass('pageSelected');
-    	  $('#menu .next' + (next-1)).addClass('pageSelected');
-      }
-
-      $('.pt-page-' + next).attr('hidden', false);
-
-      $('.pt-page').removeClass('pt-page-current');
-      $('.pt-page-' + next).addClass('pt-page-current');
-
-      //scroll
-      if (scroll) {
-        $('.pt-page').scrollTo(scroll);
-      }
-  });
-}
-
-function transition() {
-  //init
-  $('.pt-page-1').addClass('pt-page-current');
-
-  //change page TODO elimina
-  $('[data-animation]').on('click', function() {
-      
-      var animation = $(this).data('animation');
-      var next = $(this).data('next') + 1;
-      var current = $('.pt-page-current').data('page');
-      var scroll = $(this).data('scroll');
-
-      changePage(animation, next, current, scroll);
-  });
-}
+})();*/
 
 function changePage(animation, next, current, scroll) {
-  if ( ! current  || current == next ) { return false; }
+  if (!current || current == next) return;
 
-      if (next == 1) {
-    	  $('#menu').hide();
-    	  $('.socials').hide();
-          } else {
-          	  $('#menu').show();
-          	  $('.socials').show();
+  if (next == 1) {
+    $('#menu').hide();
+    $('.socials').hide();
+  } else {
+    $('#menu').show();
+    $('.socials').show();
 
-    	  $('#menu li').removeClass('pageSelected');
-    	  $('#menu .next' + (next-1)).addClass('pageSelected');
-      }
+    $('#menu li').removeClass('pageSelected');
+    $('#menu .next' + (next-1)).addClass('pageSelected');
+  }
 
-      var animationClass = '';
+  if ((isIE() && isIE() < 10) || navigator.userAgent.match(/trident/i)) {
+    ieTransition(next, current, scroll);
+  } else {
+    transition(animation, next, current, scroll);
+  }
+}
 
-      switch (animation) {
-        case 13:
-      	  animationClass = 'pt-page-moveToLeftEasing';
-      	  break;
-      	case 14:
-      	  animationClass = 'pt-page-moveToRightEasing';
-      	  break;
-      	case 15:
-      	  animationClass = 'pt-page-moveToTopEasing';
-      	  break;
-      	default:
-      	  animationClass = 'pt-page-moveToLeftEasing';
-      	  break;
-      }
+function ieTransition(next, current, scroll) {
+  $('.pt-page-' + next).attr('hidden', false);
 
-      $('.pt-page-' + current).css('z-index', 2).addClass(animationClass);
+  $('.pt-page').removeClass('pt-page-current');
+  $('.pt-page-' + next).addClass('pt-page-current');
+
+  //scroll
+  if (scroll) {
+    $('.pt-page').scrollTo(scroll);
+  }
+}
+
+function transition(animation, next, current, scroll) {
+  var animationClass = '';
+
+  switch (animation) {
+    case 13:
+      animationClass = 'pt-page-moveToLeftEasing';
+      break;
+    case 14:
+      animationClass = 'pt-page-moveToRightEasing';
+      break;
+    case 15:
+      animationClass = 'pt-page-moveToTopEasing';
+      break;
+    default:
+      animationClass = 'pt-page-moveToLeftEasing';
+      break;
+  }
+
+  $('.pt-page-' + current).css('z-index', 2).addClass(animationClass);
       
-      $('.pt-page-' + next).animate({ scrollTop: 0 }, 1);
-      $('.pt-page-' + next).addClass('pt-page-current');
-      $('.pt-page-' + next).attr('hidden', false);
+  $('.pt-page-' + next).animate({ scrollTop: 0 }, 1);
+  $('.pt-page-' + next).addClass('pt-page-current');
+  $('.pt-page-' + next).attr('hidden', false);
 
-      $('.pt-page-' + current).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
-        // code to execute after animation ends
-	$('.pt-page-' + current).removeClass('pt-page-current').removeClass(animationClass).css('z-index', 1);
-        $('.pt-page-' + current).attr('hidden', true);
-	$('.pt-page-' + current).animate({ scrollTop: 0 }, 1);
+  $('.pt-page-' + current).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
+    // code to execute after animation ends
+    $('.pt-page-' + current).removeClass('pt-page-current').removeClass(animationClass).css('z-index', 1);
+    $('.pt-page-' + current).attr('hidden', true);
+    $('.pt-page-' + current).animate({ scrollTop: 0 }, 1);
 
-        //scroll
-        if (scroll) {
-          $('.pt-page').scrollTo(scroll);
-        }
-     
-     });
+    //scroll
+    if (scroll) {
+      $('.pt-page').scrollTo(scroll);
+    }
+  });
 }

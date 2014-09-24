@@ -485,6 +485,7 @@ html, body {
   text-align:center;
   behavior: url(css/PIE.htc);  /*ie 6-9 via PIE*/
   top: 20%;
+  z-index: 2;
 
 }
 
@@ -951,9 +952,9 @@ img.top {
 .pt-page-2 .branch-detail-link {
   font-size: 15px;
   color: #898989;
-  position: absolute;
+  /*position: absolute;
   width: 100%;
-  bottom: 20px;
+  bottom: 20px;*/
 }
 
 .branch-content {

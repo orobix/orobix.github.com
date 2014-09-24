@@ -1,5 +1,5 @@
 $('.nav a').on('click', function(){
-    $(".navbar-toggle").click() //bootstrap 3.x by Richard
+    $(".navbar-toggle").click();
 });
 
 $(function() {
@@ -27,9 +27,15 @@ $.fn.scrollTo = function( target, options, callback ) {
   });
 }
 
+function isIE () {
+  var myNav = navigator.userAgent.toLowerCase();
+  return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+}
+
 var PageTransitions = (function() {
-  if (navigator.userAgent.match(/msie/i) || navigator.userAgent.match(/trident/i) ) {
-    ieTransition(); //TODO regexp ie < 10
+  //if (navigator.userAgent.match(/msie/i) || navigator.userAgent.match(/trident/i) ) {
+  if ((isIE() && isIE() < 10) || navigator.userAgent.match(/trident/i)) {
+    ieTransition();
   } else {
     transition();
   }
@@ -71,14 +77,20 @@ function transition() {
   //init
   $('.pt-page-1').addClass('pt-page-current');
 
-  //change page
+  //change page TODO elimina
   $('[data-animation]').on('click', function() {
+      
       var animation = $(this).data('animation');
       var next = $(this).data('next') + 1;
       var current = $('.pt-page-current').data('page');
       var scroll = $(this).data('scroll');
 
-      if ( ! current  || current == next ) { return false; }
+      changePage(animation, next, current, scroll);
+  });
+}
+
+function changePage(animation, next, current, scroll) {
+  if ( ! current  || current == next ) { return false; }
 
       if (next == 1) {
     	  $('#menu').hide();
@@ -126,7 +138,4 @@ function transition() {
         }
      
      });
-
-  });
-
 }

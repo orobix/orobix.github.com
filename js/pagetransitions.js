@@ -2,9 +2,9 @@ $('.nav a').on('click', function(){
     $(".navbar-toggle").click();
 });
 
-function isIE () {
-  var myNav = navigator.userAgent.toLowerCase();
-  return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+function getIEVersion() {
+  var match = navigator.userAgent.match(/(?:MSIE |Trident\/.*; rv:)(\d+)/);
+  return match ? parseInt(match[1]) : false;
 }
 
 $.fn.scrollTo = function( target, options, callback ) {
@@ -44,17 +44,6 @@ $(function() {
   });
 });
 
-
-/*var PageTransitions = (function() {
-  //$('.pt-page-1').addClass('pt-page-current');
-
-  if ((isIE() && isIE() < 10) || navigator.userAgent.match(/trident/i)) {
-    ieTransition();
-  } else {
-    transition();
-  }
-})();*/
-
 function changePage(animation, next, current, scroll) {
   if (!current || current == next) return;
 
@@ -69,7 +58,7 @@ function changePage(animation, next, current, scroll) {
     $('#menu .next' + (next-1)).addClass('pageSelected');
   }
 
-  if ((isIE() && isIE() < 10) || navigator.userAgent.match(/trident/i)) {
+  if (getIEVersion() && getIEVersion() < 10) {
     ieTransition(next, current, scroll);
   } else {
     transition(animation, next, current, scroll);

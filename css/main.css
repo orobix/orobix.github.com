@@ -245,6 +245,7 @@ and (orientation : landscape) {
     .navbar-collapse {
         border-top: 1px solid transparent;
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+	max-height: inherit;
     }
     .navbar-collapse.collapse {
         display: none!important;
@@ -257,13 +258,15 @@ and (orientation : landscape) {
         float: none;
     }
     .navbar-nav>li>a {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
 	font-size: 30px;
     }
     /* since 3.1.0 */
     .navbar-collapse.collapse.in { 
-        display: block!important;
+        overflow-y: auto!important;
+	display: block!important;
+
     }
     .collapsing {
         overflow: hidden!important;
@@ -927,6 +930,7 @@ img.top {
 .pt-page-2 .branch-detail-link {
   font-size: 15px;
   color: #898989;
+  letter-spacing: -1px;
   /*position: absolute;
   width: 100%;
   bottom: 20px;*/

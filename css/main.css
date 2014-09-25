@@ -138,8 +138,8 @@ and (orientation: landscape) {
   }
 
   .home-bottom {
-    position: static!important;
-    margin-top: 20px;
+    margin-top: 0px;
+    /*margin-bottom: 30px;*/
     display: block;
   }
 
@@ -166,11 +166,10 @@ and (orientation: portrait) {
   }
 
   .pt-page-1 .home-logo .home-bottom {
-    position: static;
-    display: inline-block;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     font-size: 40px;
+    margin: 0;
   }
 
   .pt-page-1 .home-background {
@@ -480,12 +479,10 @@ html, body {
 }
 
 .home-bottom {
-  /*position: fixed;*/
-  width: 100%;
-  bottom: 40px;
-  left: 0;
+  margin-bottom: 40px;
   font-size: 21px;
-
+  display: block;
+  position: static;
 }
 
 .home-bottom:hover {

@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "First blog post"
 date:   2014-05-29 09:06:17
-categories: jekyll update
+author: Luca Antiga
+authorLink: "#team/lucaAntiga"
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

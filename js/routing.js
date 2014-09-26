@@ -10,6 +10,12 @@ routie(':ptpage', function(ptpage) {
   var current = $('.pt-page-current').data('page');
 
   switch (ptpage) {
+
+    case 'home':
+      var next = 1;
+      var animation = 15;
+      break;
+
     case 'what-we-do':
       var next = 2;
       var animation = 13;
@@ -63,7 +69,7 @@ routie(':ptpage', function(ptpage) {
     default:
       var next = 1;
   }
-  
+
   changePage(animation, next, current);
 });
 
@@ -86,10 +92,15 @@ routie(':ptpage/:section', function(ptpage, section) {
       var animation = 15;
       break;
 
+    case 'team':
+      var next = 6;
+      var animation = 15;
+      break;
+
     default:
       var next = 1;
   }
- 
+
   changePage(animation, next, current, '#' + section);
 
 });

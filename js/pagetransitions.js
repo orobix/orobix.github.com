@@ -8,6 +8,7 @@ function getIEVersion() {
 }
 
 $.fn.scrollTo = function( target, options, callback ) {
+
   if (typeof options == 'function' && arguments.length == 2) { callback = options; options = target; }
   var settings = $.extend({
     scrollTarget  : target,
@@ -29,22 +30,25 @@ $(function() {
   $('[data-hash]').click(function() {
     var target = $(this).data('hash');
     var paths = location.hash.split('/');
-    
+
     if (paths.length == 1) {
       paths.push(target);
       location.hash = paths.join('/');
     }
-    
+
     if (paths.length == 2) {
       paths[1] = target;
       location.hash = paths.join('/');
     }
 
     $('.pt-page').scrollTo('#' + target);
+
+
   });
 });
 
 function changePage(animation, next, current, scroll) {
+
   if (!current || current == next) return;
 
   if (next == 1) {
@@ -78,6 +82,7 @@ function ieTransition(next, current, scroll) {
 }
 
 function transition(animation, next, current, scroll) {
+
   var animationClass = '';
 
   switch (animation) {
@@ -96,7 +101,7 @@ function transition(animation, next, current, scroll) {
   }
 
   $('.pt-page-' + current).css('z-index', 2).addClass(animationClass);
-      
+
   $('.pt-page-' + next).animate({ scrollTop: 0 }, 1);
   $('.pt-page-' + next).addClass('pt-page-current');
   $('.pt-page-' + next).attr('hidden', false);

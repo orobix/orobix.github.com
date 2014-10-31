@@ -97,6 +97,11 @@ routie(':ptpage/:section', function(ptpage, section) {
       var animation = 15;
       break;
 
+    case 'blog':
+      var next = 10;
+      var animation = 13;
+      break;
+
     default:
       var next = 1;
   }

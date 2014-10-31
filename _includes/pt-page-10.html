@@ -6,10 +6,10 @@
 
 
 <div class="container">
-  <div class="row">
-    <div class="col-sm-8 blog-main">
-      {% for post in site.posts limit: 5 %}
-        <div class="blog-post">
+  <div class="row blog-row">
+    <div class="col-sm-7 col-sm-offset-1 blog-main">
+      {% for post in site.posts limit: 50 %}
+        <div id= {{ post.anchorId }} class="blog-post">
           <h2 class="blog-post-title">{{ post.title }}</h2>
           <p class="blog-post-meta">{{ post.date | date: "%A, %B %d, %Y" }} <a href= {{ post.authorLink }} >{{ post.author }}</a></p>
           {{ post.content }}
@@ -18,19 +18,19 @@
     </div><!-- /.blog-main -->
 
     <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-      <div class="sidebar-module sidebar-module-inset">
+      <!-- <div class="sidebar-module sidebar-module-inset">
         <h4>About</h4>
         <p>We find practical solutions to tangible problems using
             high-profile engineering and computing.
             We use mathematics to unravel reality and make it
             accessible to end-users.</p>
-      </div>
+      </div> -->
       <div class="sidebar-module">
         <h4>Archives</h4>
         <ol class="list-unstyled">
           {% for post in site.posts %}
             <li>
-              <a href="{{ post.url }}">{{ post.title }}</a>
+              <a data-hash="{{ post.anchorId }}">{{ post.title }}</a>
             </li>
           {% endfor %}
         </ol>

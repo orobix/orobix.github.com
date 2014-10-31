@@ -183,7 +183,7 @@ and (orientation: portrait) {
   }
 
   .pt-page-2 .color-middle {
-    background-color: #f1f1f1; 
+    background-color: #f1f1f1;
   }
 
   .pt-page-2 .color-middle .img-branches {
@@ -262,7 +262,7 @@ and (orientation : landscape) {
 	font-size: 30px;
     }
     /* since 3.1.0 */
-    .navbar-collapse.collapse.in { 
+    .navbar-collapse.collapse.in {
         overflow-y: auto!important;
 	display: block!important;
 
@@ -308,7 +308,7 @@ and (orientation : landscape) {
         padding-bottom: 10px;
     }
     /* since 3.1.0 */
-    .navbar-collapse.collapse.in { 
+    .navbar-collapse.collapse.in {
         display: block!important;
     }
     .collapsing {
@@ -318,10 +318,10 @@ and (orientation : landscape) {
 
 
 /* iPhone 2G-4S in landscape */
-/*@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) 
-and (orientation : landscape) { 
+/*@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+and (orientation : landscape) {
   .pt-page-2 .col-xs-12,
   .pt-page-2 .col-sm-12 {
     width: 33.33333333%!important;
@@ -330,9 +330,9 @@ and (orientation : landscape) {
 }*/
 
 /* iPhone 5 in landscape */
-/*@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) 
+/*@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
 and (orientation : landscape) {
   .pt-page-2 .col-xs-12,
   .pt-page-2 .col-sm-12 {
@@ -1549,6 +1549,35 @@ img.top {
     margin-top: 20px;
   }
 }*/
+
+.blog-row {
+
+  margin-top: 1em;
+
+}
+
+.blog-post p {
+
+  font-family: 'Merriweather', serif;
+  color: #000000;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+
+}
+
+
+.sidebar-module p {
+
+  font-family: 'Merriweather', serif;
+  color: #000000;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+
+}
 
 
 .img-branches {

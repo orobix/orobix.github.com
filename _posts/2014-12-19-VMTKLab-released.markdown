@@ -7,8 +7,6 @@ author: Luca Antiga
 authorLink: "#team/lucaAntiga"
 ---
 
-# VMTKLab 1.0, a new tool for image-based modeling
-
 Today marks an important milestone for Orobix. We release our first product, VMTKLab, an application for image-based modeling of the cardiovascular system.
 
 Some background first. The Vascular Modeling Toolkit (VMTK) is an open-source collection of algorithms created to support the study of the cardiovascular system using computational geometry and numerical analysis. The project was started by Luca Antiga back in 2003 and was later adopted by Orobix in 2009, where it has grown both in functionality, documentation and, most importantly, user base.

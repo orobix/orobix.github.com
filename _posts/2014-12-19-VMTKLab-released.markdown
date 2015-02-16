@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "VMTKLAb 1.0"
+title:  "VMTKLab 1.0"
 anchorId: "post_0002"
 date:   2014-12-19 17:23:17
 author: Luca Antiga

@@ -7,7 +7,7 @@ author: Luca Antiga
 authorLink: "#team/lucaAntiga"
 ---
 
-# We're hiring!
+# Machine learning positions available 
 
 As part of the [REVAMMAD project](http://revammad.blogs.lincoln.ac.uk) (REtinal Vascular Modelling, Measurement and Diagnosis), we're looking for an Early Stage Researcher to join us full time at Orobix. The ideal candidate has good coding skills, a background in machine learning and an interest in contributing to the retinal imaging field from within a dynamic environment.
 

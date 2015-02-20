@@ -1567,6 +1567,21 @@ img.top {
 
 }
 
+.blog-post a:hover {
+  font-family: 'Merriweather', serif !important;
+  text-decoration: none !important;
+  color: #428bca !important;
+  font-size: 16px !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  line-height: 1.5 !important;
+  letter-spacing: inherit !important;
+}
+
+.list-unstyled a:hover {
+  letter-spacing: inherit !important;
+}
+
 
 .sidebar-module p {
 

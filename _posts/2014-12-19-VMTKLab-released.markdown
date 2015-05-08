@@ -15,6 +15,6 @@ Today VMTK is one of the go-to tools for image-based modeling in several bioengi
 
 A few months ago we decided it was time to address these requests. Today we introduce [VMTKLab](http://vmtklab.orobix.com), a new graphical, workflow-oriented application that makes image-based modeling accessible and feasible at large scales.
 
-What we release today is a set of core modules that allow to obtain volume mesh generation-ready surface models from medical images. We have several additional modules in the work - take a look at the [VMTKLab website](http://vmtklab.orobix.com) for an overview. We'll roll them out during the next few weeks.
+What we release today is a set of core modules that allow to obtain volume mesh generation-ready surface models from medical images. We have several additional modules in the works - take a look at the [VMTKLab website](http://vmtklab.orobix.com) for an overview. We'll roll them out during the next few weeks.
 
 We hope you'll like VMTKLab. For any question, please [contact us](mailto:vmtklab@orobix.com).

@@ -579,6 +579,11 @@ img.top {
   height: initial;
 }
 
+.contact-image-top {
+  padding-top: 20px;
+}
+
+
 .main-content > div .branch-detail-link:hover {
   opacity: .7;
 }
@@ -1419,7 +1424,8 @@ img.top {
 }
 
 .company-certification {
-  background-color: #f1f1f1;
+  /*background-color: #f1f1f1;*/
+  background-color: #FFFFFF;
   margin-top: 30px;
   margin-bottom: 10px;
   padding-bottom: 20px;

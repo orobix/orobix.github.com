@@ -658,8 +658,18 @@ img.top {
 }
 
 .branch-head-team {
-  background-color: #f1f1f1;
+  height: 99%;
   padding-bottom: 30px;
+  background: url(../img/06_team/team.jpg) no-repeat;
+  background-size: cover;
+  background-color: #f1f1f1;
+  -pie-background: url(../img/06_team/team.jpg) no-repeat; /*ie 6-9 via PIE*/
+}
+
+.branch-head-team-2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f1f1f1;
 }
 
 .branch-link {

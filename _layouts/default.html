@@ -52,6 +52,21 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
 
+
+      $( window ).ready(function() {
+        var height = $('#img-team').height();
+        $('#team-all').css('height',height);
+        console.log( "set height: ", height)
+      });
+
+
+      $( window ).resize(function() {
+        console.log("resize")
+        var new_height = $('#img-team').height();
+        $('#team-all').css('height',new_height);
+      });
+
+
     </script>
   </body>
 </html>

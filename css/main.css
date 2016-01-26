@@ -665,10 +665,50 @@ img.top {
 .branch-head-team {
   height: 99%;
   padding-bottom: 30px;
-  background: url(../img/06_team/team.jpg) no-repeat;
-  background-size: cover;
+  /*background: url(../img/06_team/team_1.jpg) no-repeat;
+  background-size: contain;
   background-color: #f1f1f1;
-  -pie-background: url(../img/06_team/team.jpg) no-repeat; /*ie 6-9 via PIE*/
+  -pie-background: url(../img/06_team/team_1.jpg) no-repeat; /*ie 6-9 via PIE*/*/
+}
+
+#team-all {
+  position:relative;
+  height:100%;
+  width: 100%;
+  margin:0 auto;
+}
+
+#team-all img {
+  position:absolute;
+  left:0;
+  padding: 0px !important;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+#cf3 img.top {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 100s;
+animation-direction: alternate;
 }
 
 .branch-head-team-2 {

@@ -55,8 +55,14 @@
       $( window ).ready(function() {
         var img = new Image();
         img.onload = function() {
-          $('#team-all').css('height',this.height);
+          var height = this.height;
+          var bodyWidth = $('body').width();
+          if ( bodyWidth != this.width ) {
+            height = ( bodyWidth * this.height ) / this.width
+          }
+          $('#team-all').css('height',height);
         }
+
         img.src = 'img/06_team/team_1.jpg';
       });
 

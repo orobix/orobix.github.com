@@ -40,15 +40,11 @@ $(function() {
       paths[1] = target;
       location.hash = paths.join('/');
     }
-
     $('.pt-page').scrollTo('#' + target);
-
-
   });
 });
 
 function changePage(animation, next, current, scroll) {
-
   if (!current || current == next) return;
 
   if (next == 1) {
@@ -83,8 +79,8 @@ function ieTransition(next, current, scroll) {
 
 function transition(animation, next, current, scroll) {
 
-  // var animationClass = '';
-  //
+  var animationClass = '';
+
   // switch (animation) {
   //   case 13:
   //     animationClass = 'pt-page-moveToLeftEasing';
@@ -99,22 +95,38 @@ function transition(animation, next, current, scroll) {
   //     animationClass = 'pt-page-moveToLeftEasing';
   //     break;
   // }
-  //
-  // $('.pt-page-' + current).css('z-index', 2).addClass(animationClass);
 
-  $('.pt-page-' + next).animate({ scrollTop: 0 }, 1);
+
+  $('.pt-page-' + current).css('z-index', 2).addClass(animationClass);
+
+  // $('.pt-page-' + next).animate({ scrollTop: 0 }, 1);
   $('.pt-page-' + next).addClass('pt-page-current');
   $('.pt-page-' + next).attr('hidden', false);
 
-  $('.pt-page-' + current).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
-    // code to execute after animation ends
-    $('.pt-page-' + current).removeClass('pt-page-current').removeClass(animationClass).css('z-index', 1);
-    $('.pt-page-' + current).attr('hidden', true);
-    $('.pt-page-' + current).animate({ scrollTop: 0 }, 1);
+  $('.pt-page-' + current).removeClass('pt-page-current').removeClass(animationClass).css('z-index', 1);
+  $('.pt-page-' + current).attr('hidden', true);
+  $('.pt-page-' + current).animate({ scrollTop: 0 }, 1);
 
-    //scroll
-    if (scroll) {
-      $('.pt-page').scrollTo(scroll);
-    }
-  });
+  //scroll
+  if (scroll) {
+    $('.pt-page').scrollTo(scroll);
+  }
+
+  // $('.pt-page-' + current).css('z-index', 2).addClass(animationClass);
+  //
+  // $('.pt-page-' + next).animate({ scrollTop: 0 }, 1);
+  // $('.pt-page-' + next).addClass('pt-page-current');
+  // $('.pt-page-' + next).attr('hidden', false);
+  //
+  // $('.pt-page-' + current).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
+  //   // code to execute after animation ends
+  //   $('.pt-page-' + current).removeClass('pt-page-current').removeClass(animationClass).css('z-index', 1);
+  //   $('.pt-page-' + current).attr('hidden', true);
+  //   $('.pt-page-' + current).animate({ scrollTop: 0 }, 1);
+  //
+  //   //scroll
+  //   if (scroll) {
+  //     $('.pt-page').scrollTo(scroll);
+  //   }
+  // });
 }

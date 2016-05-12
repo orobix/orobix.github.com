@@ -5,18 +5,12 @@ layout: default
   {% include navbar.html %}
 
   <div class="pt-page pt-page-current pt-page-1" data-page="1">
-    <!--<div class="col-xs-4 col-xs-offset-4 home-logo">
-      <img src="img/01_intro/logo_orobix_intro.png" class="img-logo"></img>
-    </div>
-
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 home-bottom">
-      <a href="#" data-animation="13" data-next="1">We are Orobix <img src="img/01_intro/arrow_intro.png"></img></a>
-    </div>-->
-
-    <div class="home-logo">
-      <img src="img/01_intro/logo_orobix_intro.png" class="img-logo"></img>
-      <a href="#what-we-do" class="row home-bottom">we are OROBIX <img src="img/01_intro/arrow_intro.png"></img></a>
-    </div>
+    <a href="#what-we-do">
+      <div class="home-logo">
+        <img src="img/01_intro/logo_orobix_intro.png" class="img-logo"></img>
+        <p class="branch-description">We are Orobix. <br> We cross-breed artificial intelligence and engineering <br>to unlock new possibilities in the real world.</p>
+      </div>
+    </a>
 
     <div class="home-background">
       <img src="img/01_intro/apple_sx_01.png" class="background-home background-home-left img-responsive"></img>
@@ -26,59 +20,306 @@ layout: default
     </div>
   </div>
 
+  <!-- WHAT WE DO -->
+
   <div class="pt-page pt-page-2" hidden='true' data-page="2"> <!-- Branch Page -->
     <div class="main-content-responsive">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 color-middle">
+        <p class="branch-description">At Orobix we leverage the latest advances in artificial intelligence </br>
+          and a strong engineering know-how to enable what was not possible before.</p>
+          <p class="branch-description">Deep learning, the technique that is revolutionizing the world, is at the heart of our solutions - we have a team dedicated to it. </br>
+          On the other end, our engineers break down real-world problems and tailor our solutions to specific applications and end-users. </br>
+          Our computer science team provides the technological foundation and makes sure our software is sound, scalable and resilient.</p>
+          <p class="branch-description">
+          We engineer systems end-to-end, starting from a problem all the way to a solution working in production. </br>
+          Our output is pure software, or a combination of software and hardware, such as sensors or robots.</br>
+        </p>
 
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-        <p class="branch">Science & Tech</p>
-        <dl>
-          <dt class="branch-list"><a href="#science-tech/machinelearning">Machine Learning&nbsp;<img src="img/02_main/arrow_branch.png"></img></a></dt>
-          <dt class="branch-list"><a href="#science-tech/imageanalysis">Image Analysis&nbsp;<img src="img/02_main/arrow_branch.png"></img></a></dt>
-          <dt class="branch-list"><a href="#science-tech/modeling">Modeling&nbsp;<img src="img/02_main/arrow_branch.png"></img></a></dt>
-
-        </dl>
-
-        <a class="bottom row" href="#science-tech">
-          <img class="img-branches" src="img/02_main/apple_science.jpg"></img>
-          <div class="branch-detail-link">
-            <p>discover more</p>
-            <img src="img/02_main/arrow_discover.png">
+        <div class="row branch-black">
+          <div class="container black">
+            <div class="row black">
+              <div class="col-xs-12 col-sm-4 col-md-12 col-lg-4 black-div" data-hash="healthcare">
+      	  <img src="/img/00_common/apple_icon_branch.png"></img>
+                <p class="apple-white-branch">Healthcare</p>
+                <div class="branch-detail-link branch-detail-link-black">
+                  <p class="discover discover-white">discover more</p>
+                  <img src="img/00_common/arrow_discover_more.png">
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-12 col-lg-4 black-div" data-hash="manufacturing">
+      	  <img src="/img/00_common/apple_icon_branch.png"></img>
+                <p class="apple-white-branch">Manufacturing</p>
+                <div class="branch-detail-link branch-detail-link-black">
+                  <p class="discover-white">discover more</p>
+                  <img src="img/00_common/arrow_discover_more.png">
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-12 col-lg-4 black-div" data-hash="everything">
+      	  <img src="img/00_common/apple_icon_branch.png"></img>
+                <p class="apple-white-branch">Everything else</p>
+                <div class="branch-detail-link branch-detail-link-black">
+                  <p class="discover-white">discover more</p>
+                  <img src="img/00_common/arrow_discover_more.png">
+                </div>
+              </div>
+            </div>
           </div>
-        </a>
-      </div>
+        </div>
 
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 color-middle">
-        <p class="branch">Design & Development</p>
-        <dl>
-          <dt class="branch-list"><a href="#design-development/dataengineering">Data Engineering&nbsp;<img src="img/02_main/arrow_branch.png"></img></a></dt>
-          <dt class="branch-list"><a href="#design-development/applicationdesign">Application Design&nbsp;<img src="img/02_main/arrow_branch.png"></img></a></dt>
-          <dt class="branch-list"><a href="#design-development/softwaredevelopment">Software Development&nbsp;<img src="img/02_main/arrow_branch.png"></img></a></dt>
-        </dl>
+        <!-- HEALTHCARE -->
 
-        <a class="bottom row" href="#design-development">
-          <img class="img-branches" src="img/02_main/apple_design.jpg"></img>
-          <div class="branch-detail-link">
-            <p>discover more</p>
-            <img src="img/02_main/arrow_discover.png">
+        <div class="branch-content-resp row" id="healthcare">
+          <div class="col-xs-8 col-lg-8 col-xs-offset-2 col-lg-offset-2">
+            <h2 class="branch-title">Healthcare</h2>
+            <p class="branch-description">TODO: add explanatory text (mention ISO 13485, medical devices).</p>
           </div>
-        </a>
-      </div>
 
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-        <p class="branch">Customers & Services</p>
-        <dl>
-          <dt class="branch-list"><a href="#customers-services/pharma">Pharma&nbsp;<img src="img/02_main/arrow_branch.png"></img></a></dt>
-          <dt class="branch-list"><a href="#customers-services/b2b">B2B&nbsp;<img src="img/02_main/arrow_branch.png"></img></a></dt>
-          <dt class="branch-list"><a href="#customers-services/b2c">B2C&nbsp;<img src="img/02_main/arrow_branch.png"></img></a></dt>
-        </dl>
-
-        <a class="bottom row" href="#customers-services">
-          <img class="img-branches" src="img/02_main/apple_customers.jpg"></img>
-          <div class="branch-detail-link">
-            <p>discover more</p>
-            <img src="img/02_main/arrow_discover.png">
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3">
+              <p class="branch-description-list">Image-based biomarkers (extracting complex biomarkers from medical imaging data)</p>
           </div>
-        </a>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3 separator-div">
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3" style="z-index:5">
+            <p class="branch-description-list">Surgical planning/precision medicine or diagnostic support system</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3 separator-div">
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3">
+            <p class="branch-description-list">Patient stratification and staging (mapping individual patients to reference patient populations for diagnostic and prognostic support, clinical trial recruitment)</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3 separator-div">
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3" style="z-index:5">
+            <p class="branch-description-list">Modeling of biological systems (creating numerical models of physiological and pathological processes to explain and predict disease states)</p>
+          </div>
+
+          <div class="row">
+            <img class="img-responsive col-xs-12 img-branches" src="img/03_science/image_an.jpg"></img>
+          </div>
+
+        </div>
+
+        <!-- MANUFACTURING -->
+
+        <div class="branch-content-resp row" id="manufacturing">
+          <div class="col-xs-8 col-lg-8 col-xs-offset-2 col-lg-offset-2">
+            <h2 class="branch-title">Manufacturing</h2>
+            <p class="branch-description">TODO: add explanatory text (taking industrial vision to the next level using deep learning; new frontiers of X-ray inspection; cobots)</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3">
+              <p class="branch-description-list">Automated vision and X-ray inspection systems.</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3 separator-div">
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3" style="z-index:5">
+            <p class="branch-description-list">Production data insight </p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3 separator-div">
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3">
+            <p class="branch-description-list">Anomaly detection</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3 separator-div">
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3" style="z-index:5">
+            <p class="branch-description-list">Similarity retrieval</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3 separator-div">
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3" style="z-index:5">
+            <p class="branch-description-list">Collaborative robots</p>
+          </div>
+
+
+
+          <div class="row">
+            <img class="img-responsive col-xs-12 img-branches" src="img/04_design/data_eng.jpg"></img>
+          </div>
+
+        </div>
+
+        <!-- EVERYTHING ELSE -->
+
+        <div class="branch-content-resp row" id="everything">
+          <div class="col-xs-8 col-lg-8 col-xs-offset-2 col-lg-offset-2">
+            <h2 class="branch-title">Everything else</h2>
+            <p class="branch-description">TODO: add explanatory text</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3">
+              <p class="branch-description-list">Energy management ????.</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3 separator-div">
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3" style="z-index:5">
+            <p class="branch-description-list">Forecasting </p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3 separator-div">
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3">
+            <p class="branch-description-list">Decision support systems (integrating massive amounts of data to provide second-opinion, high-throughput screening or alerting)</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3 separator-div">
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3" style="z-index:5">
+            <p class="branch-description-list">Quantitative marketing.</p>
+          </div>
+
+          <div class="row">
+            <img class="img-responsive col-xs-12 img-branches" src="img/03_science/machine_learning.jpg"></img>
+          </div>
+
+        </div>
+
+
+        <!-- HOW WE WORK -->
+        <div class="branch-content-resp row" id="how-we-work">
+          <div class="col-xs-8 col-lg-8 col-xs-offset-2 col-lg-offset-2">
+            <h2 class="branch-title">How we work</h2>
+            <p class="branch-description">Orobix is made of three groups, each with its own specific expertise, but working together in a closely intertwined fashion (Diagram?)</p>
+          </div>
+        </div>
+
+        <div class="branch-content-resp row" id="math">
+          <div class="col-xs-8 col-lg-8 col-xs-offset-2 col-lg-offset-2">
+            <h2 class="branch-title">Math</h2>
+            <p class="branch-description">TODO: add explanatory text</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3">
+              <p class="branch-description-list">Deep learning</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3 separator-div">
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3" style="z-index:5">
+            <p class="branch-description-list">Mathematical modelling </p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3 separator-div">
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3">
+            <p class="branch-description-list">Optimization</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3 separator-div">
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3" style="z-index:5">
+            <p class="branch-description-list">Data management</p>
+          </div>
+
+          <!-- <div class="row">
+            <img class="img-responsive col-xs-12 img-branches" src="img/03_science/modeling.jpg"></img>
+          </div> -->
+
+        </div>
+
+        <div class="branch-content-resp row" id="eng">
+          <div class="col-xs-8 col-lg-8 col-xs-offset-2 col-lg-offset-2">
+            <h2 class="branch-title">Engineering</h2>
+            <p class="branch-description">TODO: add explanatory text</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3">
+              <p class="branch-description-list">System integration</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3 separator-div">
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3" style="z-index:5">
+            <p class="branch-description-list">Numerical simulation</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3 separator-div">
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3">
+            <p class="branch-description-list">Computational geometry</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3 separator-div">
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3" style="z-index:5">
+            <p class="branch-description-list">Visualization</p>
+          </div>
+
+          <!-- <div class="row">
+            <img class="img-responsive col-xs-12 img-branches" src="img/04_design/application_design.jpg"></img>
+          </div> -->
+
+        </div>
+
+        <div class="branch-content-resp row" id="cs">
+          <div class="col-xs-8 col-lg-8 col-xs-offset-2 col-lg-offset-2">
+            <h2 class="branch-title">Computer Science</h2>
+            <p class="branch-description">TODO: add explanatory text</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3">
+              <p class="branch-description-list">Software architecture</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3 separator-div">
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3" style="z-index:5">
+            <p class="branch-description-list">Software development</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3 separator-div">
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3">
+            <p class="branch-description-list">Distributed systems</p>
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3 separator-div">
+          </div>
+
+          <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3" style="z-index:5">
+            <p class="branch-description-list">Cloud computing</p>
+          </div>
+
+          <div class="row">
+            <img class="img-responsive col-xs-12 img-branches" src="img/04_design/software_development.jpg"></img>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
       </div>
 
     </div> <!-- END Main Content-->

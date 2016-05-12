@@ -77,6 +77,10 @@ routie(':ptpage/:section', function(ptpage, section) {
   var current = $('.pt-page-current').data('page');
 
   switch (ptpage) {
+    case 'what-we-do':
+      var next = current;
+      break;
+
     case 'science-tech':
       var next = 3;
       var animation = 15;

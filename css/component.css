@@ -1,5 +1,14 @@
 html, body { height: 100%; }
 
+.logos {
+	-webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+	margin-bottom: 20px;
+	max-width: 150px !important;
+	margin-left: calc((100% - 150px) / 2);
+}
+
+
 .pt-perspective {
 	position: relative;
 	width: 100%;
@@ -56,9 +65,9 @@ html, body { height: 100%; }
 
   font-family: 'DINNeuzeitGroteskStd-Light';
   color: #585858;
-  background: url(../img/01_intro/sfondo_intro.gif) repeat-y;
-  background-color: #FFFFFF;
-  background-size: 40% 100%;
+  /*background: url(../img/01_intro/sfondo_intro.gif) repeat-y;*/
+  /*background-color: #FFFFFF;*/
+  /*background-size: 40% 100%;*/
   letter-spacing: -1px;;
   behavior: url(css/PIE.htc);  /*ie 6-9 via PIE*/
 

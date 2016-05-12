@@ -83,24 +83,24 @@ function ieTransition(next, current, scroll) {
 
 function transition(animation, next, current, scroll) {
 
-  var animationClass = '';
-
-  switch (animation) {
-    case 13:
-      animationClass = 'pt-page-moveToLeftEasing';
-      break;
-    case 14:
-      animationClass = 'pt-page-moveToRightEasing';
-      break;
-    case 15:
-      animationClass = 'pt-page-moveToTopEasing';
-      break;
-    default:
-      animationClass = 'pt-page-moveToLeftEasing';
-      break;
-  }
-
-  $('.pt-page-' + current).css('z-index', 2).addClass(animationClass);
+  // var animationClass = '';
+  //
+  // switch (animation) {
+  //   case 13:
+  //     animationClass = 'pt-page-moveToLeftEasing';
+  //     break;
+  //   case 14:
+  //     animationClass = 'pt-page-moveToRightEasing';
+  //     break;
+  //   case 15:
+  //     animationClass = 'pt-page-moveToTopEasing';
+  //     break;
+  //   default:
+  //     animationClass = 'pt-page-moveToLeftEasing';
+  //     break;
+  // }
+  //
+  // $('.pt-page-' + current).css('z-index', 2).addClass(animationClass);
 
   $('.pt-page-' + next).animate({ scrollTop: 0 }, 1);
   $('.pt-page-' + next).addClass('pt-page-current');

@@ -21,25 +21,30 @@ routie(':ptpage', function(ptpage) {
       var animation = 13;
       break;
 
-    case 'science-tech':
+    case 'how-we-work':
       var next = 3;
-      if (current == 2) var animation = 15;
-      if (current == 4) var animation = 14;
-      if (current == 5) var animation = 13;
+      var animation = 13;
       break;
 
-    case 'design-development':
-      var next = 4;
-      if (current == 2) var animation = 15;
-      if (current == 3 || current == 4) var animation = 13;
-      if (current == 5) var animation = 14;
-      break;
-
-    case 'customers-services':
-      var next = 5;
-      if (current == 2) var animation = 15;
-      if (current == 3) var animation = 13;
-      break;
+    // case 'science-tech':
+    //   var next = 3;
+    //   if (current == 2) var animation = 15;
+    //   if (current == 4) var animation = 14;
+    //   if (current == 5) var animation = 13;
+    //   break;
+    //
+    // case 'design-development':
+    //   var next = 4;
+    //   if (current == 2) var animation = 15;
+    //   if (current == 3 || current == 4) var animation = 13;
+    //   if (current == 5) var animation = 14;
+    //   break;
+    //
+    // case 'customers-services':
+    //   var next = 5;
+    //   if (current == 2) var animation = 15;
+    //   if (current == 3) var animation = 13;
+    //   break;
 
     case 'products':
       var next = 8;
@@ -61,10 +66,10 @@ routie(':ptpage', function(ptpage) {
       var animation = 13;
       break;
 
-    case 'blog':
-      var next = 10;
-      var animation = 13;
-      break;
+    // case 'blog':
+    //   var next = 10;
+    //   var animation = 13;
+    //   break;
 
     default:
       var next = 1;
@@ -81,30 +86,34 @@ routie(':ptpage/:section', function(ptpage, section) {
       var next = current;
       break;
 
-    case 'science-tech':
-      var next = 3;
-      var animation = 15;
-      break;
-
-    case 'design-development':
+    case 'how-we-work':
       var next = 4;
-      var animation = 15;
       break;
 
-    case 'customers-services':
-      var next = 5;
-      var animation = 15;
-      break;
+    // case 'science-tech':
+    //   var next = 3;
+    //   var animation = 15;
+    //   break;
+    //
+    // case 'design-development':
+    //   var next = 4;
+    //   var animation = 15;
+    //   break;
+    //
+    // case 'customers-services':
+    //   var next = 5;
+    //   var animation = 15;
+    //   break;
 
     case 'team':
       var next = 6;
       var animation = 15;
       break;
 
-    case 'blog':
-      var next = 10;
-      var animation = 13;
-      break;
+    // case 'blog':
+    //   var next = 10;
+    //   var animation = 13;
+    //   break;
 
     default:
       var next = 1;

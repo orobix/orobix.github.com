@@ -191,7 +191,7 @@ html, body { height: 100%; }
 
 
 .pt-page-2 .img-branches{
-  width: auto;
+  /*width: auto;*/
   max-height: 75%;
   -moz-height: 75%;
   -webkit-height: 75%;

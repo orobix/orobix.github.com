@@ -1570,7 +1570,7 @@ animation-direction: alternate;
 
 .deepray {
   background: url(../img/08_products/deep_ray.jpg) no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: right bottom;
   background-color: #FFFFFF;
   -pie-background: url(../img/08_products/deep_ray.jpg) no-repeat; /*ie 6-9 via PIE*/
@@ -1579,7 +1579,7 @@ animation-direction: alternate;
 
 .vmtklab {
   background: url(../img/08_products/vmtk_lab.jpg) no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: right bottom;
   background-color: #000000;
   -pie-background: url(../img/08_products/vmtk_lab.jpg) no-repeat; /*ie 6-9 via PIE*/
@@ -1587,7 +1587,7 @@ animation-direction: alternate;
 
 .dicom {
   background: url(../img/08_products/dicom.jpg) no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: right bottom;
   background-color: #FFFFFF;
   -pie-background: url(../img/08_products/dicom.jpg) no-repeat; /*ie 6-9 via PIE*/
@@ -1595,7 +1595,7 @@ animation-direction: alternate;
 
 .vmtk {
   background: url(../img/08_products/vmtk.jpg) no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: right bottom;
   background-color: #000000;
   -pie-background: url(../img/08_products/vmtk.jpg) no-repeat; /*ie 6-9 via PIE*/
@@ -1603,7 +1603,7 @@ animation-direction: alternate;
 
 .invariant {
   background: url(../img/08_products/invariant.jpg) no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: right bottom;
   background-color: #FFFFFF;
   -pie-background: url(../img/08_products/invariant.jpg) no-repeat; /*ie 6-9 via PIE*/

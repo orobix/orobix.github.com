@@ -75,7 +75,8 @@ html, body { height: 100%; }
 
 .pt-page-1 a, a:hover {
 
-	font-family: 'DINNeuzeitGroteskStd-Light';
+	/*font-family: 'DINNeuzeitGroteskStd-Light';*/
+	font-family: 'DIN-Light' !important;
 	color: #585858;
 	text-decoration: none;
 	letter-spacing: -1px;
@@ -207,7 +208,13 @@ html, body { height: 100%; }
   letter-spacing: -1px;
 }
 
-.pt-page-2, .pt-page-3, .pt-page-4, .pt-page-5, .pt-page-6, .pt-page-7, .pt-page-8, .pt-page-10 {
+/*.pt-page-2, .pt-page-3, .pt-page-4, .pt-page-5, .pt-page-6, .pt-page-7, .pt-page-8, .pt-page-10 {
+  background: #FFFFFF;
+  top: 61px;
+  height: calc(100% - 61px);
+}*/
+
+.pt-page-3, .pt-page-4, .pt-page-5, .pt-page-6, .pt-page-7, .pt-page-8, .pt-page-10 {
   background: #FFFFFF;
   top: 61px;
   height: calc(100% - 61px);

@@ -24,28 +24,71 @@ and (max-device-width : 480px) {
     max-height: 60% !important;
   }
 
+  .caption-what-we-do {
+    background-color: #000 !important;
+    width: 75% !important;
+    margin-left: 12.5% !important;
+  }
+
+  .apple-menu-01 {
+    width: 75% !important;
+    opacity: 0.7 !important;
+  }
+
+  .apple-menu-02 {
+    width: 75% !important;
+    opacity: 0.45 !important;
+  }
+
+  .apple-menu-03 {
+    width: 75% !important;
+    opacity: 0.5 !important;
+  }
+
   .branch-description {
-    font-size: 35px !important;
+    font-size: 45px !important;
+    margin-bottom: 80px !important;
+    /*-webkit-text-size-adjust: none !important;*/
+    /*text-size-adjust: none;*/
+  }
+
+  .branch-description-home {
+    font-size: 40px !important;
     /*-webkit-text-size-adjust: none !important;*/
     /*text-size-adjust: none;*/
   }
 
   .branch-description-white {
     font-size: 35px !important;
-    /*-webkit-text-size-adjust: 50%;*/
+    -webkit-text-size-adjust: 180%;
     /*text-size-adjust: none;*/
   }
 
+  .branch-description-white-header {
+    margin-top: 25% !important;
+    font-size : 30px !important;
+    -webkit-text-size-adjust: 100%  !important;
+  }
+
+  .branch-description-white-header-2 {
+    font-size : 30px !important;
+    -webkit-text-size-adjust: 100% !important;
+  }
+
   .branch-description-list {
-    font-size: 30px !important;
+    font-size: 25px !important;
   }
 
   .apple-white-branch {
-    font-size: 45px !important;
+    font-size: 30px !important;
   }
 
   .branch-detail-link {
-    font-size: 30px !important;
+    font-size: 10px !important;
+  }
+
+  .discover-white {
+    font-size: 25px !important;
   }
 
   .white-a {
@@ -81,7 +124,7 @@ and (max-device-width : 480px) {
   }
 
   .socials {
-    font-size: 35px;
+    font-size: 20px;
   }
 
 }
@@ -171,7 +214,7 @@ and (orientation: portrait) {
   .pt-page-1 .home-logo .home-bottom {
     padding-top: 60px;
     padding-bottom: 60px;
-    font-size: 40px;
+    font-size: 30px;
     margin: 0;
   }
 
@@ -375,7 +418,8 @@ html, body {
   position: fixed;
   margin-bottom: 0!important;
   display: none;
-  font-family: 'DINNeuzeitGroteskStd-Light';
+  font-family: 'DIN-Light';
+  font-weight: 600;
   font-size: 18px;
   color: #000000;
   letter-spacing: -1px;
@@ -479,6 +523,28 @@ html, body {
 
 }
 
+
+.caption-what-we-do {
+  background-color: #000;
+  width: 40%;
+  margin-left: 30%;
+}
+
+.apple-menu-01 {
+  width: 40%;
+  opacity: 0.7;
+}
+
+.apple-menu-02 {
+  width: 40%;
+  opacity: 0.45;
+}
+
+.apple-menu-03 {
+  width: 40%;
+  opacity: 0.5;
+}
+
 .img-logo {
   height: auto;
   max-width: 353px;
@@ -489,9 +555,12 @@ html, body {
 
 .home-bottom {
   margin-bottom: 40px;
+  margin-top: 60px;
   font-size: 21px;
   display: block;
   position: static;
+  font-family: DIN-Light !important;
+  color: #000 !important;
 }
 
 .home-bottom:hover {
@@ -809,7 +878,7 @@ animation-direction: alternate;
 }
 
 .branch-detail-link-black {
-  margin-bottom: 30px !important;
+  /*margin-bottom: 30px !important;*/
 }
 
 .branch-name {
@@ -865,14 +934,27 @@ animation-direction: alternate;
   letter-spacing: -1px
 }
 
-.branch-description {
+.branch-description-home {
   font-family: "DIN-Light";
   color: #000000;
-  font-size: 25px;
+  font-size: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
   letter-spacing: -1px;
-  line-height: 1.3;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.branch-description {
+  font-family: "DIN-Light";
+  color: #000000;
+  /*font-size: 25px;*/
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  /*line-height: 1.3;*/
+  line-height: 1.5;
 }
 
 .branch-description-small {
@@ -906,6 +988,28 @@ animation-direction: alternate;
   text-align: left !important;
 }
 
+.branch-description-white-header{
+  font-family: "DIN-Light";
+  color: #FFFFFF;
+  /*font-size: 30px;*/
+  font-size: 1.8vw;
+  margin-top: 10%;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  line-height: 1.5;
+}
+
+.branch-description-white-header-2{
+  font-family: "DIN-Light";
+  color: #FFFFFF;
+  /*font-size: 30px;*/
+  font-size: 1.8vw;
+  margin-top: 10px;
+  margin-bottom:6%;
+  letter-spacing: -1px;
+  line-height: 1.5;
+}
+
 .branch-description-white{
   font-family: "DIN-Light";
   color: #FFFFFF;
@@ -930,24 +1034,37 @@ animation-direction: alternate;
   margin-bottom: 5px !important;
   text-decoration: none;
   color: #898989;
+  font-family: "DIN-Light" !important;
 }
 
 .apple-white-branch{
   font-family: "DIN-Light";
   color: #FFFFFF;
-  font-size: 37px;
+  /*font-size: 28px;*/
+  font-size: 1.5vw;
   margin-top: 10px;
   margin-bottom: 10px;
-  letter-spacing: -3px;
+  letter-spacing: -1px;
   line-height: 1.3;
 }
 
-.thumbnail {
+.what-sections {
+  margin-top:5%;
+}
+
+
+.thumbnail-what-we-do {
+  background-color: transparent !important;
+  border: 0px !important;
+}
+
+
+/*.thumbnail {
   margin-top: 20px !important;
   margin-bottom: 20px !important;
   width: 175px;
   height: 105px;
-}
+}*/
 
 .branch-description-thumbnails{
   font-family: "DIN-Light";
@@ -1020,7 +1137,9 @@ animation-direction: alternate;
 }
 
 .pt-page-2 .branch-detail-link {
-  font-size: 15px;
+  /*font-size: 15px;*/
+  /*font-size: 20px;*/
+  font-size: 1.2vw;
   color: #898989;
   letter-spacing: -1px;
   /*position: absolute;
@@ -1042,6 +1161,13 @@ animation-direction: alternate;
   -moz-background-size: 100% auto!important;
   -o-background-size: 100% auto!important;
   background-size: 100% auto!important;
+}
+
+.eng-background {
+  background-image: url("../img/00_common/engineering.jpg");
+  background-size: cover;
+  background-position: 50% 0px !important;
+  background-repeat: no-repeat;
 }
 
 .branch-content-img {

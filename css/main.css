@@ -52,6 +52,14 @@ and (max-device-width : 480px) {
     /*text-size-adjust: none;*/
   }
 
+  .branch-title-grey {
+    margin-top: 25% !important;
+  }
+
+  .branch-title-grey-content {
+    margin-top: 15% !important;
+  }
+
   .branch-description-home {
     font-size: 40px !important;
     /*-webkit-text-size-adjust: none !important;*/
@@ -65,7 +73,7 @@ and (max-device-width : 480px) {
   }
 
   .branch-description-white-header {
-    margin-top: 25% !important;
+    /*margin-top: 25% !important;*/
     font-size : 30px !important;
     -webkit-text-size-adjust: 100%  !important;
   }
@@ -187,6 +195,10 @@ and (orientation: landscape) {
     margin-top: 0px;
     /*margin-bottom: 30px;*/
     display: block;
+  }
+
+  .branch-title-grey {
+    margin-top: 15% !important;
   }
 
 }
@@ -406,13 +418,39 @@ html, body {
 
 }*/
 
+.pt-page-8 {
+  top:40px !important;
+}
+
+#spin-outs-container {
+  margin-top: 5%;
+}
+
+
+#how-container {
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+
 .centercontents {
 	text-align: center !important;
 }
 
-#menu {
+/*#menu {
   z-index: 2;
+  height: 80px;
+  background-image: none !important;
+  background-color: white !important;
 }
+
+.navbar-header {
+  margin-top: 0.5%;
+}
+
+.navbar-right {
+  margin-top: 1% !important;
+  margin-right: 3% !important;
+}*/
 
 #menu.navbar {
   position: fixed;
@@ -481,6 +519,25 @@ html, body {
 }
 
 
+.btn-home {
+  background-color: white;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+  font-family: "DIN-Light" !important;
+  background-image: none !important;
+  text-shadow: none !important;
+  border-color: none !important;
+  font-size: 22px;
+  margin-top:5%;
+}
+
+.btn-home:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
 #wrap{
 
 	position:fixed;;
@@ -507,6 +564,7 @@ html, body {
 
 .orobix-logo-menu {
   padding: 10px;
+  margin-left: 15%;
 }
 
 .home-logo {
@@ -916,6 +974,47 @@ animation-direction: alternate;
   letter-spacing: -3px;
 }
 
+.branch-title-grey {
+  font-family: "DIN-Light";
+  color: grey;
+  font-size: 65px;
+  letter-spacing: -3px;
+  margin-top: 7%;
+}
+
+.branch-title-grey-how {
+font-family: "DIN-Light";
+color: grey;
+font-size: 45px;
+letter-spacing: -3px;
+margin-top: 7%;
+}
+
+
+.branch-title-grey-content {
+  font-family: "DIN-Light";
+  color: grey;
+  font-size: 65px;
+  letter-spacing: -3px;
+  margin-top: 2%;
+}
+
+.branch-title-grey-content-how {
+  font-family: "DIN-Light";
+  color: grey;
+  font-size: 65px;
+  letter-spacing: -3px;
+  margin-top: 3.5%;
+}
+
+.branch-title-grey-content-products {
+  font-family: "DIN-Light";
+  color: grey;
+  font-size: 65px;
+  letter-spacing: -3px;
+  margin-top: 5%;
+}
+
 .cription {
   font-family: "DIN-Light";
   color: #000000;
@@ -988,12 +1087,34 @@ animation-direction: alternate;
   text-align: left !important;
 }
 
+.branch-description-header{
+  font-family: "DIN-Light";
+  color: #000000;
+  /*font-size: 30px;*/
+  font-size: 1.7vw;
+  /*margin-top: 10%;*/
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  line-height: 1.5;
+}
+
+.branch-description-header-2{
+  font-family: "DIN-Light";
+  color: #000000;
+  /*font-size: 30px;*/
+  font-size: 1.7vw;
+  margin-top: 10px;
+  margin-bottom:6%;
+  letter-spacing: -1px;
+  line-height: 1.5;
+}
+
 .branch-description-white-header{
   font-family: "DIN-Light";
   color: #FFFFFF;
   /*font-size: 30px;*/
-  font-size: 1.8vw;
-  margin-top: 10%;
+  font-size: 1.7vw;
+  /*margin-top: 10%;*/
   margin-bottom: 20px;
   letter-spacing: -1px;
   line-height: 1.5;
@@ -1003,9 +1124,9 @@ animation-direction: alternate;
   font-family: "DIN-Light";
   color: #FFFFFF;
   /*font-size: 30px;*/
-  font-size: 1.8vw;
+  font-size: 1.7vw;
   margin-top: 10px;
-  margin-bottom:6%;
+  margin-bottom:3%;
   letter-spacing: -1px;
   line-height: 1.5;
 }
@@ -1013,7 +1134,27 @@ animation-direction: alternate;
 .branch-description-white{
   font-family: "DIN-Light";
   color: #FFFFFF;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  line-height: 1.3;
+}
+
+.branch-description-white-product{
+  font-family: "DIN-Light";
+  color: #FFFFFF;
   font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  line-height: 1.3;
+}
+
+.branch-description-black{
+  font-family: "DIN-Light";
+  color: #000000;
+  font-size: 35px;
   margin-top: 20px;
   margin-bottom: 20px;
   letter-spacing: -1px;
@@ -1066,6 +1207,10 @@ animation-direction: alternate;
   height: 105px;
 }*/
 
+#spin-out-box {
+  height: 450px;
+}
+
 .branch-description-thumbnails{
   font-family: "DIN-Light";
   color: #000000;
@@ -1077,18 +1222,18 @@ animation-direction: alternate;
 }
 
 .white-a {
-  font-size: 15px !important;
-  color: #898989 !important;
+  font-size: 20px !important;
+  color: #FFFFFF !important;
   text-decoration: none !important;
-  font-family: "DINNeuzeitGroteskStd-Light" !important;
+  /*font-family: "DINNeuzeitGroteskStd-Light" !important;*/
   letter-spacing: -1px !important;
 }
 
 .black-a {
-  color: #898989 !important;
-  font-size: 15px !important;
+  color: #000000 !important;
+  font-size: 20px !important;
   text-decoration: none !important;
-  font-family: "DINNeuzeitGroteskStd-Light" !important;
+  /*font-family: "DINNeuzeitGroteskStd-Light" !important;*/
   letter-spacing: -1px !important;
 }
 
@@ -1170,6 +1315,20 @@ animation-direction: alternate;
   background-repeat: no-repeat;
 }
 
+.how-background {
+  background-image: url("../img/00_common/how-we-work.jpg");
+  background-size: cover;
+  background-position: 50% 0px !important;
+  background-repeat: no-repeat;
+}
+
+.spin-background {
+  background-image: url("../img/08_products/spin.jpg");
+  background-size: cover;
+  background-position: 50% 0px !important;
+  background-repeat: no-repeat;
+}
+
 .branch-content-img {
   width: 100%;
   z-index: 10;
@@ -1188,7 +1347,7 @@ animation-direction: alternate;
   text-align: center;
   letter-spacing: -1px;
   margin-left: 0px !important;
-  margin-top: 50px !important;
+  /*margin-top: 50px !important;*/
   margin-right: 0px !important;
 }
 
@@ -1692,6 +1851,59 @@ animation-direction: alternate;
 
 .main-content-partners-gray a {
   display: inline-block;
+}
+
+#logo-products {
+  margin-top: 10%;
+}
+
+#description-products {
+  margin-top: 15% !important;
+}
+
+.btn-products {
+  background-color: transparent;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+  font-family: "DIN-Light" !important;
+  background-image: none !important;
+  text-shadow: none !important;
+  border-color: none !important;
+  font-size: 22px;
+  margin-top:5%;
+  color:white !important;
+}
+
+.btn-products:focus {
+  background-color: black;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+  font-family: "DIN-Light" !important;
+  background-image: none !important;
+  text-shadow: none !important;
+  border-color: none !important;
+  font-size: 22px;
+  margin-top:5%;
+  color:white !important;
+}
+
+.btn-products:hover, .btn-products:visited {
+  background-color: black;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+  font-family: "DIN-Light" !important;
+  background-image: none !important;
+  text-shadow: none !important;
+  border-color: none !important;
+  font-size: 22px;
+  margin-top:5%;
+  color:white !important;
 }
 
 .deepray {

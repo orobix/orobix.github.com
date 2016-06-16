@@ -112,6 +112,7 @@ function transition(animation, next, current, scroll) {
     $('.pt-page').scrollTo(scroll);
   }
 
+
   // $('.pt-page-' + current).css('z-index', 2).addClass(animationClass);
   //
   // $('.pt-page-' + next).animate({ scrollTop: 0 }, 1);

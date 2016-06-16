@@ -62,14 +62,16 @@
           }
           $('#team-all').css('height',height);
         }
-
         img.src = 'img/06_team/team_1.jpg';
+
       });
 
       $( window ).resize(function() {
         var new_height = $('#img-team').height();
         $('#team-all').css('height',new_height);
+        console.log("resize");
       });
+
 
 
     </script>

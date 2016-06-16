@@ -423,7 +423,11 @@ html, body {
 }
 
 #spin-outs-container {
-  margin-top: 5%;
+  /*margin-top: 5%;*/
+}
+
+#spin-outs-header {
+  height: 550px;
 }
 
 
@@ -436,14 +440,14 @@ html, body {
 	text-align: center !important;
 }
 
-/*#menu {
+#menu {
   z-index: 2;
-  height: 80px;
+  /*height: 80px;*/
   background-image: none !important;
   background-color: white !important;
 }
 
-.navbar-header {
+/*.navbar-header {
   margin-top: 0.5%;
 }
 
@@ -1945,6 +1949,10 @@ margin-top: 7%;
   background-position: right bottom;
   background-color: #FFFFFF;
   -pie-background: url(../img/08_products/invariant.jpg) no-repeat; /*ie 6-9 via PIE*/
+}
+
+.logo-invariant {
+  opacity: 0.3;
 }
 
 .col-products {

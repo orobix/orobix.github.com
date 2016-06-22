@@ -108,7 +108,7 @@ and (max-device-width : 480px) {
   }
 
   .team-name{
-    font-size: 45px !important;
+    font-size: 40px !important;
   }
 
   .team-description{
@@ -116,7 +116,8 @@ and (max-device-width : 480px) {
   }
 
   .team-title-bottom{
-    margin-top: 30px !important;
+    font-size: 50px !important;
+    /*margin-top: 45px !important;*/
   }
 
   .team-description-bottom{
@@ -168,7 +169,11 @@ and (max-width : 997px) {
   }
 
   .team-description {
-    margin-top: 40px;
+    /*margin-top: 40px;*/
+  }
+
+  .team-text {
+    margin-top: 0%;
   }
 
 }
@@ -854,7 +859,7 @@ animation-direction: alternate;
 .branch-head-team-2 {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #f1f1f1;
+  /*background-color: #f1f1f1;*/
 }
 
 .branch-link {
@@ -984,6 +989,14 @@ animation-direction: alternate;
   font-size: 65px;
   letter-spacing: -3px;
   margin-top: 7%;
+}
+
+.branch-title-grey-team {
+  font-family: "DIN-Light";
+  color: grey;
+  font-size: 65px;
+  letter-spacing: -3px;
+  margin-top: 5%;
 }
 
 .branch-title-grey-how {
@@ -1401,7 +1414,12 @@ margin-top: 7%;
   text-align: center;
   letter-spacing: -1px;
   margin: 0px !important;
-  padding-bottom: 40px;
+  /*padding-bottom: 40px;*/
+  padding-bottom: 80px;
+}
+
+.branch-content-team-first {
+  padding-top: 80px;
 }
 
 .branch-content-team-bottom {
@@ -1744,7 +1762,8 @@ margin-top: 7%;
 .team-title-bottom {
   font-family: "DIN-Light";
   color: #000000;
-  font-size: 50px;
+  /*font-size: 50px;*/
+  font-size: 30px;
   letter-spacing: -1px;
   margin-top: 0px;
 }
@@ -1752,21 +1771,25 @@ margin-top: 7%;
 .team-name {
   font-family: "DIN-Light";
   color: #7d7d7d;
-  font-size: 26px;
+  /*font-size: 26px;*/
+  font-size: 20px;
   letter-spacing: -1px
 }
 
 .team-description {
   font-family: "DIN-Light";
   color: #000000;
-  font-size: 20px;
-  letter-spacing: -1px
+  /*font-size: 20px;*/
+  font-size: 16px;
+  letter-spacing: -1px;
+  font-style: italic;
 }
 
 .team-description-bottom {
   font-family: "DIN-Light";
   color: #000000;
-  font-size: 18px;
+  /*font-size: 18px;*/
+  font-size: 16px;
   letter-spacing: -1px
 }
 
@@ -1989,9 +2012,10 @@ margin-top: 7%;
 
 .team-text{
   text-align:left;
-  margin-left: 42px;
+  /*margin-left: 42px;*/
+  margin-top: 5%;
   vertical-align: top;
-  width: 369px;
+  /*width: 369px;*/
 }
 
 /*@media (max-width: 1030px) {

@@ -23,7 +23,7 @@ html, body { height: 100%; }
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	top: 0;
+	top: 61px;
 	left: 0;
 	visibility: hidden;
 	overflow-x: hidden;
@@ -214,11 +214,10 @@ html, body { height: 100%; }
   height: calc(100% - 61px);
 }*/
 
-.pt-page-3, .pt-page-4, .pt-page-5, .pt-page-6, .pt-page-7, .pt-page-8, .pt-page-10 {
+.pt-page-2, .pt-page-3, .pt-page-4, .pt-page-5, .pt-page-6, .pt-page-7, .pt-page-8, .pt-page-10 {
   background: #FFFFFF;
   top: 61px;
-  /*height: calc(100% - 61px);*/
-	height: calc(100% - 80px)
+  height: calc(100% - 61px);
 }
 
 .pt-page-9 {

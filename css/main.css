@@ -427,12 +427,20 @@ html, body {
   top:40px !important;
 }
 
-#spin-outs-container {
-  /*margin-top: 5%;*/
+#deepray-container {
+  height: 100%;
+}
+
+#vmtklab-container {
+  height: 100%;
+}
+
+#invariant-container {
+  height: 100%;
 }
 
 #spin-outs-header {
-  height: 550px;
+  height: 100%;
 }
 
 
@@ -460,6 +468,10 @@ html, body {
   margin-top: 1% !important;
   margin-right: 3% !important;
 }*/
+
+#menu-navbar {
+  margin-right: 3%;
+}
 
 #menu.navbar {
   position: fixed;
@@ -1084,7 +1096,11 @@ margin-top: 7%;
   color: grey;
   font-size: 65px;
   letter-spacing: -3px;
-  margin-top: 5%;
+  /*margin-top: 13%;*/
+}
+
+.spin-header-p {
+  margin-top: 15%;
 }
 
 .cription {
@@ -1232,9 +1248,9 @@ margin-top: 7%;
   line-height: 1.3;
 }
 
-.branch-description-white-product{
+.branch-description-product{
   font-family: "DIN-Light";
-  color: #FFFFFF;
+  color: #000000;
   font-size: 25px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1962,6 +1978,7 @@ margin-top: 7%;
 
 .main-content-products {
   text-align: center;
+  height: 100%;
 }
 
 .main-content-partners-gray {
@@ -1999,15 +2016,15 @@ margin-top: 7%;
 }
 
 #logo-products {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 #description-products {
-  margin-top: 15% !important;
+  margin-top: 2%;
 }
 
-.btn-products {
-  background-color: transparent;
+.btn-products, .btn-products:visited {
+  background-color: white;
   padding-top: 15px !important;
   padding-bottom: 15px !important;
   padding-left: 60px !important;
@@ -2017,11 +2034,11 @@ margin-top: 7%;
   text-shadow: none !important;
   border-color: none !important;
   font-size: 22px;
-  margin-top:5%;
-  color:white !important;
+  margin-top:2%;
+  color:grey !important;
 }
 
-.btn-products:focus {
+.btn-products:focus, .btn-products:hover {
   background-color: black;
   padding-top: 15px !important;
   padding-bottom: 15px !important;
@@ -2032,65 +2049,40 @@ margin-top: 7%;
   text-shadow: none !important;
   border-color: none !important;
   font-size: 22px;
-  margin-top:5%;
+  margin-top:2%;
   color:white !important;
 }
 
-.btn-products:hover, .btn-products:visited {
-  background-color: black;
-  padding-top: 15px !important;
-  padding-bottom: 15px !important;
-  padding-left: 60px !important;
-  padding-right: 60px !important;
-  font-family: "DIN-Light" !important;
-  background-image: none !important;
-  text-shadow: none !important;
-  border-color: none !important;
-  font-size: 22px;
-  margin-top:5%;
-  color:white !important;
-}
+
 
 .deepray {
-  background: url(../img/08_products/deep_ray.jpg) no-repeat;
+  height: 100%;
+  background-image: url("../img/08_products/deep_ray_background.jpg");
   background-size: cover;
-  background-position: right bottom;
-  background-color: #FFFFFF;
-  -pie-background: url(../img/08_products/deep_ray.jpg) no-repeat; /*ie 6-9 via PIE*/
+  background-position: 50% 0px !important;
+  background-repeat: no-repeat;
+  -pie-background: url(../img/08_products/deep_ray_background.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
-
 
 .vmtklab {
-  background: url(../img/08_products/vmtk_lab.jpg) no-repeat;
+  height: 100%;
+  background-image: url("../img/08_products/vmtklab_background.jpg");
   background-size: cover;
-  background-position: right bottom;
-  background-color: #000000;
-  -pie-background: url(../img/08_products/vmtk_lab.jpg) no-repeat; /*ie 6-9 via PIE*/
-}
-
-.dicom {
-  background: url(../img/08_products/dicom.jpg) no-repeat;
-  background-size: cover;
-  background-position: right bottom;
-  background-color: #FFFFFF;
-  -pie-background: url(../img/08_products/dicom.jpg) no-repeat; /*ie 6-9 via PIE*/
-}
-
-.vmtk {
-  background: url(../img/08_products/vmtk.jpg) no-repeat;
-  background-size: cover;
-  background-position: right bottom;
-  background-color: #000000;
-  -pie-background: url(../img/08_products/vmtk.jpg) no-repeat; /*ie 6-9 via PIE*/
+  background-position: 50% 0px !important;
+  background-repeat: no-repeat;
+  -pie-background: url(../img/08_products/vmtklab_background.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .invariant {
-  background: url(../img/08_products/invariant.jpg) no-repeat;
+  height: 100%;
+  background-image: url("../img/08_products/invariant_background.jpg");
   background-size: cover;
-  background-position: right bottom;
-  background-color: #FFFFFF;
-  -pie-background: url(../img/08_products/invariant.jpg) no-repeat; /*ie 6-9 via PIE*/
+  background-position: 50% 0px !important;
+  background-repeat: no-repeat;
+  -pie-background: url(../img/08_products/invariant_background.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
+
+
 
 .logo-invariant {
   opacity: 0.3;

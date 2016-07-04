@@ -342,7 +342,7 @@ img.background-home.background-home-right {
 }
 
 .spin-background {
-  background-image: url("../img/08_products/spin.jpg");
+  background-image: url("../img/spinouts/spin.jpg");
   background-size: cover;
   background-position: 50% 0px;
   background-repeat: no-repeat;
@@ -383,29 +383,29 @@ img.background-home.background-home-right {
 
 .deepray {
   height: 100%;
-  background-image: url("../img/08_products/deep_ray_background.jpg");
+  background-image: url("../img/spinouts/deep_ray_background.jpg");
   background-size: cover;
   background-position: 50% 0px ;
   background-repeat: no-repeat;
-  -pie-background: url(../img/08_products/deep_ray_background.jpg) no-repeat; /*ie 6-9 via PIE*/
+  -pie-background: url(../img/spinouts/deep_ray_background.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .vmtklab {
   height: 100%;
-  background-image: url("../img/08_products/vmtklab_background.jpg");
+  background-image: url("../img/spinouts/vmtklab_background.jpg");
   background-size: cover;
   background-position: 50% 0px ;
   background-repeat: no-repeat;
-  -pie-background: url(../img/08_products/vmtklab_background.jpg) no-repeat; /*ie 6-9 via PIE*/
+  -pie-background: url(../img/spinouts/vmtklab_background.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 .invariant {
   height: 100%;
-  background-image: url("../img/08_products/invariant_background.jpg");
+  background-image: url("../img/spinouts/invariant_background.jpg");
   background-size: cover;
   background-position: 50% 0px ;
   background-repeat: no-repeat;
-  -pie-background: url(../img/08_products/invariant_background.jpg) no-repeat; /*ie 6-9 via PIE*/
+  -pie-background: url(../img/spinouts/invariant_background.jpg) no-repeat; /*ie 6-9 via PIE*/
 }
 
 #logo-products {
@@ -577,7 +577,19 @@ img.top {
 
 /* CUSTOMERS */
 
+.thumbnail-partners {
+  background-color: none;
+}
 
+.thumbnail-partners > img{
+  width: 44%;
+}
+
+.main-content-partners-white {
+  text-align: center;
+  background-color: #ffffff;
+  margin-top: 40px;
+}
 
 /* FAQ */
 
@@ -611,14 +623,14 @@ img.top {
 
 #companyVAT > p {
   margin: 20px 0 0 0;
-  font-family: "DINNeuzeitGroteskStd-Light";
+  font-family: "DIN-Light";
   font-size: 11px;
   text-align: center;
 }
 
 #disclaimerLink {
   font-size: 11px;
-  font-family: "DINNeuzeitGroteskStd-Light";
+  font-family: "DIN-Light";
   color: #898989;
   letter-spacing: normal;
 }

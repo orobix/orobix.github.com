@@ -741,8 +741,50 @@ img.top {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (max-device-width : 1030px) {
-  p {
-    font-size: 25px;
+
+  /* NAVBAR */
+
+  .navbar {
+    font-size: 25px !important;
+  }
+
+
+  /* WHAT-WE-DO */
+  .branch-description
+  {
+    font-size: 35px !important;
+  }
+  .branch-description-white-header,
+  .branch-description-white-header-2 {
+    font-size: 30px !important;
+  }
+
+  .branch-description-list {
+    font-size: 25px !important;
+  }
+
+  .apple-white-branch {
+    font-size: 22px !important;
+  }
+
+  .discover-white {
+    font-size: 18px !important;
+  }
+
+  /* HOW-WE-WORK */
+
+  .branch-description-header,
+  .branch-description-header-2 {
+    font-size: 30px !important;
+  }
+
+  /* TEAM */
+
+  .team-description {
+    font-size: 25px !important;
+  }
+  .team-description-bottom {
+    font-size: 30px !important;
   }
 }
 

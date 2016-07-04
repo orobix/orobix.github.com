@@ -1,15 +1,10 @@
 html, body {
-  /*height: 100%;*/
-  /*min-height: 2000px;*/
   padding-top: 25px;
+  overflow-x: hidden;
 }
 
 a:hover, a:focus, a:visited {
   text-decoration: none;
-}
-
-.main-content { 
-  /*height: 100%;*/
 }
 
 /* FONTS */
@@ -151,6 +146,10 @@ a:hover, a:focus, a:visited {
 
 /* NAVBAR */
 
+.navbar-header {
+  margin-top: 5px;
+}
+
 .navbar {
   position: fixed;
   margin-bottom: 0;
@@ -163,6 +162,15 @@ a:hover, a:focus, a:visited {
 
 .navbar * {
   color: #000000;
+}
+
+.navbar-default .navbar-nav>li.active-li>a {
+  color: #000000;
+}
+
+.container-navbar {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* INDEX */
@@ -428,7 +436,8 @@ img.background-home.background-home-right {
   border-color: none ;
   font-size: 22px;
   margin-top:2%;
-  color:grey ;
+  color:grey;
+  opacity: 0.7;
 }
 
 .btn-products:focus, .btn-products:hover {
@@ -531,10 +540,8 @@ img.top {
 
 .team-text{
   text-align:left;
-  /*margin-left: 42px;*/
   margin-top: 5%;
   vertical-align: top;
-  /*width: 369px;*/
 }
 
 .team-title {
@@ -618,7 +625,7 @@ img.top {
   background-color: #f1f1f1;
   background-image: url("../img/customers/project.jpg");
   background-size: cover;
-  background-position: 50% 0px !important;
+  background-position: 50% 0px;
   background-repeat: no-repeat;
 }
 

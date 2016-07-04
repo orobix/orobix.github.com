@@ -655,8 +655,11 @@ img.top {
   margin-bottom: 5%;
 }
 
-.fa {
-  color: black;
+.contact-us-p > a {
+  font-family: 'DIN-Light';
+  color: #000000;
+  font-size: 22px;
+  letter-spacing: -1px;
 }
 
 .company-certification {

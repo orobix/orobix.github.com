@@ -6,38 +6,23 @@
     <meta name="format-detection" content="telephone=no"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
     <link rel="stylesheet" href="css/main.css">
-    <!--<link rel="stylesheet" type="text/css" href="css/animations.css" />-->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300' rel='stylesheet' type='text/css'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-
-    <link rel="icon" type="image/gif" href="img/00_common/favicon.gif" />
-
+    <link rel="icon" type="image/gif" href="img/favicon.gif" />
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.js"></script>
     <![endif]-->
   </head>
   <body>
-    <div class="socials">
-      <a href="https://www.facebook.com/orobix" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-      <a href="https://twitter.com/orobix" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-      <a href="https://www.linkedin.com/company/orobix-srl" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-      <a href="https://github.com/orobix" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-    </div>
-
 
     {{content}}
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
-    <script src="js/pagetransitions.js"></script>
+
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/routie.min.js"></script>
-    <script src="js/routing.js"></script>
     <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
     <script type="text/javascript">
 
@@ -51,28 +36,6 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-
-      $( window ).ready(function() {
-        var img = new Image();
-        img.onload = function() {
-          var height = this.height;
-          var bodyWidth = $('body').width();
-          if ( bodyWidth != this.width ) {
-            height = ( bodyWidth * this.height ) / this.width
-          }
-          $('#team-all').css('height',height);
-        }
-        img.src = 'img/06_team/team_1.jpg';
-
-      });
-
-      $( window ).resize(function() {
-        var new_height = $('#img-team').height();
-        $('#team-all').css('height',new_height);
-        console.log("resize");
-      });
-
-
 
     </script>
   </body>

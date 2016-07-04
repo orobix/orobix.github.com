@@ -748,7 +748,6 @@ and (max-device-width : 1030px) {
     font-size: 25px !important;
   }
 
-
   /* WHAT-WE-DO */
   .branch-description
   {
@@ -794,7 +793,7 @@ and (max-device-width : 1030px) {
       float: none;
   }
   .orobix-logo-menu {
-    margin-top: 10px;
+    margin-top: 15px;
   }
   .navbar-toggle {
       display: block;

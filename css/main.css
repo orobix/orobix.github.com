@@ -748,10 +748,26 @@ and (max-device-width : 1030px) {
     font-size: 25px !important;
   }
 
+  /* INDEX */
+  .home-logo {
+    position: static;
+  }
+
+  .home-background {
+    position: static;
+    height: 50%;
+  }
+
+  .background-home {
+    max-width: 45%;
+    height: auto !important;
+  }
+
   /* WHAT-WE-DO */
   .branch-description
   {
     font-size: 35px !important;
+    line-height: 1.1 !important;
   }
   .branch-description-white-header,
   .branch-description-white-header-2 {
@@ -769,6 +785,8 @@ and (max-device-width : 1030px) {
   .discover-white {
     font-size: 18px !important;
   }
+
+
 
   /* HOW-WE-WORK */
 
@@ -825,4 +843,34 @@ and (max-device-width : 1030px) {
   .collapsing {
       overflow: hidden!important;
   }
+}
+
+
+@media only screen
+and (max-device-width : 1030px)
+and (orientation : landscape) {
+
+  /*INDEX*/
+
+  .home-logo {
+    position: fixed;
+  }
+
+  .home-background {
+    height: auto !important;
+  }
+
+  .background-home {
+    max-width: 20%;
+    height: auto !important;
+  }
+
+  img.background-home {
+    max-width: 20%;
+  }
+
+  .btn-home {
+    margin-top: 0px !important;
+  }
+
 }

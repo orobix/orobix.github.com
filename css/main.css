@@ -128,7 +128,7 @@ a:hover, a:focus, a:visited {
 .branch-description-list {
   font-family: "DIN-Light";
   color: #000000;
-  font-size: 20px;
+  font-size: 1.2vw;
   margin-top: 8px;
   margin-bottom: 8px;
   letter-spacing: -1px;
@@ -141,6 +141,8 @@ a:hover, a:focus, a:visited {
   font-size: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   letter-spacing: -1px;
   line-height: 1.3;
 }
@@ -259,7 +261,8 @@ img.background-home.background-home-right {
   text-shadow: none;
   border-color: none;
   font-size: 22px;
-  margin-top:5%;
+  margin-top: 20px;
+  margin-bottom: 70px;
 }
 
 .btn-home:hover {
@@ -677,6 +680,11 @@ img.top {
   margin-top: 2%;
 }
 
+.row-projects > div {
+  padding-right: 5px;
+  padding-left: 5px; 
+}
+
 /* FAQ */
 
 /* CONTACT */
@@ -903,8 +911,11 @@ and (orientation : landscape) {
     max-width: 20%;
   }
 
-  .btn-home {
-    margin-top: 0px !important;
+  .home-logo {
+    top: 50px;
   }
 
+  .btn-home {
+    margin-top: 0;
+  }
 }

@@ -122,7 +122,7 @@ a:hover, a:focus, a:visited {
   color: grey;
   font-size: 65px;
   letter-spacing: -3px;
-  margin-top: 5%;
+  margin-top: 70px;
 }
 
 .branch-description-list {
@@ -682,7 +682,7 @@ img.top {
 /* CONTACT */
 
 #location-contact {
-  margin-bottom: 5%;
+  margin-bottom: 70px;
 }
 
 .contact-us-p > a {
@@ -694,9 +694,20 @@ img.top {
 
 .company-certification {
   background-color: #FFFFFF;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  padding-bottom: 20px;
+  margin-bottom: 70px;
+}
+
+.certification-row {
+    display: flex;
+    height: 177px;
+}
+
+.certification-row > img {
+    max-height: 100%;
+}
+
+.certification-row > * {
+    margin: auto;
 }
 
 .branch-description-contact {
@@ -712,8 +723,6 @@ img.top {
   font-family: "DIN-Light";
   color: #000000;
   font-size: 22px;
-  margin-top: 8px;
-  margin-bottom: 8px;
   letter-spacing: -1px;
   line-height: 1.3;
   text-align: left;

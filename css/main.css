@@ -32,6 +32,15 @@ a:hover, a:focus, a:visited {
   line-height: 1.5;
 }
 
+.branch-description-bottom-header{
+  font-family: "DIN-Light";
+  color: #000000;
+  font-size: 1.7vw;
+  margin-bottom: 5%;
+  letter-spacing: -1px;
+  line-height: 1.5;
+}
+
 .branch-description-header{
   font-family: "DIN-Light";
   color: #000000;
@@ -334,6 +343,10 @@ img.background-home.background-home-right {
   background-size: cover;
   background-position: 50% 0px ;
   background-repeat: no-repeat;
+}
+
+#how-container {
+  margin-bottom: 40px;
 }
 
 .branch-title-grey-content-how {
@@ -807,6 +820,8 @@ and (max-device-width : 1030px) {
   /* HOW-WE-WORK */
 
   .branch-description-header,
+  .branch-description-main-header,
+  .branch-description-bottom-header,
   .branch-description-header-2 {
     font-size: 30px !important;
   }

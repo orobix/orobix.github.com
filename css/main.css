@@ -871,7 +871,7 @@ and (max-device-width : 1030px) {
   }
   .navbar-nav {
       float: none!important;
-      /*font-size: 30px;*/
+      font-size: 40px;
       margin: 7.5px 50px 7.5px -15px
   }
   .navbar-nav>li {

@@ -3,6 +3,10 @@ html, body {
   overflow-x: hidden;
 }
 
+a.discover {
+  color: #FFFFFF;
+}
+
 a:hover, a:focus, a:visited {
   text-decoration: none;
 }
@@ -682,7 +686,7 @@ img.top {
 
 .row-projects > div {
   padding-right: 5px;
-  padding-left: 5px; 
+  padding-left: 5px;
 }
 
 /* FAQ */
